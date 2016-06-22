@@ -15,13 +15,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <title>polymer-font-awesome Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="../polymer-font-awesome.html">
+    <script src="FontAwesome.js"></script>
   </head>
   <body unresolved>
 
     <div class="vertical-section vertical-section-container centered">
-      <iron-icon icon="polymer-font-awesome:fa-pencil"></iron-icon>
-      <iron-icon icon="polymer-font-awesome:fa-warning"></iron-icon>
+      <iron-icon icon="fa:fa-gift" size="55"></iron-icon>
+      <iron-icon icon="fa:fa-leaf"></iron-icon>
+      <iron-icon icon="fa:fa-archive"></iron-icon>
+      <iron-icon icon="fa:fa-database"></iron-icon>
+      <iron-icon icon="fa:fa-internet-explorer"></iron-icon>
+      <iron-icon icon="fa:fa-television"></iron-icon>
     </div>
+
+    <template id="demo-icons" is="dom-bind">
+      <ul class="list-bare flex flex--col">
+        <template is="dom-repeat" items="[[icons]]">
+          <li>
+            <iron-icon icon$="{{item.icon}}"></iron-icon>
+            <span>{{item.icon}}</span>
+          </li>
+        </template>
+      </ul>
+    </template>
+    <script type="text/javascript">
+      var ficons = window.FONT_AWESOME.icons,
+        len = ficons.length,
+        icon = null,
+        tmpl = document.getElementById('demo-icons'),
+        icons = [];
+      for (var i = 0; i < len; i++) {
+        icon = ficons[i];
+        icons.push({
+          icon: 'fa:fa-'+ icon.id
+        });
+        console.log('Adding icon', icon );
+      }
+      tmpl.icons = icons;
+    </script>
 
     <script>
 
