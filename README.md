@@ -1,4 +1,4 @@
-# polymer-font-awesome
+# px-polymer-font-awesome
 
 An element providing a starting point for your own reusable Polymer elements.
 
@@ -18,7 +18,7 @@ Then, go ahead and install the element and its dependencies:
 
 To use this component, include the import link at the top of your page:
 ```
-<link rel="import" href="bower_components/polymer-font-awesome/polymer-font-awesome.html" />
+<link rel="import" href="bower_components/px-polymer-font-awesome/polymer-font-awesome.html" />
 ```   
 
 and call the requested icon in your code like so:
@@ -40,7 +40,7 @@ And you can run it via:
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/polymer-font-awesome/`, where `polymer-font-awesome` is the name of the directory containing it.
+`http://localhost:8080/components/px-polymer-font-awesome/`, where `px-polymer-font-awesome` is the name of the directory containing it.
 
 
 ## Testing Your Element
