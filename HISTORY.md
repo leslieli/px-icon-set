@@ -1,3 +1,15 @@
+v1.0.1
+==================
+* added image to README
+
+v1.0.0
+==================
+* standardized name of main file
+* updated README
+* added Git issue/PR templates
+* updated license
+* removed dummy tests
+
 v0.1.10
 ==================
 * added new demo page and auto-ghp
