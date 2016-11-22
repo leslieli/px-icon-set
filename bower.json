@@ -1,25 +1,24 @@
 {
   "name": "px-polymer-font-awesome",
-  "version": "0.1.10",
-  "authors": [
-    "Martin Wragg mdwragg@gmail.com",
-    "Runn Vermel runn.vermel@ge.com"
-  ],
+  "version": "1.0.0",
   "description": "Polymer component to allow easy use of Font Awesome icons in your Polymer element.",
-  "keywords": [
-    "web-component",
-    "polymer",
-    "seed"
-  ],
-  "main": "polymer-font-awesome.html",
-  "license": "https://github.com/PredixDev/px-polymer-font-awesome/LICENSE.md",
-  "homepage": "https://github.com/PredixDev/px-polymer-font-awesome",
+  "main": "px-polymer-font-awesome.html",
   "ignore": [
-    "/.*",
-    "/test/"
+    ".*",
+      "npm-debug.log",
+      "gulpfile.js",
+      "sass",
+      "bower_components",
+      "node_modules",
+      "test",
+      "OSS_Notice.pdf",
+      "px-context-browser.png",
+      "scripts",
+      "id_rsa.enc",
+      "wct.conf.*"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
+    "polymer": "^1.7.0",
     "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.9",
     "iron-icon": "PolymerElements/iron-icon#^1.0.7",
     "px-theme": "~1.1.2"

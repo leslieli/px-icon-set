@@ -1,6 +1,6 @@
 {
   "name": "px-polymer-font-awesome",
-  "version": "0.1.10",
+  "version": "1.0.0",
   "description": "Base icon styles for Predix UI",
   "private": false,
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PredixDev/px-iconography-design.git"
+    "url": "https://github.com/PredixDev/px-polymer-font-awesome.git"
   },
   "author": "General Electric",
   "devDependencies": {
