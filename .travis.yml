@@ -1,25 +1,33 @@
+sudo: required
+dist: trusty
 language: node_js
-sudo: false
-before_script:
-  - npm install -g bower polylint web-component-tester
-  - bower install
-  - polylint
-env:
-  global:
-    - secure: gZ5vpMlc9fuKSZeMmT6xf4+FIVWxET6f6Lkp6l5Qo9vL2X/KC/bMJF1v2w5xXFLFTdm/hPUDkeQRDUBBJhGcsXhJeWIvAXdPkObV9ZPRwpDnnN1qU5lOqVIy6gFjDm2Wm6UNXcRnyP1TrGpMwbG13EUtD0rF8LZqBm3B833sKS4=
-    - secure: DObDewETPYiIsASeC3UETPbQ6YBniRZdNV2eTM1xULvuFNDxXJD09KKyWOiMduublEIJRXLjBIXmD8cbVsgrbRUYA4bxcXffDeuc6q6HaQGU9HvIbLz6o3/oxi4fX2G9GwrZtijW2p2Rgw2l9koR3ovjcM97CSTWFUMh5rtXag8=
-    - CXX=g++-4.8
-node_js: stable
+node_js:
+- stable
+branches:
+  except:
+  - gh-pages
 addons:
-  firefox: latest
   apt:
     sources:
-      - google-chrome
-      - ubuntu-toolchain-r-test
+    - google-chrome
     packages:
-      - google-chrome-stable
-      - g++-4.8
-  sauce_connect: true
+    - google-chrome-stable
+before_script:
+- npm install web-component-tester
+- npm install bower
+- export PATH=$PWD/node_modules/.bin:$PATH
+- bower install
 script:
-  - xvfb-run wct
-  - "if [ \"${TRAVIS_PULL_REQUEST}\" = \"false\" ]; then wct -s 'default'; fi"
+- xvfb-run wct --skip-plugin sauce
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --plugin sauce --skip-plugin
+  local; fi
+env:
+  global:
+    secure: a5fiwG+8UmPWhwEtoC5+5HoeaXwaFfDEDP+cisvsiHRAo4Z+iF6P5uy3sVwKF45AAHpUsMc1UAKJz4uyZTukXeHGj8KvaNtSAJ2bB+u5sCxiulj49bFaNLoE1toa27RsdexJhF+a7iAz+YJ67QjTAMCImNA9NoqHQvSRibeMHs0RCjJxMzyFj+AdjwQHfzzQwmHriGe6E1BcyFbszSeG6cHVGnd8qi1TkRuQZw1n1gbABPYCUxFA1ytEA/6MdQwdRZ1iXBB8aQ7CjPA1CI02ogMO0JhdG7pp0fTgFZsNuMCdm5kCENpwU26Q96YQAyJymj9C3HW//Ml4TUnJsTmz+qf3DCc3D5pPcsbOcEyHrgFFY6H1dygUsObSYOWaWtB31K+VLS1n8eAPtNPfpQwofUFKX+eyuFFX0nZjIMllWp0H0hKkoS3GS/SIVsr+MGwMxogf9JB+7pbx9lpqXl4WaxYnJ10z05kHDSV2CmAEH4qmC48c5xfTbBOUnYVtWGYdzb5YqhnwVq9fm0iZA6++284+hCvhXbUWyv7MjB5X9iFeX2pIv8QOWaIzRWpSBaFNAt78QYkY1y2Wpyx9WhCSxF1S1nxqi5Q+XpFH4HdQyZCqgiVks+UMAsdFhSySSHnDZ1+aEihYa+1S6Ts03f6/BCzPMR/cpFCaXHZjcJyNuGE=
+    secure: TYQf3C2w6/XmhVqpagILwD8oeLpr6FNa9iHJdn5TN0juH1MAPOeJ6BICdo2dkuzlNDa0igpWIZTuTOaPNp+c/BrY0EmmzYE1IU+3OeLWcEP8FXqTOwrVgnyHeFckhUUffw2Le5BfCDS9W+wayy/IqG7fEyytMDnfM4Gd6DEigkGXv+rDUgGIfui0t0T4MQsj0jcy/YxhSX8e8Rq16wCuyPwDt1KUTCOHh5iulFpkB0q4L8y2+FHRthyLkM9eCm5gujWj+gjBSIrmOLnsSPfHs2/Jku3W4S77jCljYpSq3gJ29ylfu8LmZjIdXtcV77d5QyCsKPbf31RvtxAcd7sYrEQvGs0WfkEG2x/9gBzA2jmWrZydy/eyboO/0K8F0fzHHUzPmPErhXiR6dMMLwaEi8Q0NzK1PCeHsp15aVpY3liFp/CVpWkEJ4fjkeNUiGSRb3j9QOtTHeJGF8ALRmoq7lUQQxsNtSjCwmeb3fI+yrQzsOp4lZmctT8T6D+voN0fePpxpoBamIaPhXKmNulAjXtu0JXDKj5TqGIREjXTILOyFJmhsS2vi2yYKoKXgfmEaoCiAuddxz2gA5jYHlLe+OHJGOEtm6fjszgp4qPcXyR8uEy6yhrK+pZsvhTnw3uDFNWWZWhCr6D0uldFxTFyTrlWfe2ltroqdFIbjmKbS0k=
+before_install:
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password" -in id_rsa.enc -out deploy_key -d; fi
+after_success:
+- cd $TRAVIS_BUILD_DIR/scripts
+- chmod 755 ghp.sh
+- "./ghp.sh"
