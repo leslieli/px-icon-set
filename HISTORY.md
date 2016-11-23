@@ -1,3 +1,7 @@
+v1.0.4
+==================
+* changing all devDeps to ^
+
 v1.0.3
 ==================
 * Remove unused dependency.
