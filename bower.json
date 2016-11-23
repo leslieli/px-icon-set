@@ -1,6 +1,6 @@
 {
     "name": "px-polymer-font-awesome",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Polymer component to allow easy use of Font Awesome icons in your Polymer element.",
     "main": "px-polymer-font-awesome.html",
     "ignore": [
@@ -36,7 +36,6 @@
         "px-code-design": "^0.2.11",
         "px-headings-design": "^0.2.14",
         "px-list-inline-design": "^0.2.11",
-        "px-dropdown": "^0.12.0",
         "px-spacing-design": "~0.3.8",
         "px-toggle-design": "^0.2.12"
     }
