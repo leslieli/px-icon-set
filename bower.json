@@ -1,6 +1,6 @@
 {
     "name": "px-polymer-font-awesome",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Polymer component to allow easy use of Font Awesome icons in your Polymer element.",
     "main": "px-polymer-font-awesome.html",
     "ignore": [
