@@ -1,3 +1,7 @@
+v1.1.4
+==================
+* added .bowerrc
+
 v1.1.3
 ==================
 * Updating so px-demo-snippet and px-api-viewer get new grays
