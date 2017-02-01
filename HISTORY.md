@@ -1,6 +1,6 @@
 v1.1.4
 ==================
-* added .bowerrc
+* added .bowerrc .editorconfig .jshintrc
 
 v1.1.3
 ==================
