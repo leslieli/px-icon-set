@@ -1,3 +1,7 @@
+v1.1.5
+==================
+* updated to px-demo
+
 v1.1.4
 ==================
 * added .bowerrc .editorconfig .jshintrc
