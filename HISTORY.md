@@ -1,3 +1,7 @@
+v2.0.0
+==================
+* Major bump for redesign, picking up sub-dependencies for now
+
 v1.1.5
 ==================
 * updated to px-demo
