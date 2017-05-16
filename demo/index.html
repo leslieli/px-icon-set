@@ -1,0 +1,450 @@
+<!-- Common imports -->
+<link rel="import" href="../../polymer/polymer.html" />
+
+<!-- Common demo imports -->
+<link rel="import" href="../../px-demo/px-demo-header.html" />
+<link rel="import" href="../../px-demo/px-demo-api-viewer.html" />
+<link rel="import" href="../../px-demo/px-demo-footer.html" />
+<link rel="import" href="../../px-demo/px-demo-configs.html" />
+<link rel="import" href="../../px-demo/px-demo-props.html" />
+<link rel="import" href="../../px-demo/px-demo-interactive.html" />
+<link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
+
+<!-- Imports for this componnent -->
+<link rel="import" href="../../px-demo/css/px-demo-styles.html" />
+<link rel="import" href="../px-icon-set.html" />
+
+<!-- Demo DOM module -->
+<dom-module id="local-element-demo">
+  <template>
+    <style include="px-demo-styles" is="custom-style">
+      .large iron-icon {
+        width: 32px;
+        height: 32px;
+        margin: 5px;
+        stroke-width: 1.1px;
+      }
+      .small iron-icon {
+        width: 22px;
+        height: 22px;
+        margin: 5px;
+        stroke-width: 2px;
+      }
+      .epsilon {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .column {
+        width: 25%;
+      }
+      @media (max-width: 800px) {
+        .column {
+          width: 100%;
+        }
+      }
+      .cheatsheet {
+        display: flex;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        align-items: center;
+      }
+      .cheatsheet iron-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+    </style>
+
+    <!-- Header -->
+    <px-demo-header
+        module-name="px-icon-set"
+        description="Wrapper for the Predix icon set which leverages iron-icon. Please refer to the iron-icon API and the full list of Predix icons below the demo.">
+    </px-demo-header>
+
+    <!-- Interactive -->
+    <px-demo-interactive>
+      <!-- Configs -->
+      <px-demo-configs configs="[[configs]]" props="{{props}}" chosen-config="{{chosenConfig}}"></px-demo-configs>
+
+      <!-- Props -->
+      <px-demo-props props="{{props}}" config="[[chosenConfig]]"></px-demo-props>
+
+      <!-- Component ---------------------------------------------------------->
+      <px-demo-component>
+
+        <h4 class="epsilon">Assets & Objects:</h4>
+        <div class="large">
+          <iron-icon icon="px:machine"></iron-icon>
+          <iron-icon icon="px:aircraft-engine"></iron-icon>
+          <iron-icon icon="px:gas-turbine"></iron-icon>
+          <iron-icon icon="px:steam-turbine"></iron-icon>
+          <iron-icon icon="px:aircraft"></iron-icon>
+          <iron-icon icon="px:airport"></iron-icon>
+          <iron-icon icon="px:condensor"></iron-icon>
+          <iron-icon icon="px:boiler"></iron-icon>
+          <iron-icon icon="px:cooling-tower"></iron-icon>
+          <iron-icon icon="px:hrsg"></iron-icon>
+          <iron-icon icon="px:plant"></iron-icon>
+          <iron-icon icon="px:crane"></iron-icon>
+          <iron-icon icon="px:gas-line"></iron-icon>
+          <iron-icon icon="px:lightbulb"></iron-icon>
+          <iron-icon icon="px:asset"></iron-icon>
+          <iron-icon icon="px:product"></iron-icon>
+          <iron-icon icon="px:manufacturing"></iron-icon>
+          <iron-icon icon="px:solar-panel"></iron-icon>
+          <iron-icon icon="px:edge-device"></iron-icon>
+          <iron-icon icon="px:line"></iron-icon>
+          <iron-icon icon="px:block"></iron-icon>
+          <iron-icon icon="px:automobile"></iron-icon>
+          <iron-icon icon="px:truck"></iron-icon>
+          <iron-icon icon="px:rail-yard"></iron-icon>
+          <iron-icon icon="px:locomotive"></iron-icon>
+          <iron-icon icon="px:train"></iron-icon>
+          <iron-icon icon="px:wind-turbine"></iron-icon>
+        </div>
+        <h4 class="epsilon">Comms:</h4>
+        <div class="large">
+          <iron-icon icon="px:chat"></iron-icon>
+          <iron-icon icon="px:comment"></iron-icon>
+          <iron-icon icon="px:email"></iron-icon>
+          <iron-icon icon="px:message"></iron-icon>
+          <iron-icon icon="px:phone"></iron-icon>
+          <iron-icon icon="px:sms"></iron-icon>
+          <iron-icon icon="px:software"></iron-icon>
+        </div>
+        <h4 class="epsilon">Other:</h4>
+        <div class="large">
+          <iron-icon icon="px:administration"></iron-icon>
+          <iron-icon icon="px:settings"></iron-icon>
+          <iron-icon icon="px:alerts"></iron-icon>
+          <iron-icon icon="px:orchestration"></iron-icon>
+          <iron-icon icon="px:analysis"></iron-icon>
+          <iron-icon icon="px:analytics"></iron-icon>
+          <iron-icon icon="px:attribute"></iron-icon>
+          <iron-icon icon="px:bug"></iron-icon>
+          <iron-icon icon="px:calendar"></iron-icon>
+          <iron-icon icon="px:cases"></iron-icon>
+          <iron-icon icon="px:catalog"></iron-icon>
+          <iron-icon icon="px:dashboard"></iron-icon>
+          <iron-icon icon="px:data-source"></iron-icon>
+          <iron-icon icon="px:deployment"></iron-icon>
+          <iron-icon icon="px:class"></iron-icon>
+          <iron-icon icon="px:dev-ops"></iron-icon>
+          <iron-icon icon="px:digital-twin"></iron-icon>
+          <iron-icon icon="px:microservice"></iron-icon>
+          <iron-icon icon="px:fleet"></iron-icon>
+          <iron-icon icon="px:efficiency"></iron-icon>
+          <iron-icon icon="px:heat-rate"></iron-icon>
+          <iron-icon icon="px:kpi"></iron-icon>
+          <iron-icon icon="px:output"></iron-icon>
+          <iron-icon icon="px:ingestion"></iron-icon>
+          <iron-icon icon="px:log"></iron-icon>
+          <iron-icon icon="px:order"></iron-icon>
+          <iron-icon icon="px:pipeline"></iron-icon>
+          <iron-icon icon="px:route"></iron-icon>
+          <iron-icon icon="px:server"></iron-icon>
+          <iron-icon icon="px:spaces"></iron-icon>
+          <iron-icon icon="px:tag"></iron-icon>
+          <iron-icon icon="px:tag-group"></iron-icon>
+          <iron-icon icon="px:user"></iron-icon>
+          <iron-icon icon="px:users"></iron-icon>
+          <iron-icon icon="px:templates"></iron-icon>
+          <iron-icon icon="px:version"></iron-icon>
+        </div>
+        <h4 class="epsilon">Small Icons:</h4>
+        <div class="small">
+          <iron-icon icon="px:arrow-up"></iron-icon>
+          <iron-icon icon="px:arrow-down"></iron-icon>
+          <iron-icon icon="px:arrow-left"></iron-icon>
+          <iron-icon icon="px:arrow-right"></iron-icon>
+          <iron-icon icon="px:resize"></iron-icon>
+          <iron-icon icon="px:collapse"></iron-icon>
+          <iron-icon icon="px:expand"></iron-icon>
+          <iron-icon icon="px:collapse-left"></iron-icon>
+          <iron-icon icon="px:expand-right"></iron-icon>
+          <iron-icon icon="px:chevron-up"></iron-icon>
+          <iron-icon icon="px:chevron-down"></iron-icon>
+          <iron-icon icon="px:chevron-left"></iron-icon>
+          <iron-icon icon="px:chevron-right"></iron-icon>
+          <iron-icon icon="px:download"></iron-icon>
+          <iron-icon icon="px:upload"></iron-icon>
+          <iron-icon icon="px:share"></iron-icon>
+          <iron-icon icon="px:refresh"></iron-icon>
+          <iron-icon icon="px:add"></iron-icon>
+          <iron-icon icon="px:close"></iron-icon>
+          <iron-icon icon="px:copy"></iron-icon>
+          <iron-icon icon="px:delete"></iron-icon>
+          <iron-icon icon="px:alert"></iron-icon>
+          <iron-icon icon="px:calculator"></iron-icon>
+          <iron-icon icon="px:camera"></iron-icon>
+          <iron-icon icon="px:chart"></iron-icon>
+          <iron-icon icon="px:crosshairs"></iron-icon>
+          <iron-icon icon="px:desktop"></iron-icon>
+          <iron-icon icon="px:tablet"></iron-icon>
+          <iron-icon icon="px:mobile"></iron-icon>
+          <iron-icon icon="px:document"></iron-icon>
+          <iron-icon icon="px:pdf"></iron-icon>
+          <iron-icon icon="px:excel"></iron-icon>
+          <iron-icon icon="px:csv"></iron-icon>
+          <iron-icon icon="px:word"></iron-icon>
+          <iron-icon icon="px:edit"></iron-icon>
+          <iron-icon icon="px:favorite"></iron-icon>
+          <iron-icon icon="px:failure"></iron-icon>
+          <iron-icon icon="px:filter"></iron-icon>
+          <iron-icon icon="px:folder-closed"></iron-icon>
+          <iron-icon icon="px:folder-open"></iron-icon>
+          <iron-icon icon="px:hamburger"></iron-icon>
+          <iron-icon icon="px:hierarchy"></iron-icon>
+          <iron-icon icon="px:list"></iron-icon>
+          <iron-icon icon="px:grid"></iron-icon>
+          <iron-icon icon="px:tile"></iron-icon>
+          <iron-icon icon="px:tree"></iron-icon>
+          <iron-icon icon="px:inbox"></iron-icon>
+          <iron-icon icon="px:confirm"></iron-icon>
+          <iron-icon icon="px:open"></iron-icon>
+          <iron-icon icon="px:clock"></iron-icon>
+          <iron-icon icon="px:help"></iron-icon>
+          <iron-icon icon="px:information"></iron-icon>
+          <iron-icon icon="px:play"></iron-icon>
+          <iron-icon icon="px:pause"></iron-icon>
+          <iron-icon icon="px:stop"></iron-icon>
+          <iron-icon icon="px:home"></iron-icon>
+          <iron-icon icon="px:image"></iron-icon>
+          <iron-icon icon="px:instance"></iron-icon>
+          <iron-icon icon="px:formula"></iron-icon>
+          <iron-icon icon="px:flag"></iron-icon>
+          <iron-icon icon="px:launch"></iron-icon>
+          <iron-icon icon="px:link"></iron-icon>
+          <iron-icon icon="px:unlink"></iron-icon>
+          <iron-icon icon="px:lock"></iron-icon>
+          <iron-icon icon="px:unlock"></iron-icon>
+          <iron-icon icon="px:power"></iron-icon>
+          <iron-icon icon="px:location"></iron-icon>
+          <iron-icon icon="px:map"></iron-icon>
+          <iron-icon icon="px:menu"></iron-icon>
+          <iron-icon icon="px:more"></iron-icon>
+          <iron-icon icon="px:note"></iron-icon>
+          <iron-icon icon="px:notification"></iron-icon>
+          <iron-icon icon="px:reply"></iron-icon>
+          <iron-icon icon="px:save"></iron-icon>
+          <iron-icon icon="px:search"></iron-icon>
+          <iron-icon icon="px:settings-alt"></iron-icon>
+          <iron-icon icon="px:view"></iron-icon>
+          <iron-icon icon="px:website"></iron-icon>
+        </div>
+      </px-demo-component>
+      <!-- END Component ------------------------------------------------------>
+
+      <px-demo-component-snippet
+          element-properties="{{props}}"
+          element-name="iron-icon">
+      </px-demo-component-snippet>
+    </px-demo-interactive>
+
+    <div class="demo-layout--center demo-u-pb+++ u-pt++">
+      <h3 class="delta">Cheatsheet</h3>
+
+      <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
+
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:add"></iron-icon>px:add</span>
+          <span class="cheatsheet"><iron-icon icon="px:administration"></iron-icon>px:administration</span>
+          <span class="cheatsheet"><iron-icon icon="px:aircraft-engine"></iron-icon>px:aircraft-engine</span>
+          <span class="cheatsheet"><iron-icon icon="px:aircraft"></iron-icon>px:aircraft</span>
+          <span class="cheatsheet"><iron-icon icon="px:airport"></iron-icon>px:airport</span>
+          <span class="cheatsheet"><iron-icon icon="px:alert"></iron-icon>px:alert</span>
+          <span class="cheatsheet"><iron-icon icon="px:alerts"></iron-icon>px:alerts</span>
+          <span class="cheatsheet"><iron-icon icon="px:analysis"></iron-icon>px:analysis</span>
+          <span class="cheatsheet"><iron-icon icon="px:analytics"></iron-icon>px:analytics</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-down"></iron-icon>px:arrow-down</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-left"></iron-icon>px:arrow-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-right"></iron-icon>px:arrow-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-up"></iron-icon>px:arrow-up</span>
+          <span class="cheatsheet"><iron-icon icon="px:asset"></iron-icon>px:asset</span>
+          <span class="cheatsheet"><iron-icon icon="px:attribute"></iron-icon>px:attribute</span>
+          <span class="cheatsheet"><iron-icon icon="px:automobile"></iron-icon>px:automobile</span>
+          <span class="cheatsheet"><iron-icon icon="px:block"></iron-icon>px:block</span>
+          <span class="cheatsheet"><iron-icon icon="px:boiler"></iron-icon>px:boiler</span>
+          <span class="cheatsheet"><iron-icon icon="px:bug"></iron-icon>px:bug</span>
+          <span class="cheatsheet"><iron-icon icon="px:calculator"></iron-icon>px:calculator</span>
+          <span class="cheatsheet"><iron-icon icon="px:calendar"></iron-icon>px:calendar</span>
+          <span class="cheatsheet"><iron-icon icon="px:camera"></iron-icon>px:camera</span>
+          <span class="cheatsheet"><iron-icon icon="px:cases"></iron-icon>px:cases</span>
+          <span class="cheatsheet"><iron-icon icon="px:catalog"></iron-icon>px:catalog</span>
+          <span class="cheatsheet"><iron-icon icon="px:chart"></iron-icon>px:chart</span>
+          <span class="cheatsheet"><iron-icon icon="px:chat"></iron-icon>px:chat</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-down"></iron-icon>px:chevron-down</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-left"></iron-icon>px:chevron-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-right"></iron-icon>px:chevron-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-up"></iron-icon>px:chevron-up</span>
+          <span class="cheatsheet"><iron-icon icon="px:class"></iron-icon>px:class</span>
+          <span class="cheatsheet"><iron-icon icon="px:clock"></iron-icon>px:clock</span>
+          <span class="cheatsheet"><iron-icon icon="px:close"></iron-icon>px:close</span>
+          <span class="cheatsheet"><iron-icon icon="px:collapse"></iron-icon>px:collapse</span>
+          <span class="cheatsheet"><iron-icon icon="px:collapse-left"></iron-icon>px:collapse-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:comment"></iron-icon>px:comment</span>
+          <span class="cheatsheet"><iron-icon icon="px:condensor"></iron-icon>px:condensor</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:confirm"></iron-icon>px:confirm</span>
+          <span class="cheatsheet"><iron-icon icon="px:cooling-tower"></iron-icon>px:cooling-tower</span>
+          <span class="cheatsheet"><iron-icon icon="px:copy"></iron-icon>px:copy</span>
+          <span class="cheatsheet"><iron-icon icon="px:crane"></iron-icon>px:crane</span>
+          <span class="cheatsheet"><iron-icon icon="px:crosshairs"></iron-icon>px:crosshairs</span>
+          <span class="cheatsheet"><iron-icon icon="px:csv"></iron-icon>px:csv</span>
+          <span class="cheatsheet"><iron-icon icon="px:dashboard"></iron-icon>px:dashboard</span>
+          <span class="cheatsheet"><iron-icon icon="px:data-source"></iron-icon>px:data-source</span>
+          <span class="cheatsheet"><iron-icon icon="px:delete"></iron-icon>px:delete</span>
+          <span class="cheatsheet"><iron-icon icon="px:deployment"></iron-icon>px:deployment</span>
+          <span class="cheatsheet"><iron-icon icon="px:desktop"></iron-icon>px:desktop</span>
+          <span class="cheatsheet"><iron-icon icon="px:dev-ops"></iron-icon>px:dev-ops</span>
+          <span class="cheatsheet"><iron-icon icon="px:digital-twin"></iron-icon>px:digital-twin</span>
+          <span class="cheatsheet"><iron-icon icon="px:document"></iron-icon>px:document</span>
+          <span class="cheatsheet"><iron-icon icon="px:download"></iron-icon>px:download</span>
+          <span class="cheatsheet"><iron-icon icon="px:edge-device"></iron-icon>px:edge-device</span>
+          <span class="cheatsheet"><iron-icon icon="px:edit"></iron-icon>px:edit</span>
+          <span class="cheatsheet"><iron-icon icon="px:efficiency"></iron-icon>px:efficiency</span>
+          <span class="cheatsheet"><iron-icon icon="px:email"></iron-icon>px:email</span>
+          <span class="cheatsheet"><iron-icon icon="px:excel"></iron-icon>px:excel</span>
+          <span class="cheatsheet"><iron-icon icon="px:expand"></iron-icon>px:expand</span>
+          <span class="cheatsheet"><iron-icon icon="px:expand-right"></iron-icon>px:expand-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:failure"></iron-icon>px:failure</span>
+          <span class="cheatsheet"><iron-icon icon="px:favorite"></iron-icon>px:favorite</span>
+          <span class="cheatsheet"><iron-icon icon="px:filter"></iron-icon>px:filter</span>
+          <span class="cheatsheet"><iron-icon icon="px:flag"></iron-icon>px:flag</span>
+          <span class="cheatsheet"><iron-icon icon="px:fleet"></iron-icon>px:fleet</span>
+          <span class="cheatsheet"><iron-icon icon="px:folder-closed"></iron-icon>px:folder-closed</span>
+          <span class="cheatsheet"><iron-icon icon="px:folder-open"></iron-icon>px:folder-open</span>
+          <span class="cheatsheet"><iron-icon icon="px:formula"></iron-icon>px:formula</span>
+          <span class="cheatsheet"><iron-icon icon="px:gas-line"></iron-icon>px:gas-line</span>
+          <span class="cheatsheet"><iron-icon icon="px:gas-turbine"></iron-icon>px:gas-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:grid"></iron-icon>px:grid</span>
+          <span class="cheatsheet"><iron-icon icon="px:hamburger"></iron-icon>px:hamburger</span>
+          <span class="cheatsheet"><iron-icon icon="px:heat-rate"></iron-icon>px:heat-rate</span>
+          <span class="cheatsheet"><iron-icon icon="px:help"></iron-icon>px:help</span>
+          <span class="cheatsheet"><iron-icon icon="px:hierarchy"></iron-icon>px:hierarchy</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:home"></iron-icon>px:home</span>
+          <span class="cheatsheet"><iron-icon icon="px:hrsg"></iron-icon>px:hrsg</span>
+          <span class="cheatsheet"><iron-icon icon="px:image"></iron-icon>px:image</span>
+          <span class="cheatsheet"><iron-icon icon="px:inbox"></iron-icon>px:inbox</span>
+          <span class="cheatsheet"><iron-icon icon="px:information"></iron-icon>px:information</span>
+          <span class="cheatsheet"><iron-icon icon="px:ingestion"></iron-icon>px:ingestion</span>
+          <span class="cheatsheet"><iron-icon icon="px:instance"></iron-icon>px:instance</span>
+          <span class="cheatsheet"><iron-icon icon="px:kpi"></iron-icon>px:kpi</span>
+          <span class="cheatsheet"><iron-icon icon="px:launch"></iron-icon>px:launch</span>
+          <span class="cheatsheet"><iron-icon icon="px:lightbulb"></iron-icon>px:lightbulb</span>
+          <span class="cheatsheet"><iron-icon icon="px:line"></iron-icon>px:line</span>
+          <span class="cheatsheet"><iron-icon icon="px:link"></iron-icon>px:link</span>
+          <span class="cheatsheet"><iron-icon icon="px:list"></iron-icon>px:list</span>
+          <span class="cheatsheet"><iron-icon icon="px:location"></iron-icon>px:location</span>
+          <span class="cheatsheet"><iron-icon icon="px:lock"></iron-icon>px:lock</span>
+          <span class="cheatsheet"><iron-icon icon="px:locomotive"></iron-icon>px:locomotive</span>
+          <span class="cheatsheet"><iron-icon icon="px:log"></iron-icon>px:log</span>
+          <span class="cheatsheet"><iron-icon icon="px:machine"></iron-icon>px:machine</span>
+          <span class="cheatsheet"><iron-icon icon="px:manufacturing"></iron-icon>px:manufacturing</span>
+          <span class="cheatsheet"><iron-icon icon="px:map"></iron-icon>px:map</span>
+          <span class="cheatsheet"><iron-icon icon="px:menu"></iron-icon>px:menu</span>
+          <span class="cheatsheet"><iron-icon icon="px:message"></iron-icon>px:message</span>
+          <span class="cheatsheet"><iron-icon icon="px:microservice"></iron-icon>px:microservice</span>
+          <span class="cheatsheet"><iron-icon icon="px:mobile"></iron-icon>px:mobile</span>
+          <span class="cheatsheet"><iron-icon icon="px:more"></iron-icon>px:more</span>
+          <span class="cheatsheet"><iron-icon icon="px:note"></iron-icon>px:note</span>
+          <span class="cheatsheet"><iron-icon icon="px:notification"></iron-icon>px:notification</span>
+          <span class="cheatsheet"><iron-icon icon="px:open"></iron-icon>px:open</span>
+          <span class="cheatsheet"><iron-icon icon="px:orchestration"></iron-icon>px:orchestration</span>
+          <span class="cheatsheet"><iron-icon icon="px:order"></iron-icon>px:order</span>
+          <span class="cheatsheet"><iron-icon icon="px:output"></iron-icon>px:output</span>
+          <span class="cheatsheet"><iron-icon icon="px:pause"></iron-icon>px:pause</span>
+          <span class="cheatsheet"><iron-icon icon="px:pdf"></iron-icon>px:pdf</span>
+          <span class="cheatsheet"><iron-icon icon="px:phone"></iron-icon>px:phone</span>
+          <span class="cheatsheet"><iron-icon icon="px:pipeline"></iron-icon>px:pipeline</span>
+          <span class="cheatsheet"><iron-icon icon="px:plant"></iron-icon>px:plant</span>
+          <span class="cheatsheet"><iron-icon icon="px:play"></iron-icon>px:play</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:power"></iron-icon>px:power</span>
+          <span class="cheatsheet"><iron-icon icon="px:product"></iron-icon>px:product</span>
+          <span class="cheatsheet"><iron-icon icon="px:software"></iron-icon>px:software</span>
+          <span class="cheatsheet"><iron-icon icon="px:rail-yard"></iron-icon>px:rail-yard</span>
+          <span class="cheatsheet"><iron-icon icon="px:refresh"></iron-icon>px:refresh</span>
+          <span class="cheatsheet"><iron-icon icon="px:reply"></iron-icon>px:reply</span>
+          <span class="cheatsheet"><iron-icon icon="px:resize"></iron-icon>px:reply</span>
+          <span class="cheatsheet"><iron-icon icon="px:route"></iron-icon>px:route</span>
+          <span class="cheatsheet"><iron-icon icon="px:save"></iron-icon>px:save</span>
+          <span class="cheatsheet"><iron-icon icon="px:search"></iron-icon>px:search</span>
+          <span class="cheatsheet"><iron-icon icon="px:server"></iron-icon>px:server</span>
+          <span class="cheatsheet"><iron-icon icon="px:settings-alt"></iron-icon>px:settings-alt</span>
+          <span class="cheatsheet"><iron-icon icon="px:settings"></iron-icon>px:settings</span>
+          <span class="cheatsheet"><iron-icon icon="px:share"></iron-icon>px:share</span>
+          <span class="cheatsheet"><iron-icon icon="px:sms"></iron-icon>px:sms</span>
+          <span class="cheatsheet"><iron-icon icon="px:solar-panel"></iron-icon>px:solar-panel</span>
+          <span class="cheatsheet"><iron-icon icon="px:spaces"></iron-icon>px:spaces</span>
+          <span class="cheatsheet"><iron-icon icon="px:steam-turbine"></iron-icon>px:steam-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:stop"></iron-icon>px:stop</span>
+          <span class="cheatsheet"><iron-icon icon="px:tablet"></iron-icon>px:tablet</span>
+          <span class="cheatsheet"><iron-icon icon="px:tag-group"></iron-icon>px:tag-group</span>
+          <span class="cheatsheet"><iron-icon icon="px:tag"></iron-icon>px:tag</span>
+          <span class="cheatsheet"><iron-icon icon="px:templates"></iron-icon>px:templates</span>
+          <span class="cheatsheet"><iron-icon icon="px:tile"></iron-icon>px:tile</span>
+          <span class="cheatsheet"><iron-icon icon="px:train"></iron-icon>px:train</span>
+          <span class="cheatsheet"><iron-icon icon="px:tree"></iron-icon>px:tree</span>
+          <span class="cheatsheet"><iron-icon icon="px:truck"></iron-icon>px:truck</span>
+          <span class="cheatsheet"><iron-icon icon="px:unlink"></iron-icon>px:unlink</span>
+          <span class="cheatsheet"><iron-icon icon="px:unlock"></iron-icon>px:unlock</span>
+          <span class="cheatsheet"><iron-icon icon="px:upload"></iron-icon>px:upload</span>
+          <span class="cheatsheet"><iron-icon icon="px:user"></iron-icon>px:user</span>
+          <span class="cheatsheet"><iron-icon icon="px:users"></iron-icon>px:users</span>
+          <span class="cheatsheet"><iron-icon icon="px:version"></iron-icon>px:version</span>
+          <span class="cheatsheet"><iron-icon icon="px:view"></iron-icon>px:view</span>
+          <span class="cheatsheet"><iron-icon icon="px:website"></iron-icon>px:website</span>
+          <span class="cheatsheet"><iron-icon icon="px:wind-turbine"></iron-icon>px:wind-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:word"></iron-icon>px:word</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <px-demo-footer></px-demo-footer>
+
+  </template>
+
+</dom-module>
+<script>
+  Polymer({
+    is: 'local-element-demo',
+
+    properties: {
+
+      props: {
+        type: Object,
+        value: function(){ return this.demoProps; }
+      },
+
+      configs: {
+        type: Array,
+        value: function(){
+          return [
+            { configName: "All icons",
+              configShowProps: []
+            }
+          ]
+        }
+      }
+    },
+
+    /**
+     * A reference for `this.props`. Read the documentation there.
+     */
+    demoProps: {
+
+      icon: {
+        type: String,
+        defaultValue: 'px:analysis'
+      }
+    }
+
+  });
+</script>
