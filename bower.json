@@ -1,8 +1,8 @@
 {
-  "name": "px-polymer-font-awesome",
+  "name": "px-icon-set",
   "version": "2.0.0",
-  "description": "Polymer component to allow easy use of Font Awesome icons in your Polymer element.",
-  "main": "px-polymer-font-awesome.html",
+  "description": "Polymer component to allow easy use of Predix icons",
+  "main": "px-icon-set.html",
   "ignore": [
     "*.enc",
     "**/.*",
@@ -22,10 +22,10 @@
   "dependencies": {
     "polymer": "^1.7.0",
     "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.9",
-    "iron-icon": "PolymerElements/iron-icon#^1.0.7",
-    "px-theme": "^3.0.0"
+    "iron-icon": "PolymerElements/iron-icon#^1.0.7"
   },
   "devDependencies": {
+    "px-theme": "^3.0.0",
     "px-starter-kit-design": "^1.0.0",
     "px-code-design": "^2.0.0",
     "px-toggle-design": "^2.0.0",

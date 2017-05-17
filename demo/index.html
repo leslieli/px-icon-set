@@ -12,17 +12,53 @@
 
 <!-- Imports for this componnent -->
 <link rel="import" href="../../px-demo/css/px-demo-styles.html" />
-<link rel="import" href="../px-polymer-font-awesome.html" />
+<link rel="import" href="../px-icon-set.html" />
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
   <template>
-    <style include="px-demo-styles" is="custom-style"></style>
+    <style include="px-demo-styles" is="custom-style">
+      .large iron-icon {
+        width: 32px;
+        height: 32px;
+        margin: 5px;
+        stroke-width: 1.1px;
+      }
+      .small iron-icon {
+        width: 22px;
+        height: 22px;
+        margin: 5px;
+        stroke-width: 2px;
+      }
+      .epsilon {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .column {
+        width: 25%;
+      }
+      @media (max-width: 800px) {
+        .column {
+          width: 100%;
+        }
+      }
+      .cheatsheet {
+        display: flex;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        align-items: center;
+      }
+      .cheatsheet iron-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+    </style>
 
     <!-- Header -->
     <px-demo-header
-        module-name="px-polymer-font-awesome"
-        description="Wrapper for the Font Awesome icon set which leverages iron-icon. Please refer to the iron-icon API and the full list of Font Awesome icons for more information. Note: this component currently uses v4.6.3 of Font Awesome, so the new icons added in v4.7.0 will not work yet.">
+        module-name="px-icon-set"
+        description="Wrapper for the Predix icon set which leverages iron-icon. Please refer to the iron-icon API and the full list of Predix icons below the demo.">
     </px-demo-header>
 
     <!-- Interactive -->
@@ -36,654 +72,339 @@
       <!-- Component ---------------------------------------------------------->
       <px-demo-component>
 
-        <div>
-          <iron-icon icon="fa:fa-500px"></iron-icon>
-          <iron-icon icon="fa:fa-adjust"></iron-icon>
-          <iron-icon icon="fa:fa-adn"></iron-icon>
-          <iron-icon icon="fa:fa-align-center"></iron-icon>
-          <iron-icon icon="fa:fa-align-justify"></iron-icon>
-          <iron-icon icon="fa:fa-align-left"></iron-icon>
-          <iron-icon icon="fa:fa-align-right"></iron-icon>
-          <iron-icon icon="fa:fa-amazon"></iron-icon>
-          <iron-icon icon="fa:fa-ambulance"></iron-icon>
-          <iron-icon icon="fa:fa-american-sign-language-interpreting"></iron-icon>
-          <iron-icon icon="fa:fa-anchor"></iron-icon>
-          <iron-icon icon="fa:fa-android"></iron-icon>
-          <iron-icon icon="fa:fa-angellist"></iron-icon>
-          <iron-icon icon="fa:fa-angle-double-down"></iron-icon>
-          <iron-icon icon="fa:fa-angle-double-left"></iron-icon>
-          <iron-icon icon="fa:fa-angle-double-right"></iron-icon>
-          <iron-icon icon="fa:fa-angle-double-up"></iron-icon>
-          <iron-icon icon="fa:fa-angle-down"></iron-icon>
-          <iron-icon icon="fa:fa-angle-left"></iron-icon>
-          <iron-icon icon="fa:fa-angle-right"></iron-icon>
-          <iron-icon icon="fa:fa-angle-up"></iron-icon>
-          <iron-icon icon="fa:fa-apple"></iron-icon>
-          <iron-icon icon="fa:fa-archive"></iron-icon>
-          <iron-icon icon="fa:fa-area-chart"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-down"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-left"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-o-down"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-o-left"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-o-right"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-o-up"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-right"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-circle-up"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-down"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-left"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-right"></iron-icon>
-          <iron-icon icon="fa:fa-arrow-up"></iron-icon>
-          <iron-icon icon="fa:fa-arrows-alt"></iron-icon>
-          <iron-icon icon="fa:fa-arrows-h"></iron-icon>
-          <iron-icon icon="fa:fa-arrows-v"></iron-icon>
-          <iron-icon icon="fa:fa-arrows"></iron-icon>
-          <iron-icon icon="fa:fa-assistive-listening-systems"></iron-icon>
-          <iron-icon icon="fa:fa-asterisk"></iron-icon>
-          <iron-icon icon="fa:fa-at"></iron-icon>
-          <iron-icon icon="fa:fa-audio-description"></iron-icon>
-          <iron-icon icon="fa:fa-backward"></iron-icon>
-          <iron-icon icon="fa:fa-balance-scale"></iron-icon>
-          <iron-icon icon="fa:fa-ban"></iron-icon>
-          <iron-icon icon="fa:fa-bar-chart"></iron-icon>
-          <iron-icon icon="fa:fa-barcode"></iron-icon>
-          <iron-icon icon="fa:fa-bars"></iron-icon>
-          <iron-icon icon="fa:fa-battery-empty"></iron-icon>
-          <iron-icon icon="fa:fa-battery-full"></iron-icon>
-          <iron-icon icon="fa:fa-battery-half"></iron-icon>
-          <iron-icon icon="fa:fa-battery-quarter"></iron-icon>
-          <iron-icon icon="fa:fa-battery-three-quarters"></iron-icon>
-          <iron-icon icon="fa:fa-bed"></iron-icon>
-          <iron-icon icon="fa:fa-beer"></iron-icon>
-          <iron-icon icon="fa:fa-behance-square"></iron-icon>
-          <iron-icon icon="fa:fa-behance"></iron-icon>
-          <iron-icon icon="fa:fa-bell-o"></iron-icon>
-          <iron-icon icon="fa:fa-bell-slash-o"></iron-icon>
-          <iron-icon icon="fa:fa-bell-slash"></iron-icon>
-          <iron-icon icon="fa:fa-bell"></iron-icon>
-          <iron-icon icon="fa:fa-bicycle"></iron-icon>
-          <iron-icon icon="fa:fa-binoculars"></iron-icon>
-          <iron-icon icon="fa:fa-birthday-cake"></iron-icon>
-          <iron-icon icon="fa:fa-bitbucket-square"></iron-icon>
-          <iron-icon icon="fa:fa-bitbucket"></iron-icon>
-          <iron-icon icon="fa:fa-black-tie"></iron-icon>
-          <iron-icon icon="fa:fa-blind"></iron-icon>
-          <iron-icon icon="fa:fa-bluetooth-b"></iron-icon>
-          <iron-icon icon="fa:fa-bluetooth"></iron-icon>
-          <iron-icon icon="fa:fa-bold"></iron-icon>
-          <iron-icon icon="fa:fa-bolt"></iron-icon>
-          <iron-icon icon="fa:fa-bomb"></iron-icon>
-          <iron-icon icon="fa:fa-book"></iron-icon>
-          <iron-icon icon="fa:fa-bookmark-o"></iron-icon>
-          <iron-icon icon="fa:fa-bookmark"></iron-icon>
-          <iron-icon icon="fa:fa-braille"></iron-icon>
-          <iron-icon icon="fa:fa-briefcase"></iron-icon>
-          <iron-icon icon="fa:fa-btc"></iron-icon>
-          <iron-icon icon="fa:fa-bug"></iron-icon>
-          <iron-icon icon="fa:fa-building-o"></iron-icon>
-          <iron-icon icon="fa:fa-building"></iron-icon>
-          <iron-icon icon="fa:fa-bullhorn"></iron-icon>
-          <iron-icon icon="fa:fa-bullseye"></iron-icon>
-          <iron-icon icon="fa:fa-bus"></iron-icon>
-          <iron-icon icon="fa:fa-buysellads"></iron-icon>
-          <iron-icon icon="fa:fa-calculator"></iron-icon>
-          <iron-icon icon="fa:fa-calendar-check-o"></iron-icon>
-          <iron-icon icon="fa:fa-calendar-minus-o"></iron-icon>
-          <iron-icon icon="fa:fa-calendar-o"></iron-icon>
-          <iron-icon icon="fa:fa-calendar-plus-o"></iron-icon>
-          <iron-icon icon="fa:fa-calendar-times-o"></iron-icon>
-          <iron-icon icon="fa:fa-calendar"></iron-icon>
-          <iron-icon icon="fa:fa-camera-retro"></iron-icon>
-          <iron-icon icon="fa:fa-camera"></iron-icon>
-          <iron-icon icon="fa:fa-car"></iron-icon>
-          <iron-icon icon="fa:fa-caret-down"></iron-icon>
-          <iron-icon icon="fa:fa-caret-left"></iron-icon>
-          <iron-icon icon="fa:fa-caret-right"></iron-icon>
-          <iron-icon icon="fa:fa-caret-square-o-down"></iron-icon>
-          <iron-icon icon="fa:fa-caret-square-o-left"></iron-icon>
-          <iron-icon icon="fa:fa-caret-square-o-right"></iron-icon>
-          <iron-icon icon="fa:fa-caret-square-o-up"></iron-icon>
-          <iron-icon icon="fa:fa-caret-up"></iron-icon>
-          <iron-icon icon="fa:fa-cart-arrow-down"></iron-icon>
-          <iron-icon icon="fa:fa-cart-plus"></iron-icon>
-          <iron-icon icon="fa:fa-cc-amex"></iron-icon>
-          <iron-icon icon="fa:fa-cc-diners-club"></iron-icon>
-          <iron-icon icon="fa:fa-cc-discover"></iron-icon>
-          <iron-icon icon="fa:fa-cc-jcb"></iron-icon>
-          <iron-icon icon="fa:fa-cc-mastercard"></iron-icon>
-          <iron-icon icon="fa:fa-cc-paypal"></iron-icon>
-          <iron-icon icon="fa:fa-cc-stripe"></iron-icon>
-          <iron-icon icon="fa:fa-cc-visa"></iron-icon>
-          <iron-icon icon="fa:fa-cc"></iron-icon>
-          <iron-icon icon="fa:fa-certificate"></iron-icon>
-          <iron-icon icon="fa:fa-chain-broken"></iron-icon>
-          <iron-icon icon="fa:fa-check-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-check-circle"></iron-icon>
-          <iron-icon icon="fa:fa-check-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-check-square"></iron-icon>
-          <iron-icon icon="fa:fa-check"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-circle-down"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-circle-left"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-circle-right"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-circle-up"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-down"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-left"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-right"></iron-icon>
-          <iron-icon icon="fa:fa-chevron-up"></iron-icon>
-          <iron-icon icon="fa:fa-child"></iron-icon>
-          <iron-icon icon="fa:fa-chrome"></iron-icon>
-          <iron-icon icon="fa:fa-circle-o-notch"></iron-icon>
-          <iron-icon icon="fa:fa-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-circle-thin"></iron-icon>
-          <iron-icon icon="fa:fa-circle"></iron-icon>
-          <iron-icon icon="fa:fa-clipboard"></iron-icon>
-          <iron-icon icon="fa:fa-clock-o"></iron-icon>
-          <iron-icon icon="fa:fa-clone"></iron-icon>
-          <iron-icon icon="fa:fa-cloud-download"></iron-icon>
-          <iron-icon icon="fa:fa-cloud-upload"></iron-icon>
-          <iron-icon icon="fa:fa-cloud"></iron-icon>
-          <iron-icon icon="fa:fa-code-fork"></iron-icon>
-          <iron-icon icon="fa:fa-code"></iron-icon>
-          <iron-icon icon="fa:fa-codepen"></iron-icon>
-          <iron-icon icon="fa:fa-codiepie"></iron-icon>
-          <iron-icon icon="fa:fa-coffee"></iron-icon>
-          <iron-icon icon="fa:fa-cog"></iron-icon>
-          <iron-icon icon="fa:fa-cogs"></iron-icon>
-          <iron-icon icon="fa:fa-columns"></iron-icon>
-          <iron-icon icon="fa:fa-comment-o"></iron-icon>
-          <iron-icon icon="fa:fa-comment"></iron-icon>
-          <iron-icon icon="fa:fa-commenting-o"></iron-icon>
-          <iron-icon icon="fa:fa-commenting"></iron-icon>
-          <iron-icon icon="fa:fa-comments-o"></iron-icon>
-          <iron-icon icon="fa:fa-comments"></iron-icon>
-          <iron-icon icon="fa:fa-compass"></iron-icon>
-          <iron-icon icon="fa:fa-compress"></iron-icon>
-          <iron-icon icon="fa:fa-connectdevelop"></iron-icon>
-          <iron-icon icon="fa:fa-contao"></iron-icon>
-          <iron-icon icon="fa:fa-copyright"></iron-icon>
-          <iron-icon icon="fa:fa-creative-commons"></iron-icon>
-          <iron-icon icon="fa:fa-credit-card-alt"></iron-icon>
-          <iron-icon icon="fa:fa-credit-card"></iron-icon>
-          <iron-icon icon="fa:fa-crop"></iron-icon>
-          <iron-icon icon="fa:fa-crosshairs"></iron-icon>
-          <iron-icon icon="fa:fa-css3"></iron-icon>
-          <iron-icon icon="fa:fa-cube"></iron-icon>
-          <iron-icon icon="fa:fa-cubes"></iron-icon>
-          <iron-icon icon="fa:fa-cutlery"></iron-icon>
-          <iron-icon icon="fa:fa-dashcube"></iron-icon>
-          <iron-icon icon="fa:fa-database"></iron-icon>
-          <iron-icon icon="fa:fa-deaf"></iron-icon>
-          <iron-icon icon="fa:fa-delicious"></iron-icon>
-          <iron-icon icon="fa:fa-desktop"></iron-icon>
-          <iron-icon icon="fa:fa-deviantart"></iron-icon>
-          <iron-icon icon="fa:fa-diamond"></iron-icon>
-          <iron-icon icon="fa:fa-digg"></iron-icon>
-          <iron-icon icon="fa:fa-dot-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-download"></iron-icon>
-          <iron-icon icon="fa:fa-dribbble"></iron-icon>
-          <iron-icon icon="fa:fa-dropbox"></iron-icon>
-          <iron-icon icon="fa:fa-drupal"></iron-icon>
-          <iron-icon icon="fa:fa-edge"></iron-icon>
-          <iron-icon icon="fa:fa-eject"></iron-icon>
-          <iron-icon icon="fa:fa-ellipsis-h"></iron-icon>
-          <iron-icon icon="fa:fa-ellipsis-v"></iron-icon>
-          <iron-icon icon="fa:fa-empire"></iron-icon>
-          <iron-icon icon="fa:fa-envelope-o"></iron-icon>
-          <iron-icon icon="fa:fa-envelope-square"></iron-icon>
-          <iron-icon icon="fa:fa-envelope"></iron-icon>
-          <iron-icon icon="fa:fa-envira"></iron-icon>
-          <iron-icon icon="fa:fa-eraser"></iron-icon>
-          <iron-icon icon="fa:fa-eur"></iron-icon>
-          <iron-icon icon="fa:fa-exchange"></iron-icon>
-          <iron-icon icon="fa:fa-exclamation-circle"></iron-icon>
-          <iron-icon icon="fa:fa-exclamation-triangle"></iron-icon>
-          <iron-icon icon="fa:fa-exclamation"></iron-icon>
-          <iron-icon icon="fa:fa-expand"></iron-icon>
-          <iron-icon icon="fa:fa-expeditedssl"></iron-icon>
-          <iron-icon icon="fa:fa-external-link-square"></iron-icon>
-          <iron-icon icon="fa:fa-external-link"></iron-icon>
-          <iron-icon icon="fa:fa-eye-slash"></iron-icon>
-          <iron-icon icon="fa:fa-eye"></iron-icon>
-          <iron-icon icon="fa:fa-eyedropper"></iron-icon>
-          <iron-icon icon="fa:fa-facebook-official"></iron-icon>
-          <iron-icon icon="fa:fa-facebook-square"></iron-icon>
-          <iron-icon icon="fa:fa-facebook"></iron-icon>
-          <iron-icon icon="fa:fa-fast-backward"></iron-icon>
-          <iron-icon icon="fa:fa-fast-forward"></iron-icon>
-          <iron-icon icon="fa:fa-fax"></iron-icon>
-          <iron-icon icon="fa:fa-female"></iron-icon>
-          <iron-icon icon="fa:fa-fighter-jet"></iron-icon>
-          <iron-icon icon="fa:fa-file-archive-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-audio-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-code-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-excel-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-image-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-pdf-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-powerpoint-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-text-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-text"></iron-icon>
-          <iron-icon icon="fa:fa-file-video-o"></iron-icon>
-          <iron-icon icon="fa:fa-file-word-o"></iron-icon>
-          <iron-icon icon="fa:fa-file"></iron-icon>
-          <iron-icon icon="fa:fa-files-o"></iron-icon>
-          <iron-icon icon="fa:fa-film"></iron-icon>
-          <iron-icon icon="fa:fa-filter"></iron-icon>
-          <iron-icon icon="fa:fa-fire-extinguisher"></iron-icon>
-          <iron-icon icon="fa:fa-fire"></iron-icon>
-          <iron-icon icon="fa:fa-firefox"></iron-icon>
-          <iron-icon icon="fa:fa-first-order"></iron-icon>
-          <iron-icon icon="fa:fa-flag-checkered"></iron-icon>
-          <iron-icon icon="fa:fa-flag-o"></iron-icon>
-          <iron-icon icon="fa:fa-flag"></iron-icon>
-          <iron-icon icon="fa:fa-flask"></iron-icon>
-          <iron-icon icon="fa:fa-flickr"></iron-icon>
-          <iron-icon icon="fa:fa-floppy-o"></iron-icon>
-          <iron-icon icon="fa:fa-folder-o"></iron-icon>
-          <iron-icon icon="fa:fa-folder-open-o"></iron-icon>
-          <iron-icon icon="fa:fa-folder-open"></iron-icon>
-          <iron-icon icon="fa:fa-folder"></iron-icon>
-          <iron-icon icon="fa:fa-font-awesome"></iron-icon>
-          <iron-icon icon="fa:fa-font"></iron-icon>
-          <iron-icon icon="fa:fa-fonticons"></iron-icon>
-          <iron-icon icon="fa:fa-fort-awesome"></iron-icon>
-          <iron-icon icon="fa:fa-forumbee"></iron-icon>
-          <iron-icon icon="fa:fa-forward"></iron-icon>
-          <iron-icon icon="fa:fa-foursquare"></iron-icon>
-          <iron-icon icon="fa:fa-frown-o"></iron-icon>
-          <iron-icon icon="fa:fa-futbol-o"></iron-icon>
-          <iron-icon icon="fa:fa-gamepad"></iron-icon>
-          <iron-icon icon="fa:fa-gavel"></iron-icon>
-          <iron-icon icon="fa:fa-gbp"></iron-icon>
-          <iron-icon icon="fa:fa-genderless"></iron-icon>
-          <iron-icon icon="fa:fa-get-pocket"></iron-icon>
-          <iron-icon icon="fa:fa-gg-circle"></iron-icon>
-          <iron-icon icon="fa:fa-gg"></iron-icon>
-          <iron-icon icon="fa:fa-gift"></iron-icon>
-          <iron-icon icon="fa:fa-git-square"></iron-icon>
-          <iron-icon icon="fa:fa-git"></iron-icon>
-          <iron-icon icon="fa:fa-github-alt"></iron-icon>
-          <iron-icon icon="fa:fa-github-square"></iron-icon>
-          <iron-icon icon="fa:fa-github"></iron-icon>
-          <iron-icon icon="fa:fa-gitlab"></iron-icon>
-          <iron-icon icon="fa:fa-glass"></iron-icon>
-          <iron-icon icon="fa:fa-glide-g"></iron-icon>
-          <iron-icon icon="fa:fa-glide"></iron-icon>
-          <iron-icon icon="fa:fa-globe"></iron-icon>
-          <iron-icon icon="fa:fa-google-plus-official"></iron-icon>
-          <iron-icon icon="fa:fa-google-plus-square"></iron-icon>
-          <iron-icon icon="fa:fa-google-plus"></iron-icon>
-          <iron-icon icon="fa:fa-google-wallet"></iron-icon>
-          <iron-icon icon="fa:fa-google"></iron-icon>
-          <iron-icon icon="fa:fa-graduation-cap"></iron-icon>
-          <iron-icon icon="fa:fa-gratipay"></iron-icon>
-          <iron-icon icon="fa:fa-h-square"></iron-icon>
-          <iron-icon icon="fa:fa-hacker-news"></iron-icon>
-          <iron-icon icon="fa:fa-hand-lizard-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-o-down"></iron-icon>
-          <iron-icon icon="fa:fa-hand-o-left"></iron-icon>
-          <iron-icon icon="fa:fa-hand-o-right"></iron-icon>
-          <iron-icon icon="fa:fa-hand-o-up"></iron-icon>
-          <iron-icon icon="fa:fa-hand-paper-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-peace-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-pointer-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-rock-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-scissors-o"></iron-icon>
-          <iron-icon icon="fa:fa-hand-spock-o"></iron-icon>
-          <iron-icon icon="fa:fa-hashtag"></iron-icon>
-          <iron-icon icon="fa:fa-hdd-o"></iron-icon>
-          <iron-icon icon="fa:fa-header"></iron-icon>
-          <iron-icon icon="fa:fa-headphones"></iron-icon>
-          <iron-icon icon="fa:fa-heart-o"></iron-icon>
-          <iron-icon icon="fa:fa-heart"></iron-icon>
-          <iron-icon icon="fa:fa-heartbeat"></iron-icon>
-          <iron-icon icon="fa:fa-history"></iron-icon>
-          <iron-icon icon="fa:fa-home"></iron-icon>
-          <iron-icon icon="fa:fa-hospital-o"></iron-icon>
-          <iron-icon icon="fa:fa-hourglass-end"></iron-icon>
-          <iron-icon icon="fa:fa-hourglass-half"></iron-icon>
-          <iron-icon icon="fa:fa-hourglass-o"></iron-icon>
-          <iron-icon icon="fa:fa-hourglass-start"></iron-icon>
-          <iron-icon icon="fa:fa-hourglass"></iron-icon>
-          <iron-icon icon="fa:fa-houzz"></iron-icon>
-          <iron-icon icon="fa:fa-html5"></iron-icon>
-          <iron-icon icon="fa:fa-i-cursor"></iron-icon>
-          <iron-icon icon="fa:fa-ils"></iron-icon>
-          <iron-icon icon="fa:fa-inbox"></iron-icon>
-          <iron-icon icon="fa:fa-indent"></iron-icon>
-          <iron-icon icon="fa:fa-industry"></iron-icon>
-          <iron-icon icon="fa:fa-info-circle"></iron-icon>
-          <iron-icon icon="fa:fa-info"></iron-icon>
-          <iron-icon icon="fa:fa-inr"></iron-icon>
-          <iron-icon icon="fa:fa-instagram"></iron-icon>
-          <iron-icon icon="fa:fa-internet-explorer"></iron-icon>
-          <iron-icon icon="fa:fa-ioxhost"></iron-icon>
-          <iron-icon icon="fa:fa-italic"></iron-icon>
-          <iron-icon icon="fa:fa-joomla"></iron-icon>
-          <iron-icon icon="fa:fa-jpy"></iron-icon>
-          <iron-icon icon="fa:fa-jsfiddle"></iron-icon>
-          <iron-icon icon="fa:fa-key"></iron-icon>
-          <iron-icon icon="fa:fa-keyboard-o"></iron-icon>
-          <iron-icon icon="fa:fa-krw"></iron-icon>
-          <iron-icon icon="fa:fa-language"></iron-icon>
-          <iron-icon icon="fa:fa-laptop"></iron-icon>
-          <iron-icon icon="fa:fa-lastfm-square"></iron-icon>
-          <iron-icon icon="fa:fa-lastfm"></iron-icon>
-          <iron-icon icon="fa:fa-leaf"></iron-icon>
-          <iron-icon icon="fa:fa-leanpub"></iron-icon>
-          <iron-icon icon="fa:fa-lemon-o"></iron-icon>
-          <iron-icon icon="fa:fa-level-down"></iron-icon>
-          <iron-icon icon="fa:fa-level-up"></iron-icon>
-          <iron-icon icon="fa:fa-life-ring"></iron-icon>
-          <iron-icon icon="fa:fa-lightbulb-o"></iron-icon>
-          <iron-icon icon="fa:fa-line-chart"></iron-icon>
-          <iron-icon icon="fa:fa-link"></iron-icon>
-          <iron-icon icon="fa:fa-linkedin-square"></iron-icon>
-          <iron-icon icon="fa:fa-linkedin"></iron-icon>
-          <iron-icon icon="fa:fa-linux"></iron-icon>
-          <iron-icon icon="fa:fa-list-alt"></iron-icon>
-          <iron-icon icon="fa:fa-list-ol"></iron-icon>
-          <iron-icon icon="fa:fa-list-ul"></iron-icon>
-          <iron-icon icon="fa:fa-list"></iron-icon>
-          <iron-icon icon="fa:fa-location-arrow"></iron-icon>
-          <iron-icon icon="fa:fa-lock"></iron-icon>
-          <iron-icon icon="fa:fa-long-arrow-down"></iron-icon>
-          <iron-icon icon="fa:fa-long-arrow-left"></iron-icon>
-          <iron-icon icon="fa:fa-long-arrow-right"></iron-icon>
-          <iron-icon icon="fa:fa-long-arrow-up"></iron-icon>
-          <iron-icon icon="fa:fa-low-vision"></iron-icon>
-          <iron-icon icon="fa:fa-magic"></iron-icon>
-          <iron-icon icon="fa:fa-magnet"></iron-icon>
-          <iron-icon icon="fa:fa-male"></iron-icon>
-          <iron-icon icon="fa:fa-map-marker"></iron-icon>
-          <iron-icon icon="fa:fa-map-o"></iron-icon>
-          <iron-icon icon="fa:fa-map-pin"></iron-icon>
-          <iron-icon icon="fa:fa-map-signs"></iron-icon>
-          <iron-icon icon="fa:fa-map"></iron-icon>
-          <iron-icon icon="fa:fa-mars-double"></iron-icon>
-          <iron-icon icon="fa:fa-mars-stroke-h"></iron-icon>
-          <iron-icon icon="fa:fa-mars-stroke-v"></iron-icon>
-          <iron-icon icon="fa:fa-mars-stroke"></iron-icon>
-          <iron-icon icon="fa:fa-mars"></iron-icon>
-          <iron-icon icon="fa:fa-maxcdn"></iron-icon>
-          <iron-icon icon="fa:fa-meanpath"></iron-icon>
-          <iron-icon icon="fa:fa-medium"></iron-icon>
-          <iron-icon icon="fa:fa-medkit"></iron-icon>
-          <iron-icon icon="fa:fa-meh-o"></iron-icon>
-          <iron-icon icon="fa:fa-mercury"></iron-icon>
-          <iron-icon icon="fa:fa-microphone-slash"></iron-icon>
-          <iron-icon icon="fa:fa-microphone"></iron-icon>
-          <iron-icon icon="fa:fa-minus-circle"></iron-icon>
-          <iron-icon icon="fa:fa-minus-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-minus-square"></iron-icon>
-          <iron-icon icon="fa:fa-minus"></iron-icon>
-          <iron-icon icon="fa:fa-mixcloud"></iron-icon>
-          <iron-icon icon="fa:fa-mobile"></iron-icon>
-          <iron-icon icon="fa:fa-modx"></iron-icon>
-          <iron-icon icon="fa:fa-money"></iron-icon>
-          <iron-icon icon="fa:fa-moon-o"></iron-icon>
-          <iron-icon icon="fa:fa-motorcycle"></iron-icon>
-          <iron-icon icon="fa:fa-mouse-pointer"></iron-icon>
-          <iron-icon icon="fa:fa-music"></iron-icon>
-          <iron-icon icon="fa:fa-neuter"></iron-icon>
-          <iron-icon icon="fa:fa-newspaper-o"></iron-icon>
-          <iron-icon icon="fa:fa-object-group"></iron-icon>
-          <iron-icon icon="fa:fa-object-ungroup"></iron-icon>
-          <iron-icon icon="fa:fa-odnoklassniki-square"></iron-icon>
-          <iron-icon icon="fa:fa-odnoklassniki"></iron-icon>
-          <iron-icon icon="fa:fa-opencart"></iron-icon>
-          <iron-icon icon="fa:fa-openid"></iron-icon>
-          <iron-icon icon="fa:fa-opera"></iron-icon>
-          <iron-icon icon="fa:fa-optin-monster"></iron-icon>
-          <iron-icon icon="fa:fa-outdent"></iron-icon>
-          <iron-icon icon="fa:fa-pagelines"></iron-icon>
-          <iron-icon icon="fa:fa-paint-brush"></iron-icon>
-          <iron-icon icon="fa:fa-paper-plane-o"></iron-icon>
-          <iron-icon icon="fa:fa-paper-plane"></iron-icon>
-          <iron-icon icon="fa:fa-paperclip"></iron-icon>
-          <iron-icon icon="fa:fa-paragraph"></iron-icon>
-          <iron-icon icon="fa:fa-pause-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-pause-circle"></iron-icon>
-          <iron-icon icon="fa:fa-pause"></iron-icon>
-          <iron-icon icon="fa:fa-paw"></iron-icon>
-          <iron-icon icon="fa:fa-paypal"></iron-icon>
-          <iron-icon icon="fa:fa-pencil-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-pencil-square"></iron-icon>
-          <iron-icon icon="fa:fa-pencil"></iron-icon>
-          <iron-icon icon="fa:fa-percent"></iron-icon>
-          <iron-icon icon="fa:fa-phone-square"></iron-icon>
-          <iron-icon icon="fa:fa-phone"></iron-icon>
-          <iron-icon icon="fa:fa-picture-o"></iron-icon>
-          <iron-icon icon="fa:fa-pie-chart"></iron-icon>
-          <iron-icon icon="fa:fa-pied-piper-alt"></iron-icon>
-          <iron-icon icon="fa:fa-pied-piper-pp"></iron-icon>
-          <iron-icon icon="fa:fa-pied-piper"></iron-icon>
-          <iron-icon icon="fa:fa-pinterest-p"></iron-icon>
-          <iron-icon icon="fa:fa-pinterest-square"></iron-icon>
-          <iron-icon icon="fa:fa-pinterest"></iron-icon>
-          <iron-icon icon="fa:fa-plane"></iron-icon>
-          <iron-icon icon="fa:fa-play-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-play-circle"></iron-icon>
-          <iron-icon icon="fa:fa-play"></iron-icon>
-          <iron-icon icon="fa:fa-plug"></iron-icon>
-          <iron-icon icon="fa:fa-plus-circle"></iron-icon>
-          <iron-icon icon="fa:fa-plus-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-plus-square"></iron-icon>
-          <iron-icon icon="fa:fa-plus"></iron-icon>
-          <iron-icon icon="fa:fa-power-off"></iron-icon>
-          <iron-icon icon="fa:fa-print"></iron-icon>
-          <iron-icon icon="fa:fa-product-hunt"></iron-icon>
-          <iron-icon icon="fa:fa-puzzle-piece"></iron-icon>
-          <iron-icon icon="fa:fa-qq"></iron-icon>
-          <iron-icon icon="fa:fa-qrcode"></iron-icon>
-          <iron-icon icon="fa:fa-question-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-question-circle"></iron-icon>
-          <iron-icon icon="fa:fa-question"></iron-icon>
-          <iron-icon icon="fa:fa-quote-left"></iron-icon>
-          <iron-icon icon="fa:fa-quote-right"></iron-icon>
-          <iron-icon icon="fa:fa-random"></iron-icon>
-          <iron-icon icon="fa:fa-rebel"></iron-icon>
-          <iron-icon icon="fa:fa-recycle"></iron-icon>
-          <iron-icon icon="fa:fa-reddit-alien"></iron-icon>
-          <iron-icon icon="fa:fa-reddit-square"></iron-icon>
-          <iron-icon icon="fa:fa-reddit"></iron-icon>
-          <iron-icon icon="fa:fa-refresh"></iron-icon>
-          <iron-icon icon="fa:fa-registered"></iron-icon>
-          <iron-icon icon="fa:fa-renren"></iron-icon>
-          <iron-icon icon="fa:fa-repeat"></iron-icon>
-          <iron-icon icon="fa:fa-reply-all"></iron-icon>
-          <iron-icon icon="fa:fa-reply"></iron-icon>
-          <iron-icon icon="fa:fa-retweet"></iron-icon>
-          <iron-icon icon="fa:fa-road"></iron-icon>
-          <iron-icon icon="fa:fa-rocket"></iron-icon>
-          <iron-icon icon="fa:fa-rss-square"></iron-icon>
-          <iron-icon icon="fa:fa-rss"></iron-icon>
-          <iron-icon icon="fa:fa-rub"></iron-icon>
-          <iron-icon icon="fa:fa-safari"></iron-icon>
-          <iron-icon icon="fa:fa-scissors"></iron-icon>
-          <iron-icon icon="fa:fa-scribd"></iron-icon>
-          <iron-icon icon="fa:fa-search-minus"></iron-icon>
-          <iron-icon icon="fa:fa-search-plus"></iron-icon>
-          <iron-icon icon="fa:fa-search"></iron-icon>
-          <iron-icon icon="fa:fa-sellsy"></iron-icon>
-          <iron-icon icon="fa:fa-server"></iron-icon>
-          <iron-icon icon="fa:fa-share-alt-square"></iron-icon>
-          <iron-icon icon="fa:fa-share-alt"></iron-icon>
-          <iron-icon icon="fa:fa-share-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-share-square"></iron-icon>
-          <iron-icon icon="fa:fa-share"></iron-icon>
-          <iron-icon icon="fa:fa-shield"></iron-icon>
-          <iron-icon icon="fa:fa-ship"></iron-icon>
-          <iron-icon icon="fa:fa-shirtsinbulk"></iron-icon>
-          <iron-icon icon="fa:fa-shopping-bag"></iron-icon>
-          <iron-icon icon="fa:fa-shopping-basket"></iron-icon>
-          <iron-icon icon="fa:fa-shopping-cart"></iron-icon>
-          <iron-icon icon="fa:fa-sign-in"></iron-icon>
-          <iron-icon icon="fa:fa-sign-language"></iron-icon>
-          <iron-icon icon="fa:fa-sign-out"></iron-icon>
-          <iron-icon icon="fa:fa-signal"></iron-icon>
-          <iron-icon icon="fa:fa-simplybuilt"></iron-icon>
-          <iron-icon icon="fa:fa-sitemap"></iron-icon>
-          <iron-icon icon="fa:fa-skyatlas"></iron-icon>
-          <iron-icon icon="fa:fa-skype"></iron-icon>
-          <iron-icon icon="fa:fa-slack"></iron-icon>
-          <iron-icon icon="fa:fa-sliders"></iron-icon>
-          <iron-icon icon="fa:fa-slideshare"></iron-icon>
-          <iron-icon icon="fa:fa-smile-o"></iron-icon>
-          <iron-icon icon="fa:fa-snapchat-ghost"></iron-icon>
-          <iron-icon icon="fa:fa-snapchat-square"></iron-icon>
-          <iron-icon icon="fa:fa-snapchat"></iron-icon>
-          <iron-icon icon="fa:fa-sort-alpha-asc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-alpha-desc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-amount-asc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-amount-desc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-asc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-desc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-numeric-asc"></iron-icon>
-          <iron-icon icon="fa:fa-sort-numeric-desc"></iron-icon>
-          <iron-icon icon="fa:fa-sort"></iron-icon>
-          <iron-icon icon="fa:fa-soundcloud"></iron-icon>
-          <iron-icon icon="fa:fa-space-shuttle"></iron-icon>
-          <iron-icon icon="fa:fa-spinner"></iron-icon>
-          <iron-icon icon="fa:fa-spoon"></iron-icon>
-          <iron-icon icon="fa:fa-spotify"></iron-icon>
-          <iron-icon icon="fa:fa-square-o"></iron-icon>
-          <iron-icon icon="fa:fa-square"></iron-icon>
-          <iron-icon icon="fa:fa-stack-exchange"></iron-icon>
-          <iron-icon icon="fa:fa-stack-overflow"></iron-icon>
-          <iron-icon icon="fa:fa-star-half-o"></iron-icon>
-          <iron-icon icon="fa:fa-star-half"></iron-icon>
-          <iron-icon icon="fa:fa-star-o"></iron-icon>
-          <iron-icon icon="fa:fa-star"></iron-icon>
-          <iron-icon icon="fa:fa-steam-square"></iron-icon>
-          <iron-icon icon="fa:fa-steam"></iron-icon>
-          <iron-icon icon="fa:fa-step-backward"></iron-icon>
-          <iron-icon icon="fa:fa-step-forward"></iron-icon>
-          <iron-icon icon="fa:fa-stethoscope"></iron-icon>
-          <iron-icon icon="fa:fa-sticky-note-o"></iron-icon>
-          <iron-icon icon="fa:fa-sticky-note"></iron-icon>
-          <iron-icon icon="fa:fa-stop-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-stop-circle"></iron-icon>
-          <iron-icon icon="fa:fa-stop"></iron-icon>
-          <iron-icon icon="fa:fa-street-view"></iron-icon>
-          <iron-icon icon="fa:fa-strikethrough"></iron-icon>
-          <iron-icon icon="fa:fa-stumbleupon-circle"></iron-icon>
-          <iron-icon icon="fa:fa-stumbleupon"></iron-icon>
-          <iron-icon icon="fa:fa-subscript"></iron-icon>
-          <iron-icon icon="fa:fa-subway"></iron-icon>
-          <iron-icon icon="fa:fa-suitcase"></iron-icon>
-          <iron-icon icon="fa:fa-sun-o"></iron-icon>
-          <iron-icon icon="fa:fa-superscript"></iron-icon>
-          <iron-icon icon="fa:fa-table"></iron-icon>
-          <iron-icon icon="fa:fa-tablet"></iron-icon>
-          <iron-icon icon="fa:fa-tachometer"></iron-icon>
-          <iron-icon icon="fa:fa-tag"></iron-icon>
-          <iron-icon icon="fa:fa-tags"></iron-icon>
-          <iron-icon icon="fa:fa-tasks"></iron-icon>
-          <iron-icon icon="fa:fa-taxi"></iron-icon>
-          <iron-icon icon="fa:fa-television"></iron-icon>
-          <iron-icon icon="fa:fa-tencent-weibo"></iron-icon>
-          <iron-icon icon="fa:fa-terminal"></iron-icon>
-          <iron-icon icon="fa:fa-text-height"></iron-icon>
-          <iron-icon icon="fa:fa-text-width"></iron-icon>
-          <iron-icon icon="fa:fa-th-large"></iron-icon>
-          <iron-icon icon="fa:fa-th-list"></iron-icon>
-          <iron-icon icon="fa:fa-th"></iron-icon>
-          <iron-icon icon="fa:fa-themeisle"></iron-icon>
-          <iron-icon icon="fa:fa-thumb-tack"></iron-icon>
-          <iron-icon icon="fa:fa-thumbs-down"></iron-icon>
-          <iron-icon icon="fa:fa-thumbs-o-down"></iron-icon>
-          <iron-icon icon="fa:fa-thumbs-o-up"></iron-icon>
-          <iron-icon icon="fa:fa-thumbs-up"></iron-icon>
-          <iron-icon icon="fa:fa-ticket"></iron-icon>
-          <iron-icon icon="fa:fa-times-circle-o"></iron-icon>
-          <iron-icon icon="fa:fa-times-circle"></iron-icon>
-          <iron-icon icon="fa:fa-times"></iron-icon>
-          <iron-icon icon="fa:fa-tint"></iron-icon>
-          <iron-icon icon="fa:fa-toggle-off"></iron-icon>
-          <iron-icon icon="fa:fa-toggle-on"></iron-icon>
-          <iron-icon icon="fa:fa-trademark"></iron-icon>
-          <iron-icon icon="fa:fa-train"></iron-icon>
-          <iron-icon icon="fa:fa-transgender-alt"></iron-icon>
-          <iron-icon icon="fa:fa-transgender"></iron-icon>
-          <iron-icon icon="fa:fa-trash-o"></iron-icon>
-          <iron-icon icon="fa:fa-trash"></iron-icon>
-          <iron-icon icon="fa:fa-tree"></iron-icon>
-          <iron-icon icon="fa:fa-trello"></iron-icon>
-          <iron-icon icon="fa:fa-tripadvisor"></iron-icon>
-          <iron-icon icon="fa:fa-trophy"></iron-icon>
-          <iron-icon icon="fa:fa-truck"></iron-icon>
-          <iron-icon icon="fa:fa-try"></iron-icon>
-          <iron-icon icon="fa:fa-tty"></iron-icon>
-          <iron-icon icon="fa:fa-tumblr-square"></iron-icon>
-          <iron-icon icon="fa:fa-tumblr"></iron-icon>
-          <iron-icon icon="fa:fa-twitch"></iron-icon>
-          <iron-icon icon="fa:fa-twitter-square"></iron-icon>
-          <iron-icon icon="fa:fa-twitter"></iron-icon>
-          <iron-icon icon="fa:fa-umbrella"></iron-icon>
-          <iron-icon icon="fa:fa-underline"></iron-icon>
-          <iron-icon icon="fa:fa-undo"></iron-icon>
-          <iron-icon icon="fa:fa-universal-access"></iron-icon>
-          <iron-icon icon="fa:fa-university"></iron-icon>
-          <iron-icon icon="fa:fa-unlock-alt"></iron-icon>
-          <iron-icon icon="fa:fa-unlock"></iron-icon>
-          <iron-icon icon="fa:fa-upload"></iron-icon>
-          <iron-icon icon="fa:fa-usb"></iron-icon>
-          <iron-icon icon="fa:fa-usd"></iron-icon>
-          <iron-icon icon="fa:fa-user-md"></iron-icon>
-          <iron-icon icon="fa:fa-user-plus"></iron-icon>
-          <iron-icon icon="fa:fa-user-secret"></iron-icon>
-          <iron-icon icon="fa:fa-user-times"></iron-icon>
-          <iron-icon icon="fa:fa-user"></iron-icon>
-          <iron-icon icon="fa:fa-users"></iron-icon>
-          <iron-icon icon="fa:fa-venus-double"></iron-icon>
-          <iron-icon icon="fa:fa-venus-mars"></iron-icon>
-          <iron-icon icon="fa:fa-venus"></iron-icon>
-          <iron-icon icon="fa:fa-viacoin"></iron-icon>
-          <iron-icon icon="fa:fa-viadeo-square"></iron-icon>
-          <iron-icon icon="fa:fa-viadeo"></iron-icon>
-          <iron-icon icon="fa:fa-video-camera"></iron-icon>
-          <iron-icon icon="fa:fa-vimeo-square"></iron-icon>
-          <iron-icon icon="fa:fa-vimeo"></iron-icon>
-          <iron-icon icon="fa:fa-vine"></iron-icon>
-          <iron-icon icon="fa:fa-vk"></iron-icon>
-          <iron-icon icon="fa:fa-volume-control-phone"></iron-icon>
-          <iron-icon icon="fa:fa-volume-down"></iron-icon>
-          <iron-icon icon="fa:fa-volume-off"></iron-icon>
-          <iron-icon icon="fa:fa-volume-up"></iron-icon>
-          <iron-icon icon="fa:fa-weibo"></iron-icon>
-          <iron-icon icon="fa:fa-weixin"></iron-icon>
-          <iron-icon icon="fa:fa-whatsapp"></iron-icon>
-          <iron-icon icon="fa:fa-wheelchair-alt"></iron-icon>
-          <iron-icon icon="fa:fa-wheelchair"></iron-icon>
-          <iron-icon icon="fa:fa-wifi"></iron-icon>
-          <iron-icon icon="fa:fa-wikipedia-w"></iron-icon>
-          <iron-icon icon="fa:fa-windows"></iron-icon>
-          <iron-icon icon="fa:fa-wordpress"></iron-icon>
-          <iron-icon icon="fa:fa-wpbeginner"></iron-icon>
-          <iron-icon icon="fa:fa-wpforms"></iron-icon>
-          <iron-icon icon="fa:fa-wrench"></iron-icon>
-          <iron-icon icon="fa:fa-xing"></iron-icon>
-          <iron-icon icon="fa:fa-y-combinator"></iron-icon>
-          <iron-icon icon="fa:fa-yahoo"></iron-icon>
-          <iron-icon icon="fa:fa-yelp"></iron-icon>
-          <iron-icon icon="fa:fa-yoast"></iron-icon>
-          <iron-icon icon="fa:fa-youtube-play"></iron-icon>
-          <iron-icon icon="fa:fa-youtube-square"></iron-icon>
-          <iron-icon icon="fa:fa-youtube"></iron-icon>
-          <iron-icon icon="fa:fa-xing-square"></iron-icon>
+        <h4 class="epsilon">Assets & Objects:</h4>
+        <div class="large">
+          <iron-icon icon="px:machine"></iron-icon>
+          <iron-icon icon="px:aircraft-engine"></iron-icon>
+          <iron-icon icon="px:gas-turbine"></iron-icon>
+          <iron-icon icon="px:steam-turbine"></iron-icon>
+          <iron-icon icon="px:aircraft"></iron-icon>
+          <iron-icon icon="px:airport"></iron-icon>
+          <iron-icon icon="px:condensor"></iron-icon>
+          <iron-icon icon="px:boiler"></iron-icon>
+          <iron-icon icon="px:cooling-tower"></iron-icon>
+          <iron-icon icon="px:hrsg"></iron-icon>
+          <iron-icon icon="px:plant"></iron-icon>
+          <iron-icon icon="px:crane"></iron-icon>
+          <iron-icon icon="px:gas-line"></iron-icon>
+          <iron-icon icon="px:lightbulb"></iron-icon>
+          <iron-icon icon="px:asset"></iron-icon>
+          <iron-icon icon="px:product"></iron-icon>
+          <iron-icon icon="px:manufacturing"></iron-icon>
+          <iron-icon icon="px:solar-panel"></iron-icon>
+          <iron-icon icon="px:edge-device"></iron-icon>
+          <iron-icon icon="px:line"></iron-icon>
+          <iron-icon icon="px:block"></iron-icon>
+          <iron-icon icon="px:automobile"></iron-icon>
+          <iron-icon icon="px:truck"></iron-icon>
+          <iron-icon icon="px:rail-yard"></iron-icon>
+          <iron-icon icon="px:locomotive"></iron-icon>
+          <iron-icon icon="px:train"></iron-icon>
+          <iron-icon icon="px:wind-turbine"></iron-icon>
+        </div>
+        <h4 class="epsilon">Comms:</h4>
+        <div class="large">
+          <iron-icon icon="px:chat"></iron-icon>
+          <iron-icon icon="px:comment"></iron-icon>
+          <iron-icon icon="px:email"></iron-icon>
+          <iron-icon icon="px:message"></iron-icon>
+          <iron-icon icon="px:phone"></iron-icon>
+          <iron-icon icon="px:sms"></iron-icon>
+          <iron-icon icon="px:software"></iron-icon>
+        </div>
+        <h4 class="epsilon">Other:</h4>
+        <div class="large">
+          <iron-icon icon="px:administration"></iron-icon>
+          <iron-icon icon="px:settings"></iron-icon>
+          <iron-icon icon="px:alerts"></iron-icon>
+          <iron-icon icon="px:orchestration"></iron-icon>
+          <iron-icon icon="px:analysis"></iron-icon>
+          <iron-icon icon="px:analytics"></iron-icon>
+          <iron-icon icon="px:attribute"></iron-icon>
+          <iron-icon icon="px:bug"></iron-icon>
+          <iron-icon icon="px:calendar"></iron-icon>
+          <iron-icon icon="px:cases"></iron-icon>
+          <iron-icon icon="px:catalog"></iron-icon>
+          <iron-icon icon="px:dashboard"></iron-icon>
+          <iron-icon icon="px:data-source"></iron-icon>
+          <iron-icon icon="px:deployment"></iron-icon>
+          <iron-icon icon="px:class"></iron-icon>
+          <iron-icon icon="px:dev-ops"></iron-icon>
+          <iron-icon icon="px:digital-twin"></iron-icon>
+          <iron-icon icon="px:microservice"></iron-icon>
+          <iron-icon icon="px:fleet"></iron-icon>
+          <iron-icon icon="px:efficiency"></iron-icon>
+          <iron-icon icon="px:heat-rate"></iron-icon>
+          <iron-icon icon="px:kpi"></iron-icon>
+          <iron-icon icon="px:output"></iron-icon>
+          <iron-icon icon="px:ingestion"></iron-icon>
+          <iron-icon icon="px:log"></iron-icon>
+          <iron-icon icon="px:order"></iron-icon>
+          <iron-icon icon="px:pipeline"></iron-icon>
+          <iron-icon icon="px:route"></iron-icon>
+          <iron-icon icon="px:server"></iron-icon>
+          <iron-icon icon="px:spaces"></iron-icon>
+          <iron-icon icon="px:tag"></iron-icon>
+          <iron-icon icon="px:tag-group"></iron-icon>
+          <iron-icon icon="px:user"></iron-icon>
+          <iron-icon icon="px:users"></iron-icon>
+          <iron-icon icon="px:templates"></iron-icon>
+          <iron-icon icon="px:version"></iron-icon>
+        </div>
+        <h4 class="epsilon">Small Icons:</h4>
+        <div class="small">
+          <iron-icon icon="px:arrow-up"></iron-icon>
+          <iron-icon icon="px:arrow-down"></iron-icon>
+          <iron-icon icon="px:arrow-left"></iron-icon>
+          <iron-icon icon="px:arrow-right"></iron-icon>
+          <iron-icon icon="px:resize"></iron-icon>
+          <iron-icon icon="px:collapse"></iron-icon>
+          <iron-icon icon="px:expand"></iron-icon>
+          <iron-icon icon="px:collapse-left"></iron-icon>
+          <iron-icon icon="px:expand-right"></iron-icon>
+          <iron-icon icon="px:chevron-up"></iron-icon>
+          <iron-icon icon="px:chevron-down"></iron-icon>
+          <iron-icon icon="px:chevron-left"></iron-icon>
+          <iron-icon icon="px:chevron-right"></iron-icon>
+          <iron-icon icon="px:download"></iron-icon>
+          <iron-icon icon="px:upload"></iron-icon>
+          <iron-icon icon="px:share"></iron-icon>
+          <iron-icon icon="px:refresh"></iron-icon>
+          <iron-icon icon="px:add"></iron-icon>
+          <iron-icon icon="px:close"></iron-icon>
+          <iron-icon icon="px:copy"></iron-icon>
+          <iron-icon icon="px:delete"></iron-icon>
+          <iron-icon icon="px:alert"></iron-icon>
+          <iron-icon icon="px:calculator"></iron-icon>
+          <iron-icon icon="px:camera"></iron-icon>
+          <iron-icon icon="px:chart"></iron-icon>
+          <iron-icon icon="px:crosshairs"></iron-icon>
+          <iron-icon icon="px:desktop"></iron-icon>
+          <iron-icon icon="px:tablet"></iron-icon>
+          <iron-icon icon="px:mobile"></iron-icon>
+          <iron-icon icon="px:document"></iron-icon>
+          <iron-icon icon="px:pdf"></iron-icon>
+          <iron-icon icon="px:excel"></iron-icon>
+          <iron-icon icon="px:csv"></iron-icon>
+          <iron-icon icon="px:word"></iron-icon>
+          <iron-icon icon="px:edit"></iron-icon>
+          <iron-icon icon="px:favorite"></iron-icon>
+          <iron-icon icon="px:failure"></iron-icon>
+          <iron-icon icon="px:filter"></iron-icon>
+          <iron-icon icon="px:folder-closed"></iron-icon>
+          <iron-icon icon="px:folder-open"></iron-icon>
+          <iron-icon icon="px:hamburger"></iron-icon>
+          <iron-icon icon="px:hierarchy"></iron-icon>
+          <iron-icon icon="px:list"></iron-icon>
+          <iron-icon icon="px:grid"></iron-icon>
+          <iron-icon icon="px:tile"></iron-icon>
+          <iron-icon icon="px:tree"></iron-icon>
+          <iron-icon icon="px:inbox"></iron-icon>
+          <iron-icon icon="px:confirm"></iron-icon>
+          <iron-icon icon="px:open"></iron-icon>
+          <iron-icon icon="px:clock"></iron-icon>
+          <iron-icon icon="px:help"></iron-icon>
+          <iron-icon icon="px:information"></iron-icon>
+          <iron-icon icon="px:play"></iron-icon>
+          <iron-icon icon="px:pause"></iron-icon>
+          <iron-icon icon="px:stop"></iron-icon>
+          <iron-icon icon="px:home"></iron-icon>
+          <iron-icon icon="px:image"></iron-icon>
+          <iron-icon icon="px:instance"></iron-icon>
+          <iron-icon icon="px:formula"></iron-icon>
+          <iron-icon icon="px:flag"></iron-icon>
+          <iron-icon icon="px:launch"></iron-icon>
+          <iron-icon icon="px:link"></iron-icon>
+          <iron-icon icon="px:unlink"></iron-icon>
+          <iron-icon icon="px:lock"></iron-icon>
+          <iron-icon icon="px:unlock"></iron-icon>
+          <iron-icon icon="px:power"></iron-icon>
+          <iron-icon icon="px:location"></iron-icon>
+          <iron-icon icon="px:map"></iron-icon>
+          <iron-icon icon="px:menu"></iron-icon>
+          <iron-icon icon="px:more"></iron-icon>
+          <iron-icon icon="px:note"></iron-icon>
+          <iron-icon icon="px:notification"></iron-icon>
+          <iron-icon icon="px:reply"></iron-icon>
+          <iron-icon icon="px:save"></iron-icon>
+          <iron-icon icon="px:search"></iron-icon>
+          <iron-icon icon="px:settings-alt"></iron-icon>
+          <iron-icon icon="px:view"></iron-icon>
+          <iron-icon icon="px:website"></iron-icon>
         </div>
       </px-demo-component>
       <!-- END Component ------------------------------------------------------>
 
       <px-demo-component-snippet
           element-properties="{{props}}"
-          element-name="iron-icon"
-          links-includes=["px-polymer-font-awesome/px-polymer-font-awesome.html"]>
+          element-name="iron-icon">
       </px-demo-component-snippet>
     </px-demo-interactive>
 
-    <!-- API Viewer -->
-    <!-- <px-demo-api-viewer source="px-polymer-font-awesome"></px-demo-api-viewer> -->
+    <div class="demo-layout--center demo-u-pb+++ u-pt++">
+      <h3 class="delta">Cheatsheet</h3>
+
+      <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
+
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:add"></iron-icon>px:add</span>
+          <span class="cheatsheet"><iron-icon icon="px:administration"></iron-icon>px:administration</span>
+          <span class="cheatsheet"><iron-icon icon="px:aircraft-engine"></iron-icon>px:aircraft-engine</span>
+          <span class="cheatsheet"><iron-icon icon="px:aircraft"></iron-icon>px:aircraft</span>
+          <span class="cheatsheet"><iron-icon icon="px:airport"></iron-icon>px:airport</span>
+          <span class="cheatsheet"><iron-icon icon="px:alert"></iron-icon>px:alert</span>
+          <span class="cheatsheet"><iron-icon icon="px:alerts"></iron-icon>px:alerts</span>
+          <span class="cheatsheet"><iron-icon icon="px:analysis"></iron-icon>px:analysis</span>
+          <span class="cheatsheet"><iron-icon icon="px:analytics"></iron-icon>px:analytics</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-down"></iron-icon>px:arrow-down</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-left"></iron-icon>px:arrow-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-right"></iron-icon>px:arrow-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:arrow-up"></iron-icon>px:arrow-up</span>
+          <span class="cheatsheet"><iron-icon icon="px:asset"></iron-icon>px:asset</span>
+          <span class="cheatsheet"><iron-icon icon="px:attribute"></iron-icon>px:attribute</span>
+          <span class="cheatsheet"><iron-icon icon="px:automobile"></iron-icon>px:automobile</span>
+          <span class="cheatsheet"><iron-icon icon="px:block"></iron-icon>px:block</span>
+          <span class="cheatsheet"><iron-icon icon="px:boiler"></iron-icon>px:boiler</span>
+          <span class="cheatsheet"><iron-icon icon="px:bug"></iron-icon>px:bug</span>
+          <span class="cheatsheet"><iron-icon icon="px:calculator"></iron-icon>px:calculator</span>
+          <span class="cheatsheet"><iron-icon icon="px:calendar"></iron-icon>px:calendar</span>
+          <span class="cheatsheet"><iron-icon icon="px:camera"></iron-icon>px:camera</span>
+          <span class="cheatsheet"><iron-icon icon="px:cases"></iron-icon>px:cases</span>
+          <span class="cheatsheet"><iron-icon icon="px:catalog"></iron-icon>px:catalog</span>
+          <span class="cheatsheet"><iron-icon icon="px:chart"></iron-icon>px:chart</span>
+          <span class="cheatsheet"><iron-icon icon="px:chat"></iron-icon>px:chat</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-down"></iron-icon>px:chevron-down</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-left"></iron-icon>px:chevron-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-right"></iron-icon>px:chevron-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:chevron-up"></iron-icon>px:chevron-up</span>
+          <span class="cheatsheet"><iron-icon icon="px:class"></iron-icon>px:class</span>
+          <span class="cheatsheet"><iron-icon icon="px:clock"></iron-icon>px:clock</span>
+          <span class="cheatsheet"><iron-icon icon="px:close"></iron-icon>px:close</span>
+          <span class="cheatsheet"><iron-icon icon="px:collapse"></iron-icon>px:collapse</span>
+          <span class="cheatsheet"><iron-icon icon="px:collapse-left"></iron-icon>px:collapse-left</span>
+          <span class="cheatsheet"><iron-icon icon="px:comment"></iron-icon>px:comment</span>
+          <span class="cheatsheet"><iron-icon icon="px:condensor"></iron-icon>px:condensor</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:confirm"></iron-icon>px:confirm</span>
+          <span class="cheatsheet"><iron-icon icon="px:cooling-tower"></iron-icon>px:cooling-tower</span>
+          <span class="cheatsheet"><iron-icon icon="px:copy"></iron-icon>px:copy</span>
+          <span class="cheatsheet"><iron-icon icon="px:crane"></iron-icon>px:crane</span>
+          <span class="cheatsheet"><iron-icon icon="px:crosshairs"></iron-icon>px:crosshairs</span>
+          <span class="cheatsheet"><iron-icon icon="px:csv"></iron-icon>px:csv</span>
+          <span class="cheatsheet"><iron-icon icon="px:dashboard"></iron-icon>px:dashboard</span>
+          <span class="cheatsheet"><iron-icon icon="px:data-source"></iron-icon>px:data-source</span>
+          <span class="cheatsheet"><iron-icon icon="px:delete"></iron-icon>px:delete</span>
+          <span class="cheatsheet"><iron-icon icon="px:deployment"></iron-icon>px:deployment</span>
+          <span class="cheatsheet"><iron-icon icon="px:desktop"></iron-icon>px:desktop</span>
+          <span class="cheatsheet"><iron-icon icon="px:dev-ops"></iron-icon>px:dev-ops</span>
+          <span class="cheatsheet"><iron-icon icon="px:digital-twin"></iron-icon>px:digital-twin</span>
+          <span class="cheatsheet"><iron-icon icon="px:document"></iron-icon>px:document</span>
+          <span class="cheatsheet"><iron-icon icon="px:download"></iron-icon>px:download</span>
+          <span class="cheatsheet"><iron-icon icon="px:edge-device"></iron-icon>px:edge-device</span>
+          <span class="cheatsheet"><iron-icon icon="px:edit"></iron-icon>px:edit</span>
+          <span class="cheatsheet"><iron-icon icon="px:efficiency"></iron-icon>px:efficiency</span>
+          <span class="cheatsheet"><iron-icon icon="px:email"></iron-icon>px:email</span>
+          <span class="cheatsheet"><iron-icon icon="px:excel"></iron-icon>px:excel</span>
+          <span class="cheatsheet"><iron-icon icon="px:expand"></iron-icon>px:expand</span>
+          <span class="cheatsheet"><iron-icon icon="px:expand-right"></iron-icon>px:expand-right</span>
+          <span class="cheatsheet"><iron-icon icon="px:failure"></iron-icon>px:failure</span>
+          <span class="cheatsheet"><iron-icon icon="px:favorite"></iron-icon>px:favorite</span>
+          <span class="cheatsheet"><iron-icon icon="px:filter"></iron-icon>px:filter</span>
+          <span class="cheatsheet"><iron-icon icon="px:flag"></iron-icon>px:flag</span>
+          <span class="cheatsheet"><iron-icon icon="px:fleet"></iron-icon>px:fleet</span>
+          <span class="cheatsheet"><iron-icon icon="px:folder-closed"></iron-icon>px:folder-closed</span>
+          <span class="cheatsheet"><iron-icon icon="px:folder-open"></iron-icon>px:folder-open</span>
+          <span class="cheatsheet"><iron-icon icon="px:formula"></iron-icon>px:formula</span>
+          <span class="cheatsheet"><iron-icon icon="px:gas-line"></iron-icon>px:gas-line</span>
+          <span class="cheatsheet"><iron-icon icon="px:gas-turbine"></iron-icon>px:gas-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:grid"></iron-icon>px:grid</span>
+          <span class="cheatsheet"><iron-icon icon="px:hamburger"></iron-icon>px:hamburger</span>
+          <span class="cheatsheet"><iron-icon icon="px:heat-rate"></iron-icon>px:heat-rate</span>
+          <span class="cheatsheet"><iron-icon icon="px:help"></iron-icon>px:help</span>
+          <span class="cheatsheet"><iron-icon icon="px:hierarchy"></iron-icon>px:hierarchy</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:home"></iron-icon>px:home</span>
+          <span class="cheatsheet"><iron-icon icon="px:hrsg"></iron-icon>px:hrsg</span>
+          <span class="cheatsheet"><iron-icon icon="px:image"></iron-icon>px:image</span>
+          <span class="cheatsheet"><iron-icon icon="px:inbox"></iron-icon>px:inbox</span>
+          <span class="cheatsheet"><iron-icon icon="px:information"></iron-icon>px:information</span>
+          <span class="cheatsheet"><iron-icon icon="px:ingestion"></iron-icon>px:ingestion</span>
+          <span class="cheatsheet"><iron-icon icon="px:instance"></iron-icon>px:instance</span>
+          <span class="cheatsheet"><iron-icon icon="px:kpi"></iron-icon>px:kpi</span>
+          <span class="cheatsheet"><iron-icon icon="px:launch"></iron-icon>px:launch</span>
+          <span class="cheatsheet"><iron-icon icon="px:lightbulb"></iron-icon>px:lightbulb</span>
+          <span class="cheatsheet"><iron-icon icon="px:line"></iron-icon>px:line</span>
+          <span class="cheatsheet"><iron-icon icon="px:link"></iron-icon>px:link</span>
+          <span class="cheatsheet"><iron-icon icon="px:list"></iron-icon>px:list</span>
+          <span class="cheatsheet"><iron-icon icon="px:location"></iron-icon>px:location</span>
+          <span class="cheatsheet"><iron-icon icon="px:lock"></iron-icon>px:lock</span>
+          <span class="cheatsheet"><iron-icon icon="px:locomotive"></iron-icon>px:locomotive</span>
+          <span class="cheatsheet"><iron-icon icon="px:log"></iron-icon>px:log</span>
+          <span class="cheatsheet"><iron-icon icon="px:machine"></iron-icon>px:machine</span>
+          <span class="cheatsheet"><iron-icon icon="px:manufacturing"></iron-icon>px:manufacturing</span>
+          <span class="cheatsheet"><iron-icon icon="px:map"></iron-icon>px:map</span>
+          <span class="cheatsheet"><iron-icon icon="px:menu"></iron-icon>px:menu</span>
+          <span class="cheatsheet"><iron-icon icon="px:message"></iron-icon>px:message</span>
+          <span class="cheatsheet"><iron-icon icon="px:microservice"></iron-icon>px:microservice</span>
+          <span class="cheatsheet"><iron-icon icon="px:mobile"></iron-icon>px:mobile</span>
+          <span class="cheatsheet"><iron-icon icon="px:more"></iron-icon>px:more</span>
+          <span class="cheatsheet"><iron-icon icon="px:note"></iron-icon>px:note</span>
+          <span class="cheatsheet"><iron-icon icon="px:notification"></iron-icon>px:notification</span>
+          <span class="cheatsheet"><iron-icon icon="px:open"></iron-icon>px:open</span>
+          <span class="cheatsheet"><iron-icon icon="px:orchestration"></iron-icon>px:orchestration</span>
+          <span class="cheatsheet"><iron-icon icon="px:order"></iron-icon>px:order</span>
+          <span class="cheatsheet"><iron-icon icon="px:output"></iron-icon>px:output</span>
+          <span class="cheatsheet"><iron-icon icon="px:pause"></iron-icon>px:pause</span>
+          <span class="cheatsheet"><iron-icon icon="px:pdf"></iron-icon>px:pdf</span>
+          <span class="cheatsheet"><iron-icon icon="px:phone"></iron-icon>px:phone</span>
+          <span class="cheatsheet"><iron-icon icon="px:pipeline"></iron-icon>px:pipeline</span>
+          <span class="cheatsheet"><iron-icon icon="px:plant"></iron-icon>px:plant</span>
+          <span class="cheatsheet"><iron-icon icon="px:play"></iron-icon>px:play</span>
+        </div>
+        <div class="column">
+          <span class="cheatsheet"><iron-icon icon="px:power"></iron-icon>px:power</span>
+          <span class="cheatsheet"><iron-icon icon="px:product"></iron-icon>px:product</span>
+          <span class="cheatsheet"><iron-icon icon="px:software"></iron-icon>px:software</span>
+          <span class="cheatsheet"><iron-icon icon="px:rail-yard"></iron-icon>px:rail-yard</span>
+          <span class="cheatsheet"><iron-icon icon="px:refresh"></iron-icon>px:refresh</span>
+          <span class="cheatsheet"><iron-icon icon="px:reply"></iron-icon>px:reply</span>
+          <span class="cheatsheet"><iron-icon icon="px:resize"></iron-icon>px:reply</span>
+          <span class="cheatsheet"><iron-icon icon="px:route"></iron-icon>px:route</span>
+          <span class="cheatsheet"><iron-icon icon="px:save"></iron-icon>px:save</span>
+          <span class="cheatsheet"><iron-icon icon="px:search"></iron-icon>px:search</span>
+          <span class="cheatsheet"><iron-icon icon="px:server"></iron-icon>px:server</span>
+          <span class="cheatsheet"><iron-icon icon="px:settings-alt"></iron-icon>px:settings-alt</span>
+          <span class="cheatsheet"><iron-icon icon="px:settings"></iron-icon>px:settings</span>
+          <span class="cheatsheet"><iron-icon icon="px:share"></iron-icon>px:share</span>
+          <span class="cheatsheet"><iron-icon icon="px:sms"></iron-icon>px:sms</span>
+          <span class="cheatsheet"><iron-icon icon="px:solar-panel"></iron-icon>px:solar-panel</span>
+          <span class="cheatsheet"><iron-icon icon="px:spaces"></iron-icon>px:spaces</span>
+          <span class="cheatsheet"><iron-icon icon="px:steam-turbine"></iron-icon>px:steam-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:stop"></iron-icon>px:stop</span>
+          <span class="cheatsheet"><iron-icon icon="px:tablet"></iron-icon>px:tablet</span>
+          <span class="cheatsheet"><iron-icon icon="px:tag-group"></iron-icon>px:tag-group</span>
+          <span class="cheatsheet"><iron-icon icon="px:tag"></iron-icon>px:tag</span>
+          <span class="cheatsheet"><iron-icon icon="px:templates"></iron-icon>px:templates</span>
+          <span class="cheatsheet"><iron-icon icon="px:tile"></iron-icon>px:tile</span>
+          <span class="cheatsheet"><iron-icon icon="px:train"></iron-icon>px:train</span>
+          <span class="cheatsheet"><iron-icon icon="px:tree"></iron-icon>px:tree</span>
+          <span class="cheatsheet"><iron-icon icon="px:truck"></iron-icon>px:truck</span>
+          <span class="cheatsheet"><iron-icon icon="px:unlink"></iron-icon>px:unlink</span>
+          <span class="cheatsheet"><iron-icon icon="px:unlock"></iron-icon>px:unlock</span>
+          <span class="cheatsheet"><iron-icon icon="px:upload"></iron-icon>px:upload</span>
+          <span class="cheatsheet"><iron-icon icon="px:user"></iron-icon>px:user</span>
+          <span class="cheatsheet"><iron-icon icon="px:users"></iron-icon>px:users</span>
+          <span class="cheatsheet"><iron-icon icon="px:version"></iron-icon>px:version</span>
+          <span class="cheatsheet"><iron-icon icon="px:view"></iron-icon>px:view</span>
+          <span class="cheatsheet"><iron-icon icon="px:website"></iron-icon>px:website</span>
+          <span class="cheatsheet"><iron-icon icon="px:wind-turbine"></iron-icon>px:wind-turbine</span>
+          <span class="cheatsheet"><iron-icon icon="px:word"></iron-icon>px:word</span>
+        </div>
+      </div>
+
+    </div>
 
     <!-- Footer -->
     <px-demo-footer></px-demo-footer>
@@ -721,7 +442,7 @@
 
       icon: {
         type: String,
-        defaultValue: 'fa:fa-briefcase'
+        defaultValue: 'px:analysis'
       }
     }
 

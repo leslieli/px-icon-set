@@ -204,11 +204,11 @@ function testCase(options) {
 function runBaseTests() {
   px_context_browser_1 = document.getElementById('px_context_browser_1');
 
-  suite('Base Automation Tests for px-polymer-font-awesome', function() {
+  suite('Base Automation Tests for px-icon', function() {
 
     test('Polymer exists', function() {
       assert.isTrue(Polymer !== null);
     });
-    
+
   });
 };

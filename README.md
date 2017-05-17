@@ -1,10 +1,10 @@
-# px-polymer-font-awesome [![Build Status](https://travis-ci.org/PredixDev/px-polymer-font-awesome.svg?branch=master)](https://travis-ci.org/PredixDev/px-polymer-font-awesome)
+# px-icon-set [![Build Status](https://travis-ci.org/PredixDev/px-icon-set.svg?branch=master)](https://travis-ci.org/PredixDev/px-icon-set)
 
-[![px-polymer-font-awesome demo](px-polymer-font-awesome.png?raw=true)](https://PredixDev.github.io/px-polymer-font-awesome/)
+[![px-icon-set demo](px-icon-set.png?raw=true)](https://PredixDev.github.io/px-icon-set/)
 
 ## Overview
 
-px-polymer-font-awesome the font awesome icons, made available - in a shadow dom compliant way - through a polymer tag.
+px-icon-set the font awesome icons, made available - in a shadow dom compliant way - through a polymer tag.
 
 ## Usage
 
@@ -21,19 +21,19 @@ Node, npm and bower are necessary to install the component and dependencies. web
 First, install the component via bower on the command line.
 
 ```
-bower install px-polymer-font-awesome --save
+bower install px-icon-set --save
 ```
 
 Second, import the component to your application with the following tag in your head.
 
 ```
-<link rel="import" href="/bower_components/px-polymer-font-awesome/px-polymer-font-awesome.html"/>
+<link rel="import" href="/bower_components/px-icon-set/px-icon-set.html"/>
 ```
 
 Finally, use the component in your application:
 
 ```
-<iron-icon icon="fa:fa-angle-down"></iron-icon>
+<iron-icon icon="px:px-analysis"></iron-icon>
 ```
 
 <br />
@@ -41,7 +41,7 @@ Finally, use the component in your application:
 
 ## documentation
 
-Read the full API and view the demo [here](https://predixdev.github.io/px-polymer-font-awesome).
+Read the full API and view the demo [here](https://predixdev.github.io/px-icon-set).
 
 ## Local Development
 
@@ -69,4 +69,4 @@ Navigate to the root of that server (e.g. http://localhost:8080/) in a browser t
 
 ## Known Issues
 
-Please use [Github Issues](https://github.com/PredixDev/px-polymer-font-awesome/issues) to submit any bugs you might find.
+Please use [Github Issues](https://github.com/PredixDev/px-icon-set/issues) to submit any bugs you might find.
