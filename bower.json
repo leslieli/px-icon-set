@@ -4,6 +4,7 @@
   "description": "Polymer component to allow easy use of Predix icons",
   "main": "px-icon-set.html",
   "ignore": [
+    "*.enc",
     "**/.*",
     "node_modules",
     "bower_components",
