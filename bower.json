@@ -2,7 +2,7 @@
   "name": "px-icon-set",
   "version": "2.0.0",
   "description": "Polymer component to allow easy use of Predix icons",
-  "main": "px-icon.html",
+  "main": "px-icon-set.html",
   "ignore": [
     "**/.*",
     "node_modules",
