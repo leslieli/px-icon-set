@@ -9,183 +9,170 @@
   <link rel="import" href="../polymer/polymer.html"/>
   <link rel="import" href="../iron-icons/iron-icons.html"/>
   <link rel="import" href="../iron-flex-layout/iron-flex-layout.html"/>
-  <!-- <link rel="import" href="../bower_components/iron-icon/iron-icon.html"/> -->
+  <link rel="import" href="../iron-icon/iron-icon.html"/>
   <link rel="import" href="px-icon-set.html"/>
   <link rel="import" href="px-icon-set-new.html"/>
 </head>
 <body>
   <style is="custom-style">
     .icon {
-      /*color: red;*/
-      /*fill: green;
-      stroke: blue;*/
-      /*width: 100px;
-      height: 100px;*/
-      --iron-icon-width: 200px;
-      --iron-icon-height: 200px;
-      /*fill: red;
-      stroke: green;*/
+      --iron-icon-width: 150px;
+      --iron-icon-height: 150px;
+    }
+    .icon-themed {
       --iron-icon-stroke-color: lime;
       --iron-icon-fill-color: salmon;
-      /*fill: var(--iron-icon-fill-color, transparent);
-      stroke: var(--iron-icon-stroke-color, currentColor);*/
-      /*fill: red;
-      stroke: blue;*/
     }
   </style>
-  <div class="row">
-    <iron-icon class="icon" icon="icons:add-circle"></iron-icon>
-    <iron-icon class="icon" icon="pxn:asset"></iron-icon>
-    <px-icon class="icon" icon="pxn:asset"></px-icon>
-  </div>
-  <div class="row"><p class="name">administration</p><iron-icon class="icon" icon="px:administration"></iron-icon><px-icon class="icon" icon="pxn:administration"></px-icon></div>
-  <div class="row"><p class="name">aircraft</p><iron-icon class="icon" icon="px:aircraft"></iron-icon><px-icon class="icon" icon="pxn:aircraft"></px-icon></div>
-  <div class="row"><p class="name">aircraft-engine</p><iron-icon class="icon" icon="px:aircraft-engine"></iron-icon><px-icon class="icon" icon="pxn:aircraft-engine"></px-icon></div>
-  <div class="row"><p class="name">airport</p><iron-icon class="icon" icon="px:airport"></iron-icon><px-icon class="icon" icon="pxn:airport"></px-icon></div>
-  <div class="row"><p class="name">alerts</p><iron-icon class="icon" icon="px:alerts"></iron-icon><px-icon class="icon" icon="pxn:alerts"></px-icon></div>
-  <div class="row"><p class="name">analysis</p><iron-icon class="icon" icon="px:analysis"></iron-icon><px-icon class="icon" icon="pxn:analysis"></px-icon></div>
-  <div class="row"><p class="name">analytics</p><iron-icon class="icon" icon="px:analytics"></iron-icon><px-icon class="icon" icon="pxn:analytics"></px-icon></div>
-  <div class="row"><p class="name">attribute</p><iron-icon class="icon" icon="px:attribute"></iron-icon><px-icon class="icon" icon="pxn:attribute"></px-icon></div>
-  <div class="row"><p class="name">asset</p><iron-icon class="icon" icon="px:asset"></iron-icon><px-icon class="icon" icon="pxn:asset"></px-icon></div>
-  <div class="row"><p class="name">automobile</p><iron-icon class="icon" icon="px:automobile"></iron-icon><px-icon class="icon" icon="pxn:automobile"></px-icon></div>
-  <div class="row"><p class="name">block</p><iron-icon class="icon" icon="px:block"></iron-icon><px-icon class="icon" icon="pxn:block"></px-icon></div>
-  <div class="row"><p class="name">boiler</p><iron-icon class="icon" icon="px:boiler"></iron-icon><px-icon class="icon" icon="pxn:boiler"></px-icon></div>
-  <div class="row"><p class="name">bug</p><iron-icon class="icon" icon="px:bug"></iron-icon><px-icon class="icon" icon="pxn:bug"></px-icon></div>
-  <div class="row"><p class="name">calendar</p><iron-icon class="icon" icon="px:calendar"></iron-icon><px-icon class="icon" icon="pxn:calendar"></px-icon></div>
-  <div class="row"><p class="name">cases</p><iron-icon class="icon" icon="px:cases"></iron-icon><px-icon class="icon" icon="pxn:cases"></px-icon></div>
-  <div class="row"><p class="name">catalog</p><iron-icon class="icon" icon="px:catalog"></iron-icon><px-icon class="icon" icon="pxn:catalog"></px-icon></div>
-  <div class="row"><p class="name">chat</p><iron-icon class="icon" icon="px:chat"></iron-icon><px-icon class="icon" icon="pxn:chat"></px-icon></div>
-  <div class="row"><p class="name">class</p><iron-icon class="icon" icon="px:class"></iron-icon><px-icon class="icon" icon="pxn:class"></px-icon></div>
-  <div class="row"><p class="name">condensor</p><iron-icon class="icon" icon="px:condensor"></iron-icon><px-icon class="icon" icon="pxn:condensor"></px-icon></div>
-  <div class="row"><p class="name">cooling-tower</p><iron-icon class="icon" icon="px:cooling-tower"></iron-icon><px-icon class="icon" icon="pxn:cooling-tower"></px-icon></div>
-  <div class="row"><p class="name">crane</p><iron-icon class="icon" icon="px:crane"></iron-icon><px-icon class="icon" icon="pxn:crane"></px-icon></div>
-  <div class="row"><p class="name">comment</p><iron-icon class="icon" icon="px:comment"></iron-icon><px-icon class="icon" icon="pxn:comment"></px-icon></div>
-  <div class="row"><p class="name">dashboard</p><iron-icon class="icon" icon="px:dashboard"></px-icon><px-icon class="icon" icon="pxn:dashboard"></px-icon></div>
-  <div class="row"><p class="name">data-source</p><px-icon class="icon" icon="px:data-source"></px-icon><px-icon class="icon" icon="pxn:data-source"></px-icon></div>
-  <div class="row"><p class="name">deployment</p><px-icon class="icon" icon="px:deployment"></px-icon><px-icon class="icon" icon="pxn:deployment"></px-icon></div>
-  <div class="row"><p class="name">dev-ops</p><px-icon class="icon" icon="px:dev-ops"></px-icon><px-icon class="icon" icon="pxn:dev-ops"></px-icon></div>
-  <div class="row"><p class="name">digital-twin</p><px-icon class="icon" icon="px:digital-twin"></px-icon><px-icon class="icon" icon="pxn:digital-twin"></px-icon></div>
-  <div class="row"><p class="name">edge-device</p><px-icon class="icon" icon="px:edge-device"></px-icon><px-icon class="icon" icon="pxn:edge-device"></px-icon></div>
-  <div class="row"><p class="name">efficiency</p><px-icon class="icon" icon="px:efficiency"></px-icon><px-icon class="icon" icon="pxn:efficiency"></px-icon></div>
-  <div class="row"><p class="name">email</p><px-icon class="icon" icon="px:email"></px-icon><px-icon class="icon" icon="pxn:email"></px-icon></div>
-  <div class="row"><p class="name">fleet</p><px-icon class="icon" icon="px:fleet"></px-icon><px-icon class="icon" icon="pxn:fleet"></px-icon></div>
-  <div class="row"><p class="name">gas-line</p><px-icon class="icon" icon="px:gas-line"></px-icon><px-icon class="icon" icon="pxn:gas-line"></px-icon></div>
-  <div class="row"><p class="name">gas-turbine</p><px-icon class="icon" icon="px:gas-turbine"></px-icon><px-icon class="icon" icon="pxn:gas-turbine"></px-icon></div>
-  <div class="row"><p class="name">heat-rate</p><px-icon class="icon" icon="px:heat-rate"></px-icon><px-icon class="icon" icon="pxn:heat-rate"></px-icon></div>
-  <div class="row"><p class="name">hierarchy</p><px-icon class="icon" icon="px:hierarchy"></px-icon><px-icon class="icon" icon="pxn:hierarchy"></px-icon></div>
-  <div class="row"><p class="name">hrsg</p><px-icon class="icon" icon="px:hrsg"></px-icon><px-icon class="icon" icon="pxn:hrsg"></px-icon></div>
-  <div class="row"><p class="name">ingestion</p><px-icon class="icon" icon="px:ingestion"></px-icon><px-icon class="icon" icon="pxn:ingestion"></px-icon></div>
-  <div class="row"><p class="name">kpi</p><px-icon class="icon" icon="px:kpi"></px-icon><px-icon class="icon" icon="pxn:kpi"></px-icon></div>
-  <div class="row"><p class="name">lightbulb</p><px-icon class="icon" icon="px:lightbulb"></px-icon><px-icon class="icon" icon="pxn:lightbulb"></px-icon></div>
-  <div class="row"><p class="name">line</p><px-icon class="icon" icon="px:line"></px-icon><px-icon class="icon" icon="pxn:line"></px-icon></div>
-  <div class="row"><p class="name">locomotive</p><px-icon class="icon" icon="px:locomotive"></px-icon><px-icon class="icon" icon="pxn:locomotive"></px-icon></div>
-  <div class="row"><p class="name">log</p><px-icon class="icon" icon="px:log"></px-icon><px-icon class="icon" icon="pxn:log"></px-icon></div>
-  <div class="row"><p class="name">machine</p><px-icon class="icon" icon="px:machine"></px-icon><px-icon class="icon" icon="pxn:machine"></px-icon></div>
-  <div class="row"><p class="name">manufacturing</p><px-icon class="icon" icon="px:manufacturing"></px-icon><px-icon class="icon" icon="pxn:manufacturing"></px-icon></div>
-  <div class="row"><p class="name">message</p><px-icon class="icon" icon="px:message"></px-icon><px-icon class="icon" icon="pxn:message"></px-icon></div>
-  <div class="row"><p class="name">microservice</p><px-icon class="icon" icon="px:microservice"></px-icon><px-icon class="icon" icon="pxn:microservice"></px-icon></div>
-  <div class="row"><p class="name">orchestration</p><px-icon class="icon" icon="px:orchestration"></px-icon><px-icon class="icon" icon="pxn:orchestration"></px-icon></div>
-  <div class="row"><p class="name">order</p><px-icon class="icon" icon="px:order"></px-icon><px-icon class="icon" icon="pxn:order"></px-icon></div>
-  <div class="row"><p class="name">output</p><px-icon class="icon" icon="px:output"></px-icon><px-icon class="icon" icon="pxn:output"></px-icon></div>
-  <div class="row"><p class="name">phone</p><px-icon class="icon" icon="px:phone"></px-icon><px-icon class="icon" icon="pxn:phone"></px-icon></div>
-  <div class="row"><p class="name">pipeline</p><px-icon class="icon" icon="px:pipeline"></px-icon><px-icon class="icon" icon="pxn:pipeline"></px-icon></div>
-  <div class="row"><p class="name">plant</p><px-icon class="icon" icon="px:plant"></px-icon><px-icon class="icon" icon="pxn:plant"></px-icon></div>
-  <div class="row"><p class="name">product</p><px-icon class="icon" icon="px:product"></px-icon><px-icon class="icon" icon="pxn:product"></px-icon></div>
-  <div class="row"><p class="name">software</p><px-icon class="icon" icon="px:software"></px-icon><px-icon class="icon" icon="pxn:software"></px-icon></div>
-  <div class="row"><p class="name">rail-yard</p><px-icon class="icon" icon="px:rail-yard"></px-icon><px-icon class="icon" icon="pxn:rail-yard"></px-icon></div>
-  <div class="row"><p class="name">route</p><px-icon class="icon" icon="px:route"></px-icon><px-icon class="icon" icon="pxn:route"></px-icon></div>
-  <div class="row"><p class="name">server</p><px-icon class="icon" icon="px:server"></px-icon><px-icon class="icon" icon="pxn:server"></px-icon></div>
-  <div class="row"><p class="name">settings</p><px-icon class="icon" icon="px:settings"></px-icon><px-icon class="icon" icon="pxn:settings"></px-icon></div>
-  <div class="row"><p class="name">sms</p><px-icon class="icon" icon="px:sms"></px-icon><px-icon class="icon" icon="pxn:sms"></px-icon></div>
-  <div class="row"><p class="name">solar-panel</p><px-icon class="icon" icon="px:solar-panel"></px-icon><px-icon class="icon" icon="pxn:solar-panel"></px-icon></div>
-  <div class="row"><p class="name">spaces</p><px-icon class="icon" icon="px:spaces"></px-icon><px-icon class="icon" icon="pxn:spaces"></px-icon></div>
-  <div class="row"><p class="name">steam-turbine</p><px-icon class="icon" icon="px:steam-turbine"></px-icon><px-icon class="icon" icon="pxn:steam-turbine"></px-icon></div>
-  <div class="row"><p class="name">tag</p><px-icon class="icon" icon="px:tag"></px-icon><px-icon class="icon" icon="pxn:tag"></px-icon></div>
-  <div class="row"><p class="name">tag-group</p><px-icon class="icon" icon="px:tag-group"></px-icon><px-icon class="icon" icon="pxn:tag-group"></px-icon></div>
-  <div class="row"><p class="name">templates</p><px-icon class="icon" icon="px:templates"></px-icon><px-icon class="icon" icon="pxn:templates"></px-icon></div>
-  <div class="row"><p class="name">train</p><px-icon class="icon" icon="px:train"></px-icon><px-icon class="icon" icon="pxn:train"></px-icon></div>
-  <div class="row"><p class="name">truck</p><px-icon class="icon" icon="px:truck"></px-icon><px-icon class="icon" icon="pxn:truck"></px-icon></div>
-  <div class="row"><p class="name">user</p><px-icon class="icon" icon="px:user"></px-icon><px-icon class="icon" icon="pxn:user"></px-icon></div>
-  <div class="row"><p class="name">users</p><px-icon class="icon" icon="px:users"></px-icon><px-icon class="icon" icon="pxn:users"></px-icon></div>
-  <div class="row"><p class="name">version</p><px-icon class="icon" icon="px:version"></px-icon><px-icon class="icon" icon="pxn:version"></px-icon></div>
-  <div class="row"><p class="name">wind-turbine</p><px-icon class="icon" icon="px:wind-turbine"></px-icon><px-icon class="icon" icon="pxn:wind-turbine"></px-icon></div>
-  <div class="row"><p class="name">add</p><px-icon class="icon" icon="px:add"></px-icon><px-icon class="icon" icon="pxn:add"></px-icon></div>
-  <div class="row"><p class="name">arrow-down</p><px-icon class="icon" icon="px:arrow-down"></px-icon><px-icon class="icon" icon="pxn:arrow-down"></px-icon></div>
-  <div class="row"><p class="name">arrow-left</p><px-icon class="icon" icon="px:arrow-left"></px-icon><px-icon class="icon" icon="pxn:arrow-left"></px-icon></div>
-  <div class="row"><p class="name">arrow-right</p><px-icon class="icon" icon="px:arrow-right"></px-icon><px-icon class="icon" icon="pxn:arrow-right"></px-icon></div>
-  <div class="row"><p class="name">arrow-up</p><px-icon class="icon" icon="px:arrow-up"></px-icon><px-icon class="icon" icon="pxn:arrow-up"></px-icon></div>
-  <div class="row"><p class="name">alert</p><px-icon class="icon" icon="px:alert"></px-icon><px-icon class="icon" icon="pxn:alert"></px-icon></div>
-  <div class="row"><p class="name">calculator</p><px-icon class="icon" icon="px:calculator"></px-icon><px-icon class="icon" icon="pxn:calculator"></px-icon></div>
-  <div class="row"><p class="name">camera</p><px-icon class="icon" icon="px:camera"></px-icon><px-icon class="icon" icon="pxn:camera"></px-icon></div>
-  <div class="row"><p class="name">chart</p><px-icon class="icon" icon="px:chart"></px-icon><px-icon class="icon" icon="pxn:chart"></px-icon></div>
-  <div class="row"><p class="name">chevron-down</p><px-icon class="icon" icon="px:chevron-down"></px-icon><px-icon class="icon" icon="pxn:chevron-down"></px-icon></div>
-  <div class="row"><p class="name">chevron-left</p><px-icon class="icon" icon="px:chevron-left"></px-icon><px-icon class="icon" icon="pxn:chevron-left"></px-icon></div>
-  <div class="row"><p class="name">chevron-right</p><px-icon class="icon" icon="px:chevron-right"></px-icon><px-icon class="icon" icon="pxn:chevron-right"></px-icon></div>
-  <div class="row"><p class="name">chevron-up</p><px-icon class="icon" icon="px:chevron-up"></px-icon><px-icon class="icon" icon="pxn:chevron-up"></px-icon></div>
-  <div class="row"><p class="name">clock</p><px-icon class="icon" icon="px:clock"></px-icon><px-icon class="icon" icon="pxn:clock"></px-icon></div>
-  <div class="row"><p class="name">close</p><px-icon class="icon" icon="px:close"></px-icon><px-icon class="icon" icon="pxn:close"></px-icon></div>
-  <div class="row"><p class="name">collapse</p><px-icon class="icon" icon="px:collapse"></px-icon><px-icon class="icon" icon="pxn:collapse"></px-icon></div>
-  <div class="row"><p class="name">collapse-left</p><px-icon class="icon" icon="px:collapse-left"></px-icon><px-icon class="icon" icon="pxn:collapse-left"></px-icon></div>
-  <div class="row"><p class="name">confirm</p><px-icon class="icon" icon="px:confirm"></px-icon><px-icon class="icon" icon="pxn:confirm"></px-icon></div>
-  <div class="row"><p class="name">copy</p><px-icon class="icon" icon="px:copy"></px-icon><px-icon class="icon" icon="pxn:copy"></px-icon></div>
-  <div class="row"><p class="name">crosshairs</p><px-icon class="icon" icon="px:crosshairs"></px-icon><px-icon class="icon" icon="pxn:crosshairs"></px-icon></div>
-  <div class="row"><p class="name">csv</p><px-icon class="icon" icon="px:csv"></px-icon><px-icon class="icon" icon="pxn:csv"></px-icon></div>
-  <div class="row"><p class="name">delete</p><px-icon class="icon" icon="px:delete"></px-icon><px-icon class="icon" icon="pxn:delete"></px-icon></div>
-  <div class="row"><p class="name">desktop</p><px-icon class="icon" icon="px:desktop"></px-icon><px-icon class="icon" icon="pxn:desktop"></px-icon></div>
-  <div class="row"><p class="name">document</p><px-icon class="icon" icon="px:document"></px-icon><px-icon class="icon" icon="pxn:document"></px-icon></div>
-  <div class="row"><p class="name">download</p><px-icon class="icon" icon="px:download"></px-icon><px-icon class="icon" icon="pxn:download"></px-icon></div>
-  <div class="row"><p class="name">edit</p><px-icon class="icon" icon="px:edit"></px-icon><px-icon class="icon" icon="pxn:edit"></px-icon></div>
-  <div class="row"><p class="name">excel</p><px-icon class="icon" icon="px:excel"></px-icon><px-icon class="icon" icon="pxn:excel"></px-icon></div>
-  <div class="row"><p class="name">expand</p><px-icon class="icon" icon="px:expand"></px-icon><px-icon class="icon" icon="pxn:expand"></px-icon></div>
-  <div class="row"><p class="name">expand-right</p><px-icon class="icon" icon="px:expand-right"></px-icon><px-icon class="icon" icon="pxn:expand-right"></px-icon></div>
-  <div class="row"><p class="name">failure</p><px-icon class="icon" icon="px:failure"></px-icon><px-icon class="icon" icon="pxn:failure"></px-icon></div>
-  <div class="row"><p class="name">favorite</p><px-icon class="icon" icon="px:favorite"></px-icon><px-icon class="icon" icon="pxn:favorite"></px-icon></div>
-  <div class="row"><p class="name">filter</p><px-icon class="icon" icon="px:filter"></px-icon><px-icon class="icon" icon="pxn:filter"></px-icon></div>
-  <div class="row"><p class="name">flag</p><px-icon class="icon" icon="px:flag"></px-icon><px-icon class="icon" icon="pxn:flag"></px-icon></div>
-  <div class="row"><p class="name">folder-closed</p><px-icon class="icon" icon="px:folder-closed"></px-icon><px-icon class="icon" icon="pxn:folder-closed"></px-icon></div>
-  <div class="row"><p class="name">folder-open</p><px-icon class="icon" icon="px:folder-open"></px-icon><px-icon class="icon" icon="pxn:folder-open"></px-icon></div>
-  <div class="row"><p class="name">formula</p><px-icon class="icon" icon="px:formula"></px-icon><px-icon class="icon" icon="pxn:formula"></px-icon></div>
-  <div class="row"><p class="name">grid</p><px-icon class="icon" icon="px:grid"></px-icon><px-icon class="icon" icon="pxn:grid"></px-icon></div>
-  <div class="row"><p class="name">hamburger</p><px-icon class="icon" icon="px:hamburger"></px-icon><px-icon class="icon" icon="pxn:hamburger"></px-icon></div>
-  <div class="row"><p class="name">help</p><px-icon class="icon" icon="px:help"></px-icon><px-icon class="icon" icon="pxn:help"></px-icon></div>
-  <div class="row"><p class="name">home</p><px-icon class="icon" icon="px:home"></px-icon><px-icon class="icon" icon="pxn:home"></px-icon></div>
-  <div class="row"><p class="name">image</p><px-icon class="icon" icon="px:image"></px-icon><px-icon class="icon" icon="pxn:image"></px-icon></div>
-  <div class="row"><p class="name">inbox</p><px-icon class="icon" icon="px:inbox"></px-icon><px-icon class="icon" icon="pxn:inbox"></px-icon></div>
-  <div class="row"><p class="name">information</p><px-icon class="icon" icon="px:information"></px-icon><px-icon class="icon" icon="pxn:information"></px-icon></div>
-  <div class="row"><p class="name">instance</p><px-icon class="icon" icon="px:instance"></px-icon><px-icon class="icon" icon="pxn:instance"></px-icon></div>
-  <div class="row"><p class="name">launch</p><px-icon class="icon" icon="px:launch"></px-icon><px-icon class="icon" icon="pxn:launch"></px-icon></div>
-  <div class="row"><p class="name">link</p><px-icon class="icon" icon="px:link"></px-icon><px-icon class="icon" icon="pxn:link"></px-icon></div>
-  <div class="row"><p class="name">list</p><px-icon class="icon" icon="px:list"></px-icon><px-icon class="icon" icon="pxn:list"></px-icon></div>
-  <div class="row"><p class="name">location</p><px-icon class="icon" icon="px:location"></px-icon><px-icon class="icon" icon="pxn:location"></px-icon></div>
-  <div class="row"><p class="name">lock</p><px-icon class="icon" icon="px:lock"></px-icon><px-icon class="icon" icon="pxn:lock"></px-icon></div>
-  <div class="row"><p class="name">map</p><px-icon class="icon" icon="px:map"></px-icon><px-icon class="icon" icon="pxn:map"></px-icon></div>
-  <div class="row"><p class="name">menu</p><px-icon class="icon" icon="px:menu"></px-icon><px-icon class="icon" icon="pxn:menu"></px-icon></div>
-  <div class="row"><p class="name">mobile</p><px-icon class="icon" icon="px:mobile"></px-icon><px-icon class="icon" icon="pxn:mobile"></px-icon></div>
-  <div class="row"><p class="name">more</p><px-icon class="icon" icon="px:more"></px-icon><px-icon class="icon" icon="pxn:more"></px-icon></div>
-  <div class="row"><p class="name">note</p><px-icon class="icon" icon="px:note"></px-icon><px-icon class="icon" icon="pxn:note"></px-icon></div>
-  <div class="row"><p class="name">notification</p><px-icon class="icon" icon="px:notification"></px-icon><px-icon class="icon" icon="pxn:notification"></px-icon></div>
-  <div class="row"><p class="name">open</p><px-icon class="icon" icon="px:open"></px-icon><px-icon class="icon" icon="pxn:open"></px-icon></div>
-  <div class="row"><p class="name">pause</p><px-icon class="icon" icon="px:pause"></px-icon><px-icon class="icon" icon="pxn:pause"></px-icon></div>
-  <div class="row"><p class="name">pdf</p><px-icon class="icon" icon="px:pdf"></px-icon><px-icon class="icon" icon="pxn:pdf"></px-icon></div>
-  <div class="row"><p class="name">play</p><px-icon class="icon" icon="px:play"></px-icon><px-icon class="icon" icon="pxn:play"></px-icon></div>
-  <div class="row"><p class="name">power</p><px-icon class="icon" icon="px:power"></px-icon><px-icon class="icon" icon="pxn:power"></px-icon></div>
-  <div class="row"><p class="name">refresh</p><px-icon class="icon" icon="px:refresh"></px-icon><px-icon class="icon" icon="pxn:refresh"></px-icon></div>
-  <div class="row"><p class="name">reply</p><px-icon class="icon" icon="px:reply"></px-icon><px-icon class="icon" icon="pxn:reply"></px-icon></div>
-  <div class="row"><p class="name">resize</p><px-icon class="icon" icon="px:resize"></px-icon><px-icon class="icon" icon="pxn:resize"></px-icon></div>
-  <div class="row"><p class="name">save</p><px-icon class="icon" icon="px:save"></px-icon><px-icon class="icon" icon="pxn:save"></px-icon></div>
-  <div class="row"><p class="name">search</p><px-icon class="icon" icon="px:search"></px-icon><px-icon class="icon" icon="pxn:search"></px-icon></div>
-  <div class="row"><p class="name">settings-alt</p><px-icon class="icon" icon="px:settings-alt"></px-icon><px-icon class="icon" icon="pxn:settings-alt"></px-icon></div>
-  <div class="row"><p class="name">share</p><px-icon class="icon" icon="px:share"></px-icon><px-icon class="icon" icon="pxn:share"></px-icon></div>
-  <div class="row"><p class="name">stop</p><px-icon class="icon" icon="px:stop"></px-icon><px-icon class="icon" icon="pxn:stop"></px-icon></div>
-  <div class="row"><p class="name">tablet</p><px-icon class="icon" icon="px:tablet"></px-icon><px-icon class="icon" icon="pxn:tablet"></px-icon></div>
-  <div class="row"><p class="name">tile</p><px-icon class="icon" icon="px:tile"></px-icon><px-icon class="icon" icon="pxn:tile"></px-icon></div>
-  <div class="row"><p class="name">tree</p><px-icon class="icon" icon="px:tree"></px-icon><px-icon class="icon" icon="pxn:tree"></px-icon></div>
-  <div class="row"><p class="name">unlink</p><px-icon class="icon" icon="px:unlink"></px-icon><px-icon class="icon" icon="pxn:unlink"></px-icon></div>
-  <div class="row"><p class="name">unlock</p><px-icon class="icon" icon="px:unlock"></px-icon><px-icon class="icon" icon="pxn:unlock"></px-icon></div>
-  <div class="row"><p class="name">upload</p><px-icon class="icon" icon="px:upload"></px-icon><px-icon class="icon" icon="pxn:upload"></px-icon></div>
-  <div class="row"><p class="name">view</p><px-icon class="icon" icon="px:view"></px-icon><px-icon class="icon" icon="pxn:view"></px-icon></div>
-  <div class="row"><p class="name">website</p><px-icon class="icon" icon="px:website"></px-icon><px-icon class="icon" icon="pxn:website"></px-icon></div>
-  <div class="row"><p class="name">word</p><px-icon class="icon" icon="px:word"></px-icon><px-icon class="icon" icon="pxn:word"></px-icon></div>
+  <div class="row"><p>administration</p><px-icon class="icon" icon="px:administration"></px-icon><px-icon class="icon" icon="pxn:administration"></px-icon><px-icon class="icon icon-themed" icon="pxn:administration"></px-icon></div>
+  <div class="row"><p>aircraft</p><px-icon class="icon" icon="px:aircraft"></px-icon><px-icon class="icon" icon="pxn:aircraft"></px-icon><px-icon class="icon icon-themed" icon="pxn:aircraft"></px-icon></div>
+  <div class="row"><p>aircraft-engine</p><px-icon class="icon" icon="px:aircraft-engine"></px-icon><px-icon class="icon" icon="pxn:aircraft-engine"></px-icon><px-icon class="icon icon-themed" icon="pxn:aircraft-engine"></px-icon></div>
+  <div class="row"><p>airport</p><px-icon class="icon" icon="px:airport"></px-icon><px-icon class="icon" icon="pxn:airport"></px-icon><px-icon class="icon icon-themed" icon="pxn:airport"></px-icon></div>
+  <div class="row"><p>analysis</p><px-icon class="icon" icon="px:analysis"></px-icon><px-icon class="icon" icon="pxn:analysis"></px-icon><px-icon class="icon icon-themed" icon="pxn:analysis"></px-icon></div>
+  <div class="row"><p>analytics</p><px-icon class="icon" icon="px:analytics"></px-icon><px-icon class="icon" icon="pxn:analytics"></px-icon><px-icon class="icon icon-themed" icon="pxn:analytics"></px-icon></div>
+  <div class="row"><p>attribute</p><px-icon class="icon" icon="px:attribute"></px-icon><px-icon class="icon" icon="pxn:attribute"></px-icon><px-icon class="icon icon-themed" icon="pxn:attribute"></px-icon></div>
+  <div class="row"><p>asset</p><px-icon class="icon" icon="px:asset"></px-icon><px-icon class="icon" icon="pxn:asset"></px-icon><px-icon class="icon icon-themed" icon="pxn:asset"></px-icon></div>
+  <div class="row"><p>block</p><px-icon class="icon" icon="px:block"></px-icon><px-icon class="icon" icon="pxn:block"></px-icon><px-icon class="icon icon-themed" icon="pxn:block"></px-icon></div>
+  <div class="row"><p>boiler</p><px-icon class="icon" icon="px:boiler"></px-icon><px-icon class="icon" icon="pxn:boiler"></px-icon><px-icon class="icon icon-themed" icon="pxn:boiler"></px-icon></div>
+  <div class="row"><p>briefcase</p><px-icon class="icon" icon="px:briefcase"></px-icon><px-icon class="icon" icon="pxn:briefcase"></px-icon><px-icon class="icon icon-themed" icon="pxn:briefcase"></px-icon></div>
+  <div class="row"><p>bug</p><px-icon class="icon" icon="px:bug"></px-icon><px-icon class="icon" icon="pxn:bug"></px-icon><px-icon class="icon icon-themed" icon="pxn:bug"></px-icon></div>
+  <div class="row"><p>calendar</p><px-icon class="icon" icon="px:calendar"></px-icon><px-icon class="icon" icon="pxn:calendar"></px-icon><px-icon class="icon icon-themed" icon="pxn:calendar"></px-icon></div>
+  <div class="row"><p>car</p><px-icon class="icon" icon="px:car"></px-icon><px-icon class="icon" icon="pxn:car"></px-icon><px-icon class="icon icon-themed" icon="pxn:car"></px-icon></div>
+  <div class="row"><p>catalog</p><px-icon class="icon" icon="px:catalog"></px-icon><px-icon class="icon" icon="pxn:catalog"></px-icon><px-icon class="icon icon-themed" icon="pxn:catalog"></px-icon></div>
+  <div class="row"><p>class</p><px-icon class="icon" icon="px:class"></px-icon><px-icon class="icon" icon="pxn:class"></px-icon><px-icon class="icon icon-themed" icon="pxn:class"></px-icon></div>
+  <div class="row"><p>cog</p><px-icon class="icon" icon="px:cog"></px-icon><px-icon class="icon" icon="pxn:cog"></px-icon><px-icon class="icon icon-themed" icon="pxn:cog"></px-icon></div>
+  <div class="row"><p>condensor</p><px-icon class="icon" icon="px:condensor"></px-icon><px-icon class="icon" icon="pxn:condensor"></px-icon><px-icon class="icon icon-themed" icon="pxn:condensor"></px-icon></div>
+  <div class="row"><p>cooling-tower</p><px-icon class="icon" icon="px:cooling-tower"></px-icon><px-icon class="icon" icon="pxn:cooling-tower"></px-icon><px-icon class="icon icon-themed" icon="pxn:cooling-tower"></px-icon></div>
+  <div class="row"><p>crane</p><px-icon class="icon" icon="px:crane"></px-icon><px-icon class="icon" icon="pxn:crane"></px-icon><px-icon class="icon icon-themed" icon="pxn:crane"></px-icon></div>
+  <div class="row"><p>comment</p><px-icon class="icon" icon="px:comment"></px-icon><px-icon class="icon" icon="pxn:comment"></px-icon><px-icon class="icon icon-themed" icon="pxn:comment"></px-icon></div>
+  <div class="row"><p>comments</p><px-icon class="icon" icon="px:comments"></px-icon><px-icon class="icon" icon="pxn:comments"></px-icon><px-icon class="icon icon-themed" icon="pxn:comments"></px-icon></div>
+  <div class="row"><p>dashboard</p><px-icon class="icon" icon="px:dashboard"></px-icon><px-icon class="icon" icon="pxn:dashboard"></px-icon><px-icon class="icon icon-themed" icon="pxn:dashboard"></px-icon></div>
+  <div class="row"><p>data-source</p><px-icon class="icon" icon="px:data-source"></px-icon><px-icon class="icon" icon="pxn:data-source"></px-icon><px-icon class="icon icon-themed" icon="pxn:data-source"></px-icon></div>
+  <div class="row"><p>deployment</p><px-icon class="icon" icon="px:deployment"></px-icon><px-icon class="icon" icon="pxn:deployment"></px-icon><px-icon class="icon icon-themed" icon="pxn:deployment"></px-icon></div>
+  <div class="row"><p>dev-ops</p><px-icon class="icon" icon="px:dev-ops"></px-icon><px-icon class="icon" icon="pxn:dev-ops"></px-icon><px-icon class="icon icon-themed" icon="pxn:dev-ops"></px-icon></div>
+  <div class="row"><p>digital-twin</p><px-icon class="icon" icon="px:digital-twin"></px-icon><px-icon class="icon" icon="pxn:digital-twin"></px-icon><px-icon class="icon icon-themed" icon="pxn:digital-twin"></px-icon></div>
+  <div class="row"><p>edge-device</p><px-icon class="icon" icon="px:edge-device"></px-icon><px-icon class="icon" icon="pxn:edge-device"></px-icon><px-icon class="icon icon-themed" icon="pxn:edge-device"></px-icon></div>
+  <div class="row"><p>efficiency</p><px-icon class="icon" icon="px:efficiency"></px-icon><px-icon class="icon" icon="pxn:efficiency"></px-icon><px-icon class="icon icon-themed" icon="pxn:efficiency"></px-icon></div>
+  <div class="row"><p>email</p><px-icon class="icon" icon="px:email"></px-icon><px-icon class="icon" icon="pxn:email"></px-icon><px-icon class="icon icon-themed" icon="pxn:email"></px-icon></div>
+  <div class="row"><p>exclamation-triangle</p><px-icon class="icon" icon="px:exclamation-triangle"></px-icon><px-icon class="icon" icon="pxn:exclamation-triangle"></px-icon><px-icon class="icon icon-themed" icon="pxn:exclamation-triangle"></px-icon></div>
+  <div class="row"><p>fleet</p><px-icon class="icon" icon="px:fleet"></px-icon><px-icon class="icon" icon="pxn:fleet"></px-icon><px-icon class="icon icon-themed" icon="pxn:fleet"></px-icon></div>
+  <div class="row"><p>gas-line</p><px-icon class="icon" icon="px:gas-line"></px-icon><px-icon class="icon" icon="pxn:gas-line"></px-icon><px-icon class="icon icon-themed" icon="pxn:gas-line"></px-icon></div>
+  <div class="row"><p>gas-turbine</p><px-icon class="icon" icon="px:gas-turbine"></px-icon><px-icon class="icon" icon="pxn:gas-turbine"></px-icon><px-icon class="icon icon-themed" icon="pxn:gas-turbine"></px-icon></div>
+  <div class="row"><p>heat-rate</p><px-icon class="icon" icon="px:heat-rate"></px-icon><px-icon class="icon" icon="pxn:heat-rate"></px-icon><px-icon class="icon icon-themed" icon="pxn:heat-rate"></px-icon></div>
+  <div class="row"><p>hierarchy</p><px-icon class="icon" icon="px:hierarchy"></px-icon><px-icon class="icon" icon="pxn:hierarchy"></px-icon><px-icon class="icon icon-themed" icon="pxn:hierarchy"></px-icon></div>
+  <div class="row"><p>hrsg</p><px-icon class="icon" icon="px:hrsg"></px-icon><px-icon class="icon" icon="pxn:hrsg"></px-icon><px-icon class="icon icon-themed" icon="pxn:hrsg"></px-icon></div>
+  <div class="row"><p>ingestion</p><px-icon class="icon" icon="px:ingestion"></px-icon><px-icon class="icon" icon="pxn:ingestion"></px-icon><px-icon class="icon icon-themed" icon="pxn:ingestion"></px-icon></div>
+  <div class="row"><p>kpi</p><px-icon class="icon" icon="px:kpi"></px-icon><px-icon class="icon" icon="pxn:kpi"></px-icon><px-icon class="icon icon-themed" icon="pxn:kpi"></px-icon></div>
+  <div class="row"><p>lightbulb</p><px-icon class="icon" icon="px:lightbulb"></px-icon><px-icon class="icon" icon="pxn:lightbulb"></px-icon><px-icon class="icon icon-themed" icon="pxn:lightbulb"></px-icon></div>
+  <div class="row"><p>line</p><px-icon class="icon" icon="px:line"></px-icon><px-icon class="icon" icon="pxn:line"></px-icon><px-icon class="icon icon-themed" icon="pxn:line"></px-icon></div>
+  <div class="row"><p>locomotive</p><px-icon class="icon" icon="px:locomotive"></px-icon><px-icon class="icon" icon="pxn:locomotive"></px-icon><px-icon class="icon icon-themed" icon="pxn:locomotive"></px-icon></div>
+  <div class="row"><p>log</p><px-icon class="icon" icon="px:log"></px-icon><px-icon class="icon" icon="pxn:log"></px-icon><px-icon class="icon icon-themed" icon="pxn:log"></px-icon></div>
+  <div class="row"><p>machine</p><px-icon class="icon" icon="px:machine"></px-icon><px-icon class="icon" icon="pxn:machine"></px-icon><px-icon class="icon icon-themed" icon="pxn:machine"></px-icon></div>
+  <div class="row"><p>manufacturing</p><px-icon class="icon" icon="px:manufacturing"></px-icon><px-icon class="icon" icon="pxn:manufacturing"></px-icon><px-icon class="icon icon-themed" icon="pxn:manufacturing"></px-icon></div>
+  <div class="row"><p>message</p><px-icon class="icon" icon="px:message"></px-icon><px-icon class="icon" icon="pxn:message"></px-icon><px-icon class="icon icon-themed" icon="pxn:message"></px-icon></div>
+  <div class="row"><p>microservice</p><px-icon class="icon" icon="px:microservice"></px-icon><px-icon class="icon" icon="pxn:microservice"></px-icon><px-icon class="icon icon-themed" icon="pxn:microservice"></px-icon></div>
+  <div class="row"><p>orchestration</p><px-icon class="icon" icon="px:orchestration"></px-icon><px-icon class="icon" icon="pxn:orchestration"></px-icon><px-icon class="icon icon-themed" icon="pxn:orchestration"></px-icon></div>
+  <div class="row"><p>order</p><px-icon class="icon" icon="px:order"></px-icon><px-icon class="icon" icon="pxn:order"></px-icon><px-icon class="icon icon-themed" icon="pxn:order"></px-icon></div>
+  <div class="row"><p>output</p><px-icon class="icon" icon="px:output"></px-icon><px-icon class="icon" icon="pxn:output"></px-icon><px-icon class="icon icon-themed" icon="pxn:output"></px-icon></div>
+  <div class="row"><p>phone</p><px-icon class="icon" icon="px:phone"></px-icon><px-icon class="icon" icon="pxn:phone"></px-icon><px-icon class="icon icon-themed" icon="pxn:phone"></px-icon></div>
+  <div class="row"><p>pipeline</p><px-icon class="icon" icon="px:pipeline"></px-icon><px-icon class="icon" icon="pxn:pipeline"></px-icon><px-icon class="icon icon-themed" icon="pxn:pipeline"></px-icon></div>
+  <div class="row"><p>plant</p><px-icon class="icon" icon="px:plant"></px-icon><px-icon class="icon" icon="pxn:plant"></px-icon><px-icon class="icon icon-themed" icon="pxn:plant"></px-icon></div>
+  <div class="row"><p>product</p><px-icon class="icon" icon="px:product"></px-icon><px-icon class="icon" icon="pxn:product"></px-icon><px-icon class="icon icon-themed" icon="pxn:product"></px-icon></div>
+  <div class="row"><p>software</p><px-icon class="icon" icon="px:software"></px-icon><px-icon class="icon" icon="pxn:software"></px-icon><px-icon class="icon icon-themed" icon="pxn:software"></px-icon></div>
+  <div class="row"><p>rail-yard</p><px-icon class="icon" icon="px:rail-yard"></px-icon><px-icon class="icon" icon="pxn:rail-yard"></px-icon><px-icon class="icon icon-themed" icon="pxn:rail-yard"></px-icon></div>
+  <div class="row"><p>route</p><px-icon class="icon" icon="px:route"></px-icon><px-icon class="icon" icon="pxn:route"></px-icon><px-icon class="icon icon-themed" icon="pxn:route"></px-icon></div>
+  <div class="row"><p>server</p><px-icon class="icon" icon="px:server"></px-icon><px-icon class="icon" icon="pxn:server"></px-icon><px-icon class="icon icon-themed" icon="pxn:server"></px-icon></div>
+  <div class="row"><p>sms</p><px-icon class="icon" icon="px:sms"></px-icon><px-icon class="icon" icon="pxn:sms"></px-icon><px-icon class="icon icon-themed" icon="pxn:sms"></px-icon></div>
+  <div class="row"><p>solar-panel</p><px-icon class="icon" icon="px:solar-panel"></px-icon><px-icon class="icon" icon="pxn:solar-panel"></px-icon><px-icon class="icon icon-themed" icon="pxn:solar-panel"></px-icon></div>
+  <div class="row"><p>spaces</p><px-icon class="icon" icon="px:spaces"></px-icon><px-icon class="icon" icon="pxn:spaces"></px-icon><px-icon class="icon icon-themed" icon="pxn:spaces"></px-icon></div>
+  <div class="row"><p>steam-turbine</p><px-icon class="icon" icon="px:steam-turbine"></px-icon><px-icon class="icon" icon="pxn:steam-turbine"></px-icon><px-icon class="icon icon-themed" icon="pxn:steam-turbine"></px-icon></div>
+  <div class="row"><p>tag</p><px-icon class="icon" icon="px:tag"></px-icon><px-icon class="icon" icon="pxn:tag"></px-icon><px-icon class="icon icon-themed" icon="pxn:tag"></px-icon></div>
+  <div class="row"><p>tags</p><px-icon class="icon" icon="px:tags"></px-icon><px-icon class="icon" icon="pxn:tags"></px-icon><px-icon class="icon icon-themed" icon="pxn:tags"></px-icon></div>
+  <div class="row"><p>templates</p><px-icon class="icon" icon="px:templates"></px-icon><px-icon class="icon" icon="pxn:templates"></px-icon><px-icon class="icon icon-themed" icon="pxn:templates"></px-icon></div>
+  <div class="row"><p>train</p><px-icon class="icon" icon="px:train"></px-icon><px-icon class="icon" icon="pxn:train"></px-icon><px-icon class="icon icon-themed" icon="pxn:train"></px-icon></div>
+  <div class="row"><p>truck</p><px-icon class="icon" icon="px:truck"></px-icon><px-icon class="icon" icon="pxn:truck"></px-icon><px-icon class="icon icon-themed" icon="pxn:truck"></px-icon></div>
+  <div class="row"><p>user</p><px-icon class="icon" icon="px:user"></px-icon><px-icon class="icon" icon="pxn:user"></px-icon><px-icon class="icon icon-themed" icon="pxn:user"></px-icon></div>
+  <div class="row"><p>users</p><px-icon class="icon" icon="px:users"></px-icon><px-icon class="icon" icon="pxn:users"></px-icon><px-icon class="icon icon-themed" icon="pxn:users"></px-icon></div>
+  <div class="row"><p>version</p><px-icon class="icon" icon="px:version"></px-icon><px-icon class="icon" icon="pxn:version"></px-icon><px-icon class="icon icon-themed" icon="pxn:version"></px-icon></div>
+  <div class="row"><p>wind-turbine</p><px-icon class="icon" icon="px:wind-turbine"></px-icon><px-icon class="icon" icon="pxn:wind-turbine"></px-icon><px-icon class="icon icon-themed" icon="pxn:wind-turbine"></px-icon></div>
+  <div class="row"><p>add</p><px-icon class="icon" icon="px:add"></px-icon><px-icon class="icon" icon="pxn:add"></px-icon><px-icon class="icon icon-themed" icon="pxn:add"></px-icon></div>
+  <div class="row"><p>arrow-down</p><px-icon class="icon" icon="px:arrow-down"></px-icon><px-icon class="icon" icon="pxn:arrow-down"></px-icon><px-icon class="icon icon-themed" icon="pxn:arrow-down"></px-icon></div>
+  <div class="row"><p>arrow-left</p><px-icon class="icon" icon="px:arrow-left"></px-icon><px-icon class="icon" icon="pxn:arrow-left"></px-icon><px-icon class="icon icon-themed" icon="pxn:arrow-left"></px-icon></div>
+  <div class="row"><p>arrow-right</p><px-icon class="icon" icon="px:arrow-right"></px-icon><px-icon class="icon" icon="pxn:arrow-right"></px-icon><px-icon class="icon icon-themed" icon="pxn:arrow-right"></px-icon></div>
+  <div class="row"><p>arrow-up</p><px-icon class="icon" icon="px:arrow-up"></px-icon><px-icon class="icon" icon="pxn:arrow-up"></px-icon><px-icon class="icon icon-themed" icon="pxn:arrow-up"></px-icon></div>
+  <div class="row"><p>alert</p><px-icon class="icon" icon="px:alert"></px-icon><px-icon class="icon" icon="pxn:alert"></px-icon><px-icon class="icon icon-themed" icon="pxn:alert"></px-icon></div>
+  <div class="row"><p>bar-chart</p><px-icon class="icon" icon="px:bar-chart"></px-icon><px-icon class="icon" icon="pxn:bar-chart"></px-icon><px-icon class="icon icon-themed" icon="pxn:bar-chart"></px-icon></div>
+  <div class="row"><p>bars</p><px-icon class="icon" icon="px:bars"></px-icon><px-icon class="icon" icon="pxn:bars"></px-icon><px-icon class="icon icon-themed" icon="pxn:bars"></px-icon></div>
+  <div class="row"><p>calculator</p><px-icon class="icon" icon="px:calculator"></px-icon><px-icon class="icon" icon="pxn:calculator"></px-icon><px-icon class="icon icon-themed" icon="pxn:calculator"></px-icon></div>
+  <div class="row"><p>camera</p><px-icon class="icon" icon="px:camera"></px-icon><px-icon class="icon" icon="pxn:camera"></px-icon><px-icon class="icon icon-themed" icon="pxn:camera"></px-icon></div>
+  <div class="row"><p>chevron-down</p><px-icon class="icon" icon="px:chevron-down"></px-icon><px-icon class="icon" icon="pxn:chevron-down"></px-icon><px-icon class="icon icon-themed" icon="pxn:chevron-down"></px-icon></div>
+  <div class="row"><p>chevron-left</p><px-icon class="icon" icon="px:chevron-left"></px-icon><px-icon class="icon" icon="pxn:chevron-left"></px-icon><px-icon class="icon icon-themed" icon="pxn:chevron-left"></px-icon></div>
+  <div class="row"><p>chevron-right</p><px-icon class="icon" icon="px:chevron-right"></px-icon><px-icon class="icon" icon="pxn:chevron-right"></px-icon><px-icon class="icon icon-themed" icon="pxn:chevron-right"></px-icon></div>
+  <div class="row"><p>chevron-up</p><px-icon class="icon" icon="px:chevron-up"></px-icon><px-icon class="icon" icon="pxn:chevron-up"></px-icon><px-icon class="icon icon-themed" icon="pxn:chevron-up"></px-icon></div>
+  <div class="row"><p>clock</p><px-icon class="icon" icon="px:clock"></px-icon><px-icon class="icon" icon="pxn:clock"></px-icon><px-icon class="icon icon-themed" icon="pxn:clock"></px-icon></div>
+  <div class="row"><p>close</p><px-icon class="icon" icon="px:close"></px-icon><px-icon class="icon" icon="pxn:close"></px-icon><px-icon class="icon icon-themed" icon="pxn:close"></px-icon></div>
+  <div class="row"><p>collapse</p><px-icon class="icon" icon="px:collapse"></px-icon><px-icon class="icon" icon="pxn:collapse"></px-icon><px-icon class="icon icon-themed" icon="pxn:collapse"></px-icon></div>
+  <div class="row"><p>collapse-left</p><px-icon class="icon" icon="px:collapse-left"></px-icon><px-icon class="icon" icon="pxn:collapse-left"></px-icon><px-icon class="icon icon-themed" icon="pxn:collapse-left"></px-icon></div>
+  <div class="row"><p>check</p><px-icon class="icon" icon="px:check"></px-icon><px-icon class="icon" icon="pxn:check"></px-icon><px-icon class="icon icon-themed" icon="pxn:check"></px-icon></div>
+  <div class="row"><p>check-circle</p><px-icon class="icon" icon="px:check-circle"></px-icon><px-icon class="icon" icon="pxn:check-circle"></px-icon><px-icon class="icon icon-themed" icon="pxn:check-circle"></px-icon></div>
+  <div class="row"><p>copy</p><px-icon class="icon" icon="px:copy"></px-icon><px-icon class="icon" icon="pxn:copy"></px-icon><px-icon class="icon icon-themed" icon="pxn:copy"></px-icon></div>
+  <div class="row"><p>crosshairs</p><px-icon class="icon" icon="px:crosshairs"></px-icon><px-icon class="icon" icon="pxn:crosshairs"></px-icon><px-icon class="icon icon-themed" icon="pxn:crosshairs"></px-icon></div>
+  <div class="row"><p>csv</p><px-icon class="icon" icon="px:csv"></px-icon><px-icon class="icon" icon="pxn:csv"></px-icon><px-icon class="icon icon-themed" icon="pxn:csv"></px-icon></div>
+  <div class="row"><p>delete</p><px-icon class="icon" icon="px:delete"></px-icon><px-icon class="icon" icon="pxn:delete"></px-icon><px-icon class="icon icon-themed" icon="pxn:delete"></px-icon></div>
+  <div class="row"><p>desktop</p><px-icon class="icon" icon="px:desktop"></px-icon><px-icon class="icon" icon="pxn:desktop"></px-icon><px-icon class="icon icon-themed" icon="pxn:desktop"></px-icon></div>
+  <div class="row"><p>document</p><px-icon class="icon" icon="px:document"></px-icon><px-icon class="icon" icon="pxn:document"></px-icon><px-icon class="icon icon-themed" icon="pxn:document"></px-icon></div>
+  <div class="row"><p>download</p><px-icon class="icon" icon="px:download"></px-icon><px-icon class="icon" icon="pxn:download"></px-icon><px-icon class="icon icon-themed" icon="pxn:download"></px-icon></div>
+  <div class="row"><p>edit</p><px-icon class="icon" icon="px:edit"></px-icon><px-icon class="icon" icon="pxn:edit"></px-icon><px-icon class="icon icon-themed" icon="pxn:edit"></px-icon></div>
+  <div class="row"><p>ellipsis-h</p><px-icon class="icon" icon="px:ellipsis-h"></px-icon><px-icon class="icon" icon="pxn:ellipsis-h"></px-icon><px-icon class="icon icon-themed" icon="pxn:ellipsis-h"></px-icon></div>
+  <div class="row"><p>ellipsis-v</p><px-icon class="icon" icon="px:ellipsis-v"></px-icon><px-icon class="icon" icon="pxn:ellipsis-v"></px-icon><px-icon class="icon icon-themed" icon="pxn:ellipsis-v"></px-icon></div>
+  <div class="row"><p>excel</p><px-icon class="icon" icon="px:excel"></px-icon><px-icon class="icon" icon="pxn:excel"></px-icon><px-icon class="icon icon-themed" icon="pxn:excel"></px-icon></div>
+  <div class="row"><p>expand</p><px-icon class="icon" icon="px:expand"></px-icon><px-icon class="icon" icon="pxn:expand"></px-icon><px-icon class="icon icon-themed" icon="pxn:expand"></px-icon></div>
+  <div class="row"><p>expand-right</p><px-icon class="icon" icon="px:expand-right"></px-icon><px-icon class="icon" icon="pxn:expand-right"></px-icon><px-icon class="icon icon-themed" icon="pxn:expand-right"></px-icon></div>
+  <div class="row"><p>failure</p><px-icon class="icon" icon="px:failure"></px-icon><px-icon class="icon" icon="pxn:failure"></px-icon><px-icon class="icon icon-themed" icon="pxn:failure"></px-icon></div>
+  <div class="row"><p>filter</p><px-icon class="icon" icon="px:filter"></px-icon><px-icon class="icon" icon="pxn:filter"></px-icon><px-icon class="icon icon-themed" icon="pxn:filter"></px-icon></div>
+  <div class="row"><p>flag</p><px-icon class="icon" icon="px:flag"></px-icon><px-icon class="icon" icon="pxn:flag"></px-icon><px-icon class="icon icon-themed" icon="pxn:flag"></px-icon></div>
+  <div class="row"><p>folder</p><px-icon class="icon" icon="px:folder"></px-icon><px-icon class="icon" icon="pxn:folder"></px-icon><px-icon class="icon icon-themed" icon="pxn:folder"></px-icon></div>
+  <div class="row"><p>folder-open</p><px-icon class="icon" icon="px:folder-open"></px-icon><px-icon class="icon" icon="pxn:folder-open"></px-icon><px-icon class="icon icon-themed" icon="pxn:folder-open"></px-icon></div>
+  <div class="row"><p>formula</p><px-icon class="icon" icon="px:formula"></px-icon><px-icon class="icon" icon="pxn:formula"></px-icon><px-icon class="icon icon-themed" icon="pxn:formula"></px-icon></div>
+  <div class="row"><p>grid</p><px-icon class="icon" icon="px:grid"></px-icon><px-icon class="icon" icon="pxn:grid"></px-icon><px-icon class="icon icon-themed" icon="pxn:grid"></px-icon></div>
+  <div class="row"><p>home</p><px-icon class="icon" icon="px:home"></px-icon><px-icon class="icon" icon="pxn:home"></px-icon><px-icon class="icon icon-themed" icon="pxn:home"></px-icon></div>
+  <div class="row"><p>image</p><px-icon class="icon" icon="px:image"></px-icon><px-icon class="icon" icon="pxn:image"></px-icon><px-icon class="icon icon-themed" icon="pxn:image"></px-icon></div>
+  <div class="row"><p>inbox</p><px-icon class="icon" icon="px:inbox"></px-icon><px-icon class="icon" icon="pxn:inbox"></px-icon><px-icon class="icon icon-themed" icon="pxn:inbox"></px-icon></div>
+  <div class="row"><p>info-circle</p><px-icon class="icon" icon="px:info-circle"></px-icon><px-icon class="icon" icon="pxn:info-circle"></px-icon><px-icon class="icon icon-themed" icon="pxn:info-circle"></px-icon></div>
+  <div class="row"><p>instance</p><px-icon class="icon" icon="px:instance"></px-icon><px-icon class="icon" icon="pxn:instance"></px-icon><px-icon class="icon icon-themed" icon="pxn:instance"></px-icon></div>
+  <div class="row"><p>launch</p><px-icon class="icon" icon="px:launch"></px-icon><px-icon class="icon" icon="pxn:launch"></px-icon><px-icon class="icon icon-themed" icon="pxn:launch"></px-icon></div>
+  <div class="row"><p>link</p><px-icon class="icon" icon="px:link"></px-icon><px-icon class="icon" icon="pxn:link"></px-icon><px-icon class="icon icon-themed" icon="pxn:link"></px-icon></div>
+  <div class="row"><p>list</p><px-icon class="icon" icon="px:list"></px-icon><px-icon class="icon" icon="pxn:list"></px-icon><px-icon class="icon icon-themed" icon="pxn:list"></px-icon></div>
+  <div class="row"><p>map-marker</p><px-icon class="icon" icon="px:map-marker"></px-icon><px-icon class="icon" icon="pxn:map-marker"></px-icon><px-icon class="icon icon-themed" icon="pxn:map-marker"></px-icon></div>
+  <div class="row"><p>lock</p><px-icon class="icon" icon="px:lock"></px-icon><px-icon class="icon" icon="pxn:lock"></px-icon><px-icon class="icon icon-themed" icon="pxn:lock"></px-icon></div>
+  <div class="row"><p>map</p><px-icon class="icon" icon="px:map"></px-icon><px-icon class="icon" icon="pxn:map"></px-icon><px-icon class="icon icon-themed" icon="pxn:map"></px-icon></div>
+  <div class="row"><p>mobile</p><px-icon class="icon" icon="px:mobile"></px-icon><px-icon class="icon" icon="pxn:mobile"></px-icon><px-icon class="icon icon-themed" icon="pxn:mobile"></px-icon></div>
+  <div class="row"><p>note</p><px-icon class="icon" icon="px:note"></px-icon><px-icon class="icon" icon="pxn:note"></px-icon><px-icon class="icon icon-themed" icon="pxn:note"></px-icon></div>
+  <div class="row"><p>notification</p><px-icon class="icon" icon="px:notification"></px-icon><px-icon class="icon" icon="pxn:notification"></px-icon><px-icon class="icon icon-themed" icon="pxn:notification"></px-icon></div>
+  <div class="row"><p>open</p><px-icon class="icon" icon="px:open"></px-icon><px-icon class="icon" icon="pxn:open"></px-icon><px-icon class="icon icon-themed" icon="pxn:open"></px-icon></div>
+  <div class="row"><p>pause</p><px-icon class="icon" icon="px:pause"></px-icon><px-icon class="icon" icon="pxn:pause"></px-icon><px-icon class="icon icon-themed" icon="pxn:pause"></px-icon></div>
+  <div class="row"><p>pdf</p><px-icon class="icon" icon="px:pdf"></px-icon><px-icon class="icon" icon="pxn:pdf"></px-icon><px-icon class="icon icon-themed" icon="pxn:pdf"></px-icon></div>
+  <div class="row"><p>play</p><px-icon class="icon" icon="px:play"></px-icon><px-icon class="icon" icon="pxn:play"></px-icon><px-icon class="icon icon-themed" icon="pxn:play"></px-icon></div>
+  <div class="row"><p>power</p><px-icon class="icon" icon="px:power"></px-icon><px-icon class="icon" icon="pxn:power"></px-icon><px-icon class="icon icon-themed" icon="pxn:power"></px-icon></div>
+  <div class="row"><p>question-circle</p><px-icon class="icon" icon="px:question-circle"></px-icon><px-icon class="icon" icon="pxn:question-circle"></px-icon><px-icon class="icon icon-themed" icon="pxn:question-circle"></px-icon></div>
+  <div class="row"><p>refresh</p><px-icon class="icon" icon="px:refresh"></px-icon><px-icon class="icon" icon="pxn:refresh"></px-icon><px-icon class="icon icon-themed" icon="pxn:refresh"></px-icon></div>
+  <div class="row"><p>reply</p><px-icon class="icon" icon="px:reply"></px-icon><px-icon class="icon" icon="pxn:reply"></px-icon><px-icon class="icon icon-themed" icon="pxn:reply"></px-icon></div>
+  <div class="row"><p>resize</p><px-icon class="icon" icon="px:resize"></px-icon><px-icon class="icon" icon="pxn:resize"></px-icon><px-icon class="icon icon-themed" icon="pxn:resize"></px-icon></div>
+  <div class="row"><p>save</p><px-icon class="icon" icon="px:save"></px-icon><px-icon class="icon" icon="pxn:save"></px-icon><px-icon class="icon icon-themed" icon="pxn:save"></px-icon></div>
+  <div class="row"><p>search</p><px-icon class="icon" icon="px:search"></px-icon><px-icon class="icon" icon="pxn:search"></px-icon><px-icon class="icon icon-themed" icon="pxn:search"></px-icon></div>
+  <div class="row"><p>sliders</p><px-icon class="icon" icon="px:sliders"></px-icon><px-icon class="icon" icon="pxn:sliders"></px-icon><px-icon class="icon icon-themed" icon="pxn:sliders"></px-icon></div>
+  <div class="row"><p>share</p><px-icon class="icon" icon="px:share"></px-icon><px-icon class="icon" icon="pxn:share"></px-icon><px-icon class="icon icon-themed" icon="pxn:share"></px-icon></div>
+  <div class="row"><p>star</p><px-icon class="icon" icon="px:star"></px-icon><px-icon class="icon" icon="pxn:star"></px-icon><px-icon class="icon icon-themed" icon="pxn:star"></px-icon></div>
+  <div class="row"><p>stop</p><px-icon class="icon" icon="px:stop"></px-icon><px-icon class="icon" icon="pxn:stop"></px-icon><px-icon class="icon icon-themed" icon="pxn:stop"></px-icon></div>
+  <div class="row"><p>tablet</p><px-icon class="icon" icon="px:tablet"></px-icon><px-icon class="icon" icon="pxn:tablet"></px-icon><px-icon class="icon icon-themed" icon="pxn:tablet"></px-icon></div>
+  <div class="row"><p>tile</p><px-icon class="icon" icon="px:tile"></px-icon><px-icon class="icon" icon="pxn:tile"></px-icon><px-icon class="icon icon-themed" icon="pxn:tile"></px-icon></div>
+  <div class="row"><p>tree</p><px-icon class="icon" icon="px:tree"></px-icon><px-icon class="icon" icon="pxn:tree"></px-icon><px-icon class="icon icon-themed" icon="pxn:tree"></px-icon></div>
+  <div class="row"><p>unlink</p><px-icon class="icon" icon="px:unlink"></px-icon><px-icon class="icon" icon="pxn:unlink"></px-icon><px-icon class="icon icon-themed" icon="pxn:unlink"></px-icon></div>
+  <div class="row"><p>unlock</p><px-icon class="icon" icon="px:unlock"></px-icon><px-icon class="icon" icon="pxn:unlock"></px-icon><px-icon class="icon icon-themed" icon="pxn:unlock"></px-icon></div>
+  <div class="row"><p>upload</p><px-icon class="icon" icon="px:upload"></px-icon><px-icon class="icon" icon="pxn:upload"></px-icon><px-icon class="icon icon-themed" icon="pxn:upload"></px-icon></div>
+  <div class="row"><p>view</p><px-icon class="icon" icon="px:view"></px-icon><px-icon class="icon" icon="pxn:view"></px-icon><px-icon class="icon icon-themed" icon="pxn:view"></px-icon></div>
+  <div class="row"><p>website</p><px-icon class="icon" icon="px:website"></px-icon><px-icon class="icon" icon="pxn:website"></px-icon><px-icon class="icon icon-themed" icon="pxn:website"></px-icon></div>
+  <div class="row"><p>word</p><px-icon class="icon" icon="px:word"></px-icon><px-icon class="icon" icon="pxn:word"></px-icon><px-icon class="icon icon-themed" icon="pxn:word"></px-icon></div>
   <dom-module id="px-icon">
     <template>
       <style>

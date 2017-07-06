@@ -117,3 +117,8 @@ function write(path, string) {
 };
 
 optimizeFromSrc();
+
+exports = module.exports = {
+  read,
+  write
+};
