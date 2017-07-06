@@ -1,0 +1,9 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="csv">
+    <path stroke-linejoin="round" d="M9.7 26v2.2H29V8.9l-4.8-4.8H9.7V14"/>
+    <path stroke-linejoin="round" d="M22.6 4.9v5.6h5.6"/>
+    <text fill="currentcolor" stroke="none" transform="translate(1 25)">
+      CSV
+    </text>
+  </g>
+</svg>

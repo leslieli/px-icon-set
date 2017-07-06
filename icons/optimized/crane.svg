@@ -1,0 +1,7 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="crane" transform="matrix(.9 0 0 .9 1.8 1.8)">
+    <path stroke-linejoin="round" d="M27.48 4.26v13.23m-4 0h8v7.98h-8zm-7 3l-6-8.98H1.5v8.98h14.98z"/>
+    <rect x=".5" y="23.49" width="18.98" height="5" rx="2.5" ry="2.5" stroke-linejoin="round"/>
+    <path d="M11.48 13.51L26.49.86a1.51 1.51 0 0 1 2 .08 1.51 1.51 0 0 1 .1 2.06L16.48 15.59" stroke-linejoin="round"/>
+  </g>
+</svg>

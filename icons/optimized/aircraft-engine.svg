@@ -1,0 +1,9 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="aircraft-engine" transform="matrix(.8 0 0 .8 0 6.4)">
+    <path d="M15.5 24.5H8.2c-.4 0-.8-.3-.9-.7-.9-2.7-1.8-6.6-1.8-11.3 0-2.7.3-6.7 1.8-11.3.1-.4.5-.7 1-.7h7.3c-.9 2.7-2 6.8-2 12-.1 2.8.2 7.1 1.9 12zm1.4-6.8c-.3-2-.4-3.8-.4-5.2 0-1.9.1-3.6.4-5.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M13.5 24.5h2.3c.4 0 .8-.3 1-.7.7-2.2 1.1-4.2 1.4-6.1" stroke-linejoin="round"/>
+    <path d="M13.5.5h2.3c.4 0 .8.3 1 .7.5 1.6 1 3.7 1.4 6.1" stroke-linejoin="round" stroke-linecap="round"/>
+    <path stroke-linejoin="round" d="M17 7.5l9.5-2m-9.5 12l9.5 2m-9.5-9h9.5m-9.5 4h9.5"/>
+    <path stroke-linejoin="round" stroke-linecap="round" d="M26.5 4.5v16m0-3.1s3 2 7-1v-4 .1-4c-4-3-7-1-7-1m7 3l5 2-5 2m-28.1.8l-3.9-1.5c-1.3-.5-1.3-2.2 0-2.7l3.9-1.5"/>
+  </g>
+</svg>

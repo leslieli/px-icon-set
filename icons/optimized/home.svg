@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="home">
+    <path stroke-linejoin="round" d="M4.6 14.8v14.9h21.2V14.8M.3 14.1L15.2.7 30 14.1"/>
+    <path stroke-linejoin="round" d="M11.7 21.2h7.1v8.5h-7.1z"/>
+  </g>
+</svg>

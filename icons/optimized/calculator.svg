@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="calculator" transform="translate(3 2)">
+    <path stroke-linejoin="round" d="M.5.5h23.9v27.6H.5z"/>
+    <path stroke-linejoin="round" d="M6 15.2h1.8V17H6zm5.5 0h1.8V17h-1.8zm5.5 0h1.8V17H17zM6 20.7h1.8v1.8H6zm5.5 0h1.8v1.8h-1.8zm5.5 0h1.8v1.8H17zM4.2 4.2h16.5v5.5H4.2z"/>
+  </g>
+</svg>

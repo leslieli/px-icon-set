@@ -1,0 +1,10 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="templates" transform="translate(1 1)">
+    <path stroke-linejoin="round" d="M6.2.5h23.7v21.8H6.2z"/>
+    <path stroke-linejoin="round" d="M24.2 24.7V27H.5V5.2h3.3m2.4 0h23.7m-12.3 6.7h6.6M17.6 9h8.5"/>
+    <circle cx="11.9" cy="10.5" r="1.9" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M17.6 18.5h6.6m-6.6-2.8h8.5"/>
+    <circle cx="11.9" cy="17.1" r="1.9" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M1 9h2.8"/>
+  </g>
+</svg>

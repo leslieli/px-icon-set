@@ -1,0 +1,7 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="more" transform="translate(0 12)">
+    <circle cx="4" cy="4" r="3.5" stroke-linejoin="round"/>
+    <circle cx="15.4" cy="4" r="3.5" stroke-linejoin="round"/>
+    <circle cx="26.7" cy="4" r="3.5" stroke-linejoin="round"/>
+  </g>
+</svg>

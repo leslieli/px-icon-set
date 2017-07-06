@@ -1,0 +1,5 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="calendar" transform="translate(1 1)">
+    <path stroke-linejoin="round" d="M.5 2.4h28.7v25.8H.5zM1 9.1h27.7M1 13.9h27.7M1 18.6h27.7M1 23.4h27.7m-11-13.8V28m5.7-18.4V28M12 9.6V28M6.2 9.6V28M5.3.5v3.8M23.4.5v3.8"/>
+  </g>
+</svg>

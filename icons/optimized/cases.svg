@@ -1,0 +1,7 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="cases" transform="matrix(.9 0 0 .9 1.8 4.5)">
+    <path stroke-linejoin="round" d="M.5 14.2V25h29.2V14.2"/>
+    <path d="M17.5 15.5c5.8-.5 10.1-2.5 12.3-3.7V4.3H.5v7.5C2.6 13 6.9 15 12.8 15.5" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M12.8 13.7h4.7v3.8h-4.7zM9 4.3L11.8.5h6.6l2.7 3.8"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="solar-panel" transform="translate(1 1)">
+    <path stroke-linejoin="round" d="M16.3 13h13v14.4H12v-12m5.8-2.4v14.4M23.5 13v14.4M12 22.6h17.3M12 17.8h17.3"/>
+    <circle cx="8.2" cy="8.2" r="3.8" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M8.2 0v2.9m8.1 5.3h-2.8m-5.3 8.1v-2.8M0 8.2h2.9m11-5.8l-2 2m2 9.5l-2-2m-9.5 2l2-2m-2-9.5l2 2"/>
+  </g>
+</svg>

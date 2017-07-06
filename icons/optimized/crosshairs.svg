@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="crosshairs" transform="translate(3 3)">
+    <path stroke-linejoin="round" d="M13.1 18.4v7.9m0-26.3v7.9M0 13h8.1m10.8 0H27"/>
+    <ellipse cx="13.1" cy="13" rx="9" ry="8.8" stroke-linejoin="round"/>
+  </g>
+</svg>
