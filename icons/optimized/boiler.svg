@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="boiler" transform="translate(4 1)">
+    <ellipse cx="10.2" cy="3.3" rx="9.7" ry="2.8" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M19.9 12.1V3.3m0 21.7v1.4c0 1.5-4.4 2.8-9.7 2.8S.5 28 .5 26.4V3.3"/>
+    <circle cx="10.2" cy="12.1" r="3.2" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M10.2 12.5l1.4-1.8m11.2 9.7c0 1.8-1.5 3.3-3.3 3.3-1.8 0-3.3-1.5-3.3-3.3 0-1.9 1.5-2.4 1.5-4 0 0 1 1 1.6 2.1 0 0 1.6-1.6 1-3.6 0 0 2.5 1.7 2.5 5.5z"/>
+  </g>
+</svg>

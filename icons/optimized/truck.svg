@@ -1,0 +1,10 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="truck" transform="translate(2 5)">
+    <path stroke-linejoin="round" d="M8.7 19.5H5.9m7.2 0h3.7V5.9h5.4l6.3 6.4v7.2h-3.1"/>
+    <path d="M19.5 11.3V8.6h2.4l2.1 2.2c.2.2.1.5-.2.5h-4.3zm2.2 8.2h-4.5" stroke-linejoin="round"/>
+    <circle cx="3.7" cy="19.9" r="2.3" stroke-linejoin="round"/>
+    <circle cx="10.9" cy="19.9" r="2.3" stroke-linejoin="round"/>
+    <circle cx="23.6" cy="19.9" r="2.3" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M15 3.2H.5v16.3h1.4M14.1.5h1.4c.7 0 1.4.6 1.4 1.4v5"/>
+  </g>
+</svg>

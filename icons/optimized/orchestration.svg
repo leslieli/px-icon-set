@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="orchestration">
+    <path d="M30.5 28.3h-29S1.5 14 7.7 5.9s3.1 18.4 9.3 15.3 13.5-18.4 13.5 7.1z" stroke-linejoin="round"/>
+    <path d="M1.5 28.3C7.7 17 13.9 5.8 17 11.9s3.1 11.2 7.2 8.2 6.2 3.1 6.2 8.2" stroke-linejoin="round"/>
+  </g>
+</svg>

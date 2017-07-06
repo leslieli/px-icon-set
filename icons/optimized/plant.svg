@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="plant" transform="matrix(.9 0 0 .9 .9 7.2)">
+    <path stroke-linejoin="round" d="M7.29.5L9.5 24.44h-9L2.71.5"/>
+    <path stroke-linejoin="round" d="M9 24.44h22.5V5.48l-7 6v-6.5l-7 6v-6l-6.63 5.76M1 .5h8"/>
+  </g>
+</svg>

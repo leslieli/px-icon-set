@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="condensor" transform="matrix(.9 0 0 .9 0 5.4)">
+    <path d="M20.5 26.5h-4V19c0-3 2.5-5.5 5.5-5.5h5.5v4H23c-1.4 0-2.5 1.1-2.5 2.5v6.5z" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M21.9 13.5H14c-3 0-5.5 2.5-5.5 5.5v7.5h4V20c0-1.4 1.1-2.5 2.4-2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M13.9 13.5H6C3 13.5.5 16 .5 19v7.5h4V20c0-1.4 1.1-2.5 2.4-2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M6.5 12v-2c0-2.5 3-5.5 3-9.5h21c0 4 3 7 3 9.5v12.5H22" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+</svg>

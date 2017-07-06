@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="asset" transform="matrix(.9 0 0 .9 4.5 1.8)">
+    <path stroke-linejoin="round" d="M26.5 23.75V8.25L13.5.5.5 8.25v15.5l13 7.75 13-7.75z"/>
+    <path stroke-linejoin="round" d="M.5 8.75l13 7.75 13-7.75m-13 22.66v-15"/>
+    <path stroke-linejoin="round" d="M13.5 16.5v-.09l13-7.66v-.5L13.5.5.5 8.25v.5l13 7.75 13-7.75"/>
+    <path stroke-linejoin="round" d="M6.92 8.5l6.58-3.92 6.56 3.9-6.62 3.91L6.92 8.5z"/>
+  </g>
+</svg>

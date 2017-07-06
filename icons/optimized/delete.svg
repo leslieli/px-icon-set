@@ -1,0 +1,5 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="delete" transform="translate(1 1)">
+    <path d="M4.6 8.8v17.5c0 1 .8 1.8 1.8 1.8H23c1 0 1.8-.8 1.8-1.8V8.8M0 6h29.4M8.3 5.9L10.1.5h9.2l1.9 5.6m-9.3 6.3v10.1m5.6-10.1v10.1" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="cooling-tower" transform="translate(2 1)">
+    <path d="M4.1 28.3H.5V14.4c0-2.7 2.2-4.9 4.9-4.9h4.9V13h-4c-1.2 0-2.2 1-2.2 2.2v13.1zM13 5.9L11.3.5H22l-1.8 5.4z" stroke-linejoin="round"/>
+    <path stroke-linejoin="round" d="M25.6 12.6V5.9H7.7V9m0 4.5v14.8h17.9v-6.7"/>
+    <path d="M28.3 13.9c-1.6 0-1.6 1.8-3.3 1.8-1.6 0-1.6-1.8-3.3-1.8s-1.6 1.8-3.3 1.8m9.9 1.8c-1.6 0-1.6 1.8-3.3 1.8-1.6 0-1.6-1.8-3.3-1.8s-1.6 1.8-3.3 1.8" stroke-linejoin="round"/>
+  </g>
+</svg>

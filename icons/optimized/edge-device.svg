@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" height="32" width="32">
+  <g id="edge-device" transform="translate(7 1)">
+    <path stroke-linejoin="round" d="M.7 13.1H16v15.3H.7z"/>
+    <circle cx="8.4" cy="20.8" r="3.2" stroke-linejoin="round"/>
+    <path d="M.4 4.3C2.3 2 5.2.5 8.4.5s6.1 1.5 8 3.8" stroke-linejoin="round"/>
+    <path d="M3 6.8c1.2-1.7 3.2-2.7 5.4-2.7s4.2 1.1 5.4 2.7M5.6 9.4c.5-1 1.6-1.7 2.8-1.7s2.3.7 2.8 1.7" stroke-linejoin="round"/>
+  </g>
+</svg>
