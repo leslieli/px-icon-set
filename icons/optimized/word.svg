@@ -2,7 +2,7 @@
   <g id="word" transform="matrix(.9 0 0 .9 0 2.7)">
     <path stroke-linejoin="round" d="M10.41 25.91v2.82H33V6.15L27.35.5H10.41v12.23"/>
     <path stroke-linejoin="round" d="M25.47.5v7.53H33"/>
-    <text fill="currentcolor" stroke="none" transform="translate(0 23.24)">
+    <text fill="currentcolor" stroke="none"  transform="translate(0 23.24)">
       DOC
     </text>
   </g>

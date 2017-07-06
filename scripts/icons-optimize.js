@@ -75,10 +75,10 @@ function cleanForOutfile(string) {
  * inline to <text> tags.
  */
 function addAttrsForText(string) {
-  const match = string.match(/\<text /);
+  const match = string.match(/\<text/);
   if (match) {
     let prefix = string.slice(0, match.index);
-    let suffix = string.slice(match.index+6);
+    let suffix = string.slice(match.index+5);
     return `${prefix}<text fill="currentcolor" stroke="none" ${suffix}`;
   }
   else {

@@ -2,7 +2,7 @@
   <g id="pdf">
     <path stroke-linejoin="round" d="M8.8 26.5v1.9h19.6V8.9L23.5 4H8.8v10"/>
     <path stroke-linejoin="round" d="M21.9 4.8v5.7h5.7"/>
-    <text fill="currentcolor" stroke="none" transform="translate(1 25)">
+    <text fill="currentcolor" stroke="none"  transform="translate(1 25)">
       PDF
     </text>
   </g>
