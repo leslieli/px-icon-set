@@ -20,9 +20,9 @@
     "npm-debug.log"
   ],
   "dependencies": {
-    "polymer": "^1.7.0",
-    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.9",
-    "iron-icon": "PolymerElements/iron-icon#^1.0.7"
+    "polymer": "^1.9.0",
+    "iron-iconset-svg": "^2.0.0",
+    "iron-icon": "^2.0.0"
   },
   "devDependencies": {
     "px-theme": "^3.0.0",
