@@ -41,6 +41,7 @@ const svgo = new SVGO({
 });
 
 async function optimizeFromSrc() {
+  console.log('Optimizing icons in icons/src/*.svg and placing the result in icons/optimized/*.svg');
   const dirpath = path.join(__dirname, '..', 'icons', 'src');
   const fileList = await getFileList(dirpath);
   const fileNames = fileList.filter(f => f.slice(-4) === '.svg');
@@ -59,6 +60,7 @@ async function optimizeFromSrc() {
   }
 
   outws.end();
+  console.log(`Optimized ${fileNames.length} icons. All optimized <g> tags are available in a single file in icons/optimized/_optimized.html`);
 };
 
 /**
