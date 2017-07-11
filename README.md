@@ -1,6 +1,5 @@
 # px-icon-set [![Build Status](https://travis-ci.org/PredixDev/px-icon-set.svg?branch=master)](https://travis-ci.org/PredixDev/px-icon-set)
 
-[![px-icon-set demo](px-icon-set.png?raw=true)](https://PredixDev.github.io/px-icon-set/)
 
 ## Overview
 

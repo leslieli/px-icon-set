@@ -1,10 +1,10 @@
 v2.0.0
 ==================
 * Major bump for redesign, picking up sub-dependencies for now
-* Includes two sets of icons: a standard set that can be dropped into iron-icon
-  but cannot be themed using style variables, and a themable set that allow fill
-  and stroke to be set by style variables. (See the examples/ HTML files for
-  some simple examples of using both types of icons).
+* Includes a set of icons that allow fill and stroke to be set by style variables. (See the examples/ HTML files for some simple examples of using both types of icons).
+  * To use with iron-icon, you MUST specify the fill and stroke.
+  * To use with px-icon, you do not need to specify fill and stroke. They are options
+* px-icon component which wraps iron-icon resolving the required theming
 
 v1.1.5
 ==================
