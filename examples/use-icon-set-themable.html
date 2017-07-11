@@ -1,0 +1,83 @@
+<!--
+  EXAMPLE: Using px-icon-set-themable
+
+  Icons from px-icon-set-themable.html can be used inside <iron-icon> tags or
+  inside <px-icon-themable> tags. These icons can be themed with custom fill
+  and stroke colors. By default, their stroke inherits from their CSS color and
+  their fill is none.
+
+  Use style variables (e.g. --iron-icon-fill-color and --iron-icon-stroke-color)
+  to set the stroke and/or fill.
+
+  Using the <px-icon-themable> tag ensures the colors are set up correctly
+  by default. If you use the <iron-icon> tag, your icons will be invisible
+  until you use style variables to theme the icon.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example: theming px-icon-set</title>
+
+  <link rel="import" href="../../polymer/polymer.html"/>
+  <link rel="import" href="../px-icon-set-themable.html"/>
+</head>
+<body>
+  <!--
+    `is="custom-style"` is only needed if we're in hybrid mode, e.g. using
+    Polymer 1.x components. In Polymer 2.x, it can be removed.
+   -->
+  <custom-style>
+    <style is="custom-style">
+      body {
+        margin: 20px;
+      }
+
+      /* Sizes all icons, default size is 32px */
+      .icon {
+        --iron-icon-width: 75px;
+        --iron-icon-height: 75px;
+      }
+
+      /* Custom stroke (style variable) */
+      .icon-stroke {
+        --iron-icon-stroke-color: tomato;
+      }
+
+      /* Custom stroke (using CSS color) */
+      .icon-stroke-css-color {
+        color: pink;
+      }
+
+      /* Custom fill and stroke (style variable) */
+      .icon-fill-and-stroke {
+        --iron-icon-stroke-color: lime;
+        --iron-icon-fill-color: salmon;
+      }
+    </style>
+  </custom-style>
+
+  <div class="icon-container">
+    <p>Default icon</p>
+    <px-icon-themable class="icon" icon="pxt:clock"></px-icon-themable>
+  </div>
+
+  <div class="icon-container">
+    <p>Custom stroke (style variable)</p>
+    <px-icon-themable class="icon icon-stroke" icon="pxt:clock"></px-icon-themable>
+  </div>
+
+  <div class="icon-container">
+    <p>Custom stroke (using CSS color)</p>
+    <px-icon-themable class="icon icon-stroke-css-color" icon="pxt:clock"></px-icon-themable>
+  </div>
+
+  <div class="icon-container">
+    <p>Custom fill and stroke (style variable)</p>
+    <px-icon-themable class="icon icon-fill-and-stroke" icon="pxt:clock"></px-icon-themable>
+  </div>
+</body>
+</html>

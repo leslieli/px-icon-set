@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example: px-icon-set</title>
+
+  <link rel="import" href="../../polymer/polymer.html"/>
+  <link rel="import" href="../px-icon-set.html"/>
+</head>
+<body>
+  <!--
+    `is="custom-style"` is only needed if we're in hybrid mode, e.g. using
+    Polymer 1.x components. In Polymer 2.x, it can be removed.
+   -->
+  <custom-style>
+    <style is="custom-style">
+      body {
+        margin: 20px;
+      }
+
+      /* Sizes all icons, default size is 32px */
+      .icon {
+        --iron-icon-width: 75px;
+        --iron-icon-height: 75px;
+      }
+
+      /* Custom stroke (using CSS color) */
+      .icon-stroke-css-color {
+        color: pink;
+      }
+    </style>
+  </custom-style>
+
+  <div class="icon-container">
+    <p>Default icon</p>
+    <iron-icon class="icon" icon="px:clock"></iron-icon>
+  </div>
+
+  <div class="icon-container">
+    <p>Custom stroke (using CSS color)</p>
+    <iron-icon class="icon icon-stroke-css-color" icon="px:clock"></iron-icon>
+  </div>
+</body>
+</html>

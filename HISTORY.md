@@ -1,6 +1,10 @@
 v2.0.0
 ==================
 * Major bump for redesign, picking up sub-dependencies for now
+* Includes two sets of icons: a standard set that can be dropped into iron-icon
+  but cannot be themed using style variables, and a themable set that allow fill
+  and stroke to be set by style variables. (See the examples/ HTML files for
+  some simple examples of using both types of icons).
 
 v1.1.5
 ==================
