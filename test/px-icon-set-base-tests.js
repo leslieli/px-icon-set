@@ -2,7 +2,7 @@
 // name provided to the pxtestkit yeoman generator
 var px_polymer_font_awesome_1;
 
-
+document.addEventListener("WebComponentsReady", function() {
 // This is the bootstrapping function that will run the base and custom tests
 // upon the completion of web components construction by Polymer
   runBaseTests();
