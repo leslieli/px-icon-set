@@ -1,0 +1,8 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 30">
+  <title>
+    predix_box_32x32
+  </title>
+  <path stroke-linejoin="round" d="M.5.5h17v29H.5z"/>
+  <circle cx="5" cy="26.5" r=".5" stroke-linejoin="round"/>
+  <path stroke-linejoin="round" d="M10.5 8.5h7v4h-7zM3 3.5h5m-5 4h5m-5 4h5m-5 4h5m-5 4h5m-5 4h5"/>
+</svg>

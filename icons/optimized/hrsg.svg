@@ -1,6 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="hrsg" transform="matrix(.9 0 0 .9 .9 .9)">
-    <path stroke-linejoin="round" stroke-linecap="round" d="M22.5 9.5h7v22h-7zm-2 5.9h-11l-9 9.1v7h22m0-19h7m-13-12c0 5 9 2 9 6v-3s0-3-4-3h-5z"/>
-    <path d="M19 20.5c-1.8 0-1.8 2-3.7 2-1.8 0-1.8-2-3.7-2s-1.8 2-3.7 2m11.1 2c-1.8 0-1.8 2-3.7 2-1.8 0-1.8-2-3.7-2s-1.8 2-3.7 2" stroke-linejoin="round"/>
-  </g>
-</svg>

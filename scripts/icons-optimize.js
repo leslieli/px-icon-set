@@ -7,6 +7,12 @@
  *
  * Also bundles all optimized icons as <g> groups without a wrapper <svg> in
  * `icons/optimized/_optimized.html`.
+ *
+ * TO RUN:
+ * You need node 7.6+
+ * If you're on 7.x run with the flag node --harmony-async-await
+ * If you're on 8.x no flag
+ *
  */
 
 const fs = require('fs');

@@ -19,17 +19,10 @@
 <dom-module id="local-element-demo">
   <template>
     <style include="px-demo-styles" is="custom-style">
-      .large px-icon {
-        width: 32px;
-        height: 32px;
+      px-icon {
         margin: 5px;
-        stroke-width: 1px;
-      }
-      .small px-icon {
-        width: 22px;
-        height: 22px;
-        margin: 5px;
-        stroke-width: 1.5px;
+        /*--iron-icon-width: 64px;
+        --iron-icon-height: 64px;*/
       }
       .epsilon {
         margin-bottom: 10px;
@@ -50,8 +43,6 @@
         align-items: center;
       }
       .cheatsheet px-icon {
-        width: 32px;
-        height: 32px;
         margin-right: 10px;
       }
     </style>
@@ -72,168 +63,7 @@
 
       <!-- Component ---------------------------------------------------------->
       <px-demo-component>
-
-        <h4 class="epsilon">Assets & Objects:</h4>
-        <div class="large">
-          <px-icon icon="px:machine"></px-icon>
-          <px-icon icon="px:aircraft-engine"></px-icon>
-          <px-icon icon="px:gas-turbine"></px-icon>
-          <px-icon icon="px:steam-turbine"></px-icon>
-          <px-icon icon="px:aircraft"></px-icon>
-          <px-icon icon="px:airport"></px-icon>
-          <px-icon icon="px:condensor"></px-icon>
-          <px-icon icon="px:boiler"></px-icon>
-          <px-icon icon="px:cooling-tower"></px-icon>
-          <px-icon icon="px:hrsg"></px-icon>
-          <px-icon icon="px:plant"></px-icon>
-          <px-icon icon="px:crane"></px-icon>
-          <px-icon icon="px:gas-line"></px-icon>
-          <px-icon icon="px:lightbulb"></px-icon>
-          <px-icon icon="px:asset"></px-icon>
-          <px-icon icon="px:product"></px-icon>
-          <px-icon icon="px:manufacturing"></px-icon>
-          <px-icon icon="px:solar-panel"></px-icon>
-          <px-icon icon="px:edge-device"></px-icon>
-          <px-icon icon="px:line"></px-icon>
-          <px-icon icon="px:block"></px-icon>
-          <px-icon icon="px:car"></px-icon>
-          <px-icon icon="px:truck"></px-icon>
-          <px-icon icon="px:rail-yard"></px-icon>
-          <px-icon icon="px:locomotive"></px-icon>
-          <px-icon icon="px:train"></px-icon>
-          <px-icon icon="px:wind-turbine"></px-icon>
-        </div>
-        <h4 class="epsilon">Comms:</h4>
-        <div class="large">
-          <px-icon icon="px:comment"></px-icon>
-          <px-icon icon="px:comments"></px-icon>
-          <px-icon icon="px:email"></px-icon>
-          <px-icon icon="px:message"></px-icon>
-          <px-icon icon="px:phone"></px-icon>
-          <px-icon icon="px:sms"></px-icon>
-          <px-icon icon="px:software"></px-icon>
-        </div>
-        <h4 class="epsilon">Other:</h4>
-        <div class="large">
-          <px-icon icon="px:administration"></px-icon>
-          <px-icon icon="px:cog"></px-icon>
-          <px-icon icon="px:exclamation-triangle"></px-icon>
-          <px-icon icon="px:orchestration"></px-icon>
-          <px-icon icon="px:analysis"></px-icon>
-          <px-icon icon="px:analytics"></px-icon>
-          <px-icon icon="px:attribute"></px-icon>
-          <px-icon icon="px:bug"></px-icon>
-          <px-icon icon="px:calendar"></px-icon>
-          <px-icon icon="px:briefcase"></px-icon>
-          <px-icon icon="px:catalog"></px-icon>
-          <px-icon icon="px:dashboard"></px-icon>
-          <px-icon icon="px:data-source"></px-icon>
-          <px-icon icon="px:deployment"></px-icon>
-          <px-icon icon="px:class"></px-icon>
-          <px-icon icon="px:dev-ops"></px-icon>
-          <px-icon icon="px:digital-twin"></px-icon>
-          <px-icon icon="px:microservice"></px-icon>
-          <px-icon icon="px:fleet"></px-icon>
-          <px-icon icon="px:efficiency"></px-icon>
-          <px-icon icon="px:heat-rate"></px-icon>
-          <px-icon icon="px:kpi"></px-icon>
-          <px-icon icon="px:output"></px-icon>
-          <px-icon icon="px:ingestion"></px-icon>
-          <px-icon icon="px:log"></px-icon>
-          <px-icon icon="px:order"></px-icon>
-          <px-icon icon="px:pipeline"></px-icon>
-          <px-icon icon="px:route"></px-icon>
-          <px-icon icon="px:server"></px-icon>
-          <px-icon icon="px:spaces"></px-icon>
-          <px-icon icon="px:tag"></px-icon>
-          <px-icon icon="px:tags"></px-icon>
-          <px-icon icon="px:user"></px-icon>
-          <px-icon icon="px:users"></px-icon>
-          <px-icon icon="px:templates"></px-icon>
-          <px-icon icon="px:version"></px-icon>
-        </div>
-        <h4 class="epsilon">Small Icons:</h4>
-        <div class="small">
-          <px-icon icon="px:arrow-up"></px-icon>
-          <px-icon icon="px:arrow-down"></px-icon>
-          <px-icon icon="px:arrow-left"></px-icon>
-          <px-icon icon="px:arrow-right"></px-icon>
-          <px-icon icon="px:resize"></px-icon>
-          <px-icon icon="px:collapse"></px-icon>
-          <px-icon icon="px:expand"></px-icon>
-          <px-icon icon="px:collapse-left"></px-icon>
-          <px-icon icon="px:expand-right"></px-icon>
-          <px-icon icon="px:chevron-up"></px-icon>
-          <px-icon icon="px:chevron-down"></px-icon>
-          <px-icon icon="px:chevron-left"></px-icon>
-          <px-icon icon="px:chevron-right"></px-icon>
-          <px-icon icon="px:download"></px-icon>
-          <px-icon icon="px:upload"></px-icon>
-          <px-icon icon="px:share"></px-icon>
-          <px-icon icon="px:refresh"></px-icon>
-          <px-icon icon="px:add"></px-icon>
-          <px-icon icon="px:close"></px-icon>
-          <px-icon icon="px:copy"></px-icon>
-          <px-icon icon="px:delete"></px-icon>
-          <px-icon icon="px:alert"></px-icon>
-          <px-icon icon="px:calculator"></px-icon>
-          <px-icon icon="px:camera"></px-icon>
-          <px-icon icon="px:bar-chart"></px-icon>
-          <px-icon icon="px:crosshairs"></px-icon>
-          <px-icon icon="px:desktop"></px-icon>
-          <px-icon icon="px:tablet"></px-icon>
-          <px-icon icon="px:mobile"></px-icon>
-          <px-icon icon="px:document"></px-icon>
-          <px-icon icon="px:pdf"></px-icon>
-          <px-icon icon="px:excel"></px-icon>
-          <px-icon icon="px:csv"></px-icon>
-          <px-icon icon="px:word"></px-icon>
-          <px-icon icon="px:edit"></px-icon>
-          <px-icon icon="px:star"></px-icon>
-          <px-icon icon="px:failure"></px-icon>
-          <px-icon icon="px:filter"></px-icon>
-          <px-icon icon="px:folder"></px-icon>
-          <px-icon icon="px:folder-open"></px-icon>
-          <px-icon icon="px:bars"></px-icon>
-          <px-icon icon="px:hierarchy"></px-icon>
-          <px-icon icon="px:list"></px-icon>
-          <px-icon icon="px:grid"></px-icon>
-          <px-icon icon="px:tile"></px-icon>
-          <px-icon icon="px:tree"></px-icon>
-          <px-icon icon="px:inbox"></px-icon>
-          <px-icon icon="px:check"></px-icon>
-          <px-icon icon="px:check-circle"></px-icon>
-          <px-icon icon="px:open"></px-icon>
-          <px-icon icon="px:clock"></px-icon>
-          <px-icon icon="px:question-circle"></px-icon>
-          <px-icon icon="px:info-circle"></px-icon>
-          <px-icon icon="px:play"></px-icon>
-          <px-icon icon="px:pause"></px-icon>
-          <px-icon icon="px:stop"></px-icon>
-          <px-icon icon="px:home"></px-icon>
-          <px-icon icon="px:image"></px-icon>
-          <px-icon icon="px:instance"></px-icon>
-          <px-icon icon="px:formula"></px-icon>
-          <px-icon icon="px:flag"></px-icon>
-          <px-icon icon="px:launch"></px-icon>
-          <px-icon icon="px:link"></px-icon>
-          <px-icon icon="px:unlink"></px-icon>
-          <px-icon icon="px:lock"></px-icon>
-          <px-icon icon="px:unlock"></px-icon>
-          <px-icon icon="px:power"></px-icon>
-          <px-icon icon="px:map-marker"></px-icon>
-          <px-icon icon="px:map"></px-icon>
-          <px-icon icon="px:ellipsis-h"></px-icon>
-          <px-icon icon="px:ellipsis-v"></px-icon>
-          <px-icon icon="px:note"></px-icon>
-          <px-icon icon="px:notification"></px-icon>
-          <px-icon icon="px:reply"></px-icon>
-          <px-icon icon="px:save"></px-icon>
-          <px-icon icon="px:search"></px-icon>
-          <px-icon icon="px:sliders"></px-icon>
-          <px-icon icon="px:view"></px-icon>
-          <px-icon icon="px:website"></px-icon>
-        </div>
+        <px-icon icon="[[props.icon.value]]"></px-icon>
       </px-demo-component>
       <!-- END Component ------------------------------------------------------>
 
@@ -246,167 +76,18 @@
     <div class="demo-layout--center demo-u-pb+++ u-pt++">
       <h3 class="delta">Cheatsheet</h3>
 
-      <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
-
-        <div class="column">
-          <span class="cheatsheet"><px-icon icon="px:add"></px-icon>px:add</span>
-          <span class="cheatsheet"><px-icon icon="px:administration"></px-icon>px:administration</span>
-          <span class="cheatsheet"><px-icon icon="px:aircraft-engine"></px-icon>px:aircraft-engine</span>
-          <span class="cheatsheet"><px-icon icon="px:aircraft"></px-icon>px:aircraft</span>
-          <span class="cheatsheet"><px-icon icon="px:airport"></px-icon>px:airport</span>
-          <span class="cheatsheet"><px-icon icon="px:alert"></px-icon>px:alert</span>
-          <span class="cheatsheet"><px-icon icon="px:analysis"></px-icon>px:analysis</span>
-          <span class="cheatsheet"><px-icon icon="px:analytics"></px-icon>px:analytics</span>
-          <span class="cheatsheet"><px-icon icon="px:arrow-down"></px-icon>px:arrow-down</span>
-          <span class="cheatsheet"><px-icon icon="px:arrow-left"></px-icon>px:arrow-left</span>
-          <span class="cheatsheet"><px-icon icon="px:arrow-right"></px-icon>px:arrow-right</span>
-          <span class="cheatsheet"><px-icon icon="px:arrow-up"></px-icon>px:arrow-up</span>
-          <span class="cheatsheet"><px-icon icon="px:asset"></px-icon>px:asset</span>
-          <span class="cheatsheet"><px-icon icon="px:attribute"></px-icon>px:attribute</span>
-          <span class="cheatsheet"><px-icon icon="px:bar-chart"></px-icon>px:bar-chart</span>
-          <span class="cheatsheet"><px-icon icon="px:bars"></px-icon>px:bars</span>
-          <span class="cheatsheet"><px-icon icon="px:block"></px-icon>px:block</span>
-          <span class="cheatsheet"><px-icon icon="px:boiler"></px-icon>px:boiler</span>
-          <span class="cheatsheet"><px-icon icon="px:briefcase"></px-icon>px:briefcase</span>
-          <span class="cheatsheet"><px-icon icon="px:bug"></px-icon>px:bug</span>
-          <span class="cheatsheet"><px-icon icon="px:calculator"></px-icon>px:calculator</span>
-          <span class="cheatsheet"><px-icon icon="px:calendar"></px-icon>px:calendar</span>
-          <span class="cheatsheet"><px-icon icon="px:camera"></px-icon>px:camera</span>
-          <span class="cheatsheet"><px-icon icon="px:car"></px-icon>px:car</span>
-          <span class="cheatsheet"><px-icon icon="px:catalog"></px-icon>px:catalog</span>
-          <span class="cheatsheet"><px-icon icon="px:check"></px-icon>px:check-circle</span>
-          <span class="cheatsheet"><px-icon icon="px:check-circle"></px-icon>px:check-circle</span>
-          <span class="cheatsheet"><px-icon icon="px:chevron-down"></px-icon>px:chevron-down</span>
-          <span class="cheatsheet"><px-icon icon="px:chevron-left"></px-icon>px:chevron-left</span>
-          <span class="cheatsheet"><px-icon icon="px:chevron-right"></px-icon>px:chevron-right</span>
-          <span class="cheatsheet"><px-icon icon="px:chevron-up"></px-icon>px:chevron-up</span>
-          <span class="cheatsheet"><px-icon icon="px:class"></px-icon>px:class</span>
-          <span class="cheatsheet"><px-icon icon="px:clock"></px-icon>px:clock</span>
-          <span class="cheatsheet"><px-icon icon="px:close"></px-icon>px:close</span>
-          <span class="cheatsheet"><px-icon icon="px:cog"></px-icon>px:cog</span>
-          <span class="cheatsheet"><px-icon icon="px:collapse"></px-icon>px:collapse</span>
-          <span class="cheatsheet"><px-icon icon="px:collapse-left"></px-icon>px:collapse-left</span>
-          <span class="cheatsheet"><px-icon icon="px:comment"></px-icon>px:comment</span>
+      <template is="dom-repeat" items="[[iconSets]]" as="s">
+        <h3 class="delta">[[_returnTitle(s)]]</h3>
+        <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
+          <template is="dom-repeat" items="[[iconCols]]" as="i">
+            <div class="column">
+              <template is="dom-repeat" items="[[_getItems(iconsGrouped.*, i, s)]]">
+                <span class="cheatsheet"><px-icon icon="[[item]]"></px-icon>[[item]]</span>
+              </template>
+            </div>
+          </template>
         </div>
-        <div class="column">
-          <span class="cheatsheet"><px-icon icon="px:comments"></px-icon>px:comments</span>
-          <span class="cheatsheet"><px-icon icon="px:condensor"></px-icon>px:condensor</span>
-          <span class="cheatsheet"><px-icon icon="px:cooling-tower"></px-icon>px:cooling-tower</span>
-          <span class="cheatsheet"><px-icon icon="px:copy"></px-icon>px:copy</span>
-          <span class="cheatsheet"><px-icon icon="px:crane"></px-icon>px:crane</span>
-          <span class="cheatsheet"><px-icon icon="px:crosshairs"></px-icon>px:crosshairs</span>
-          <span class="cheatsheet"><px-icon icon="px:csv"></px-icon>px:csv</span>
-          <span class="cheatsheet"><px-icon icon="px:dashboard"></px-icon>px:dashboard</span>
-          <span class="cheatsheet"><px-icon icon="px:data-source"></px-icon>px:data-source</span>
-          <span class="cheatsheet"><px-icon icon="px:delete"></px-icon>px:delete</span>
-          <span class="cheatsheet"><px-icon icon="px:deployment"></px-icon>px:deployment</span>
-          <span class="cheatsheet"><px-icon icon="px:desktop"></px-icon>px:desktop</span>
-          <span class="cheatsheet"><px-icon icon="px:dev-ops"></px-icon>px:dev-ops</span>
-          <span class="cheatsheet"><px-icon icon="px:digital-twin"></px-icon>px:digital-twin</span>
-          <span class="cheatsheet"><px-icon icon="px:document"></px-icon>px:document</span>
-          <span class="cheatsheet"><px-icon icon="px:download"></px-icon>px:download</span>
-          <span class="cheatsheet"><px-icon icon="px:edge-device"></px-icon>px:edge-device</span>
-          <span class="cheatsheet"><px-icon icon="px:edit"></px-icon>px:edit</span>
-          <span class="cheatsheet"><px-icon icon="px:efficiency"></px-icon>px:efficiency</span>
-          <span class="cheatsheet"><px-icon icon="px:ellipsis-h"></px-icon>px:ellipsis-h</span>
-          <span class="cheatsheet"><px-icon icon="px:ellipsis-v"></px-icon>px:ellipsis-v</span>
-          <span class="cheatsheet"><px-icon icon="px:email"></px-icon>px:email</span>
-          <span class="cheatsheet"><px-icon icon="px:excel"></px-icon>px:excel</span>
-          <span class="cheatsheet"><px-icon icon="px:exclamation-triangle"></px-icon>px:exclamation-triangle</span>
-          <span class="cheatsheet"><px-icon icon="px:expand"></px-icon>px:expand</span>
-          <span class="cheatsheet"><px-icon icon="px:expand-right"></px-icon>px:expand-right</span>
-          <span class="cheatsheet"><px-icon icon="px:failure"></px-icon>px:failure</span>
-          <span class="cheatsheet"><px-icon icon="px:filter"></px-icon>px:filter</span>
-          <span class="cheatsheet"><px-icon icon="px:flag"></px-icon>px:flag</span>
-          <span class="cheatsheet"><px-icon icon="px:fleet"></px-icon>px:fleet</span>
-          <span class="cheatsheet"><px-icon icon="px:folder"></px-icon>px:folder</span>
-          <span class="cheatsheet"><px-icon icon="px:folder-open"></px-icon>px:folder-open</span>
-          <span class="cheatsheet"><px-icon icon="px:formula"></px-icon>px:formula</span>
-          <span class="cheatsheet"><px-icon icon="px:gas-line"></px-icon>px:gas-line</span>
-          <span class="cheatsheet"><px-icon icon="px:gas-turbine"></px-icon>px:gas-turbine</span>
-          <span class="cheatsheet"><px-icon icon="px:grid"></px-icon>px:grid</span>
-          <span class="cheatsheet"><px-icon icon="px:heat-rate"></px-icon>px:heat-rate</span>
-        </div>
-        <div class="column">
-          <span class="cheatsheet"><px-icon icon="px:hierarchy"></px-icon>px:hierarchy</span>
-          <span class="cheatsheet"><px-icon icon="px:home"></px-icon>px:home</span>
-          <span class="cheatsheet"><px-icon icon="px:hrsg"></px-icon>px:hrsg</span>
-          <span class="cheatsheet"><px-icon icon="px:image"></px-icon>px:image</span>
-          <span class="cheatsheet"><px-icon icon="px:inbox"></px-icon>px:inbox</span>
-          <span class="cheatsheet"><px-icon icon="px:info-circle"></px-icon>px:info-circle</span>
-          <span class="cheatsheet"><px-icon icon="px:ingestion"></px-icon>px:ingestion</span>
-          <span class="cheatsheet"><px-icon icon="px:instance"></px-icon>px:instance</span>
-          <span class="cheatsheet"><px-icon icon="px:kpi"></px-icon>px:kpi</span>
-          <span class="cheatsheet"><px-icon icon="px:launch"></px-icon>px:launch</span>
-          <span class="cheatsheet"><px-icon icon="px:lightbulb"></px-icon>px:lightbulb</span>
-          <span class="cheatsheet"><px-icon icon="px:line"></px-icon>px:line</span>
-          <span class="cheatsheet"><px-icon icon="px:link"></px-icon>px:link</span>
-          <span class="cheatsheet"><px-icon icon="px:list"></px-icon>px:list</span>
-          <span class="cheatsheet"><px-icon icon="px:lock"></px-icon>px:lock</span>
-          <span class="cheatsheet"><px-icon icon="px:locomotive"></px-icon>px:locomotive</span>
-          <span class="cheatsheet"><px-icon icon="px:log"></px-icon>px:log</span>
-          <span class="cheatsheet"><px-icon icon="px:machine"></px-icon>px:machine</span>
-          <span class="cheatsheet"><px-icon icon="px:manufacturing"></px-icon>px:manufacturing</span>
-          <span class="cheatsheet"><px-icon icon="px:map"></px-icon>px:map</span>
-          <span class="cheatsheet"><px-icon icon="px:map-marker"></px-icon>px:map-marker</span>
-          <span class="cheatsheet"><px-icon icon="px:message"></px-icon>px:message</span>
-          <span class="cheatsheet"><px-icon icon="px:microservice"></px-icon>px:microservice</span>
-          <span class="cheatsheet"><px-icon icon="px:mobile"></px-icon>px:mobile</span>
-          <span class="cheatsheet"><px-icon icon="px:note"></px-icon>px:note</span>
-          <span class="cheatsheet"><px-icon icon="px:notification"></px-icon>px:notification</span>
-          <span class="cheatsheet"><px-icon icon="px:open"></px-icon>px:open</span>
-          <span class="cheatsheet"><px-icon icon="px:orchestration"></px-icon>px:orchestration</span>
-          <span class="cheatsheet"><px-icon icon="px:order"></px-icon>px:order</span>
-          <span class="cheatsheet"><px-icon icon="px:output"></px-icon>px:output</span>
-          <span class="cheatsheet"><px-icon icon="px:pause"></px-icon>px:pause</span>
-          <span class="cheatsheet"><px-icon icon="px:pdf"></px-icon>px:pdf</span>
-          <span class="cheatsheet"><px-icon icon="px:phone"></px-icon>px:phone</span>
-          <span class="cheatsheet"><px-icon icon="px:pipeline"></px-icon>px:pipeline</span>
-          <span class="cheatsheet"><px-icon icon="px:plant"></px-icon>px:plant</span>
-          <span class="cheatsheet"><px-icon icon="px:play"></px-icon>px:play</span>
-          <span class="cheatsheet"><px-icon icon="px:power"></px-icon>px:power</span>
-        </div>
-        <div class="column">
-          <span class="cheatsheet"><px-icon icon="px:product"></px-icon>px:product</span>
-          <span class="cheatsheet"><px-icon icon="px:question-circle"></px-icon>px:question-circle</span>
-          <span class="cheatsheet"><px-icon icon="px:software"></px-icon>px:software</span>
-          <span class="cheatsheet"><px-icon icon="px:rail-yard"></px-icon>px:rail-yard</span>
-          <span class="cheatsheet"><px-icon icon="px:refresh"></px-icon>px:refresh</span>
-          <span class="cheatsheet"><px-icon icon="px:reply"></px-icon>px:reply</span>
-          <span class="cheatsheet"><px-icon icon="px:resize"></px-icon>px:resize</span>
-          <span class="cheatsheet"><px-icon icon="px:route"></px-icon>px:route</span>
-          <span class="cheatsheet"><px-icon icon="px:save"></px-icon>px:save</span>
-          <span class="cheatsheet"><px-icon icon="px:search"></px-icon>px:search</span>
-          <span class="cheatsheet"><px-icon icon="px:server"></px-icon>px:server</span>
-          <span class="cheatsheet"><px-icon icon="px:share"></px-icon>px:share</span>
-          <span class="cheatsheet"><px-icon icon="px:sliders"></px-icon>px:sliders</span>
-          <span class="cheatsheet"><px-icon icon="px:sms"></px-icon>px:sms</span>
-          <span class="cheatsheet"><px-icon icon="px:solar-panel"></px-icon>px:solar-panel</span>
-          <span class="cheatsheet"><px-icon icon="px:spaces"></px-icon>px:spaces</span>
-          <span class="cheatsheet"><px-icon icon="px:star"></px-icon>px:star</span>
-          <span class="cheatsheet"><px-icon icon="px:steam-turbine"></px-icon>px:steam-turbine</span>
-          <span class="cheatsheet"><px-icon icon="px:stop"></px-icon>px:stop</span>
-          <span class="cheatsheet"><px-icon icon="px:tablet"></px-icon>px:tablet</span>
-          <span class="cheatsheet"><px-icon icon="px:tag"></px-icon>px:tag</span>
-          <span class="cheatsheet"><px-icon icon="px:tags"></px-icon>px:tags</span>
-          <span class="cheatsheet"><px-icon icon="px:templates"></px-icon>px:templates</span>
-          <span class="cheatsheet"><px-icon icon="px:tile"></px-icon>px:tile</span>
-          <span class="cheatsheet"><px-icon icon="px:train"></px-icon>px:train</span>
-          <span class="cheatsheet"><px-icon icon="px:tree"></px-icon>px:tree</span>
-          <span class="cheatsheet"><px-icon icon="px:truck"></px-icon>px:truck</span>
-          <span class="cheatsheet"><px-icon icon="px:unlink"></px-icon>px:unlink</span>
-          <span class="cheatsheet"><px-icon icon="px:unlock"></px-icon>px:unlock</span>
-          <span class="cheatsheet"><px-icon icon="px:upload"></px-icon>px:upload</span>
-          <span class="cheatsheet"><px-icon icon="px:user"></px-icon>px:user</span>
-          <span class="cheatsheet"><px-icon icon="px:users"></px-icon>px:users</span>
-          <span class="cheatsheet"><px-icon icon="px:version"></px-icon>px:version</span>
-          <span class="cheatsheet"><px-icon icon="px:view"></px-icon>px:view</span>
-          <span class="cheatsheet"><px-icon icon="px:website"></px-icon>px:website</span>
-          <span class="cheatsheet"><px-icon icon="px:wind-turbine"></px-icon>px:wind-turbine</span>
-          <span class="cheatsheet"><px-icon icon="px:word"></px-icon>px:word</span>
-        </div>
-      </div>
-
+      </template>
     </div>
 
     <!-- Footer -->
@@ -428,12 +109,24 @@
 
       configs: {
         type: Array,
-        value: function(){
+        value: function() {
           return [
             { configName: "All icons",
               configShowProps: []
             }
           ]
+        },
+
+        iconCols: {
+          type: Array
+        },
+
+        iconSets: {
+          type: Array
+        },
+
+        iconsGrouped: {
+          type: Object
         }
       }
     },
@@ -442,12 +135,54 @@
      * A reference for `this.props`. Read the documentation there.
      */
     demoProps: {
-
       icon: {
         type: String,
-        defaultValue: 'px:analysis'
+        defaultValue: 'pxl:analysis',
+        inputType: 'text'
+      }
+    },
+    ready: function() {
+      this.dynamicLoadIcons();
+    },
+    dynamicLoadIcons: function() {
+      var iconCol = [0,1,2,3],
+          iconSets = ['pxl', 'pxm', 'pxs'],
+          meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
+          sets = {};
+
+      iconSets.forEach(function(set) {
+        var iconSet = meta.byKey(set),
+            iconNames = iconSet.getIconNames(),
+            numOfGroups = iconCol.length,
+            iconsPerGroup = Math.ceil(iconNames.length / numOfGroups)
+            grouped = [];
+
+        for (var i = 0, j = iconNames.length; i < j; i += iconsPerGroup) {
+          grouped.push(iconNames.slice(i,i+iconsPerGroup));
+        }
+
+        sets[set] = grouped;
+      });
+
+      this.set('iconsGrouped', sets);
+      this.set('iconCols', iconCol);
+      this.set('iconSets', iconSets);
+    },
+
+    _returnTitle: function(s) {
+      if(s === 'pxl') {
+        return 'Large';
+      } else if(s === 'pxm') {
+        return 'Medium';
+      }
+
+      return 'Small';
+    },
+
+    _getItems: function(groups, i, s) {
+      if(groups.value && groups.value[s] && groups.value[s][i]) {
+        return groups.value[s][i];
       }
     }
-
   });
 </script>

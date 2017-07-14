@@ -1,7 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="aircraft" transform="translate(1 7)">
-    <path stroke-linejoin="round" d="M9.6 10.6l-2.7 10h3.7l6.9-10M9.6 6.9L6.9.5h3.7L16 6.9"/>
-    <path d="M7.4 12.4H4.2c-2 0-3.7-1.6-3.7-3.7V3.2h1.8l1.8 3.7h21c2 0 3.7 1.6 3.7 3.7v1.8H18.3" stroke-linejoin="round"/>
-    <path d="M28.7 9.7h-4.4c-.7 0-1.2-.6-1.2-1.2V6.8" stroke-linejoin="round"/>
-  </g>
-</svg>

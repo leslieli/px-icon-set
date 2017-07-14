@@ -1,7 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="copy" transform="translate(1 1)">
-    <path d="M17.5 26H.5V9h12.1l4.9 4.9V26z" stroke-linejoin="round" stroke-linecap="round"/>
-    <path stroke-linejoin="round" stroke-linecap="round" d="M10.7 9v6.8h6.8M9 6.4V.5h11.9L26 5.6v11.9h-6"/>
-    <path stroke-linejoin="round" stroke-linecap="round" d="M19.2.5v6.8H26"/>
-  </g>
-</svg>

@@ -1,6 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="microservice" transform="translate(3 1)">
-    <path stroke-linejoin="round" d="M16.3 18l3.1-3.3-3.3-3.1m-7.3-.1l-3.2 3.2L8.8 18m1.9 2.8l3.7-12.1"/>
-    <path stroke-linejoin="round" d="M24.5 22V7.7L12.5.5.5 7.7V22l12 7.2z"/>
-  </g>
-</svg>

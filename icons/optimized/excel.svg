@@ -1,9 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="excel">
-    <path stroke-linejoin="round" d="M8.5 26v2.1h19.4V8.7L23 3.9H8.5V14"/>
-    <path stroke-linejoin="round" d="M21.4 4.7v5.6h5.7"/>
-    <text fill="currentcolor" stroke="none"  transform="translate(3 25)">
-      XLS
-    </text>
-  </g>
-</svg>

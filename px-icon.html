@@ -6,6 +6,14 @@
   <template>
     <style>
       :host {
+        /* Create some vars we can manipulate asour icons change*/
+        --px-icon-default-width: 22px;
+        --px-icon-default-height: 22px;
+
+        /* Update iron-icon vars so we can overwrite */
+        --iron-icon-width: var(--px-icon-default-width);
+        --iron-icon-height: var(--px-icon-default-height);
+
         /* Ensures the currentColor is overriden by the stroke color so text
            elements inside the SVG work correctly */
         color: var(--iron-icon-stroke-color, inherit);
@@ -18,8 +26,9 @@
         @apply --layout-center-center;
         position: relative;
         vertical-align: middle;
-        width: var(--iron-icon-width, 24px);
-        height: var(--iron-icon-height, 24px);
+
+        width: var(--iron-icon-width);
+        height: var(--iron-icon-height);
         @apply --iron-icon;
       }
       /* Also copied exactly from iron-icon */
@@ -41,6 +50,29 @@
     is:'px-icon',
     properties: {
       icon: String
+    },
+
+    observers: ['_updateSize(icon)'],
+
+    /*
+    * Update the default size based on the icon set
+    */
+    _updateSize: function() {
+      var prefix = this.icon.split(':')[0];
+      if(prefix === 'pxl') {
+        this.customStyle['--px-icon-default-width'] = '32px';
+        this.customStyle['--px-icon-default-height'] = '32px';
+
+      } else if(prefix === 'pxs') {
+        this.customStyle['--px-icon-default-width'] = '16px';
+        this.customStyle['--px-icon-default-height'] = '16px';
+
+      } else {
+        this.customStyle['--px-icon-default-width'] = '22px';
+        this.customStyle['--px-icon-default-height'] = '22px';
+      }
+
+      this.updateStyles();
     }
   })
 </script>

@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.9 25">
+  <title>
+    truck_32x32
+  </title>
+  <path stroke-linejoin="round" d="M9.55 21.5h-3.1m8 0h3.96v-15h4.88l6.11 7v8h-2.69"/>
+  <path d="M21.53 15.53v-3h2.62l2.28 2.4a.35.35 0 0 1-.23.6z" transform="translate(-1.03 -3.03)" stroke-linejoin="round"/>
+  <path stroke-linejoin="round" d="M23 21.5h-5"/>
+  <circle cx="4" cy="22" r="2.5" stroke-linejoin="round"/>
+  <circle cx="12" cy="22" r="2.5" stroke-linejoin="round"/>
+  <circle cx="25" cy="22" r="2.5" stroke-linejoin="round"/>
+  <path stroke-linejoin="round" d="M1.55 21.5H.5v-18h16"/>
+  <path d="M16.53 3.53H18A1.5 1.5 0 0 1 19.53 5v5.5" transform="translate(-1.03 -3.03)" stroke-linejoin="round"/>
+</svg>

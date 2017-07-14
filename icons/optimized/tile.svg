@@ -1,5 +1,0 @@
-<svg viewBox="0 0 32 32" height="32" width="32">
-  <g id="tile" transform="translate(1 6)">
-    <path stroke-linejoin="round" d="M.5.5h6.9v6.9H.5zm11 0h6.9v6.9h-6.9zm11 0h6.9v6.9h-6.9zm-22 11h6.9v6.9H.5zm11 0h6.9v6.9h-6.9zm11 0h6.9v6.9h-6.9z"/>
-  </g>
-</svg>
