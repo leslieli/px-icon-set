@@ -1,8 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 30">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 32">
   <title>
     orders_32x32
   </title>
-  <path stroke-miterlimit="10" d="M24.5 6.5v23H.5V.5h18l6 6z"/>
-  <path stroke-miterlimit="10" d="M17.5.5v7h7M4 20.5h13m-13-4h16m-16 8h16"/>
-  <path d="M11.91 8c-.87-.28-1.68-.52-1.68-1.17 0-.56.49-1 1.26-1a3.58 3.58 0 0 1 1.93.66l.44-.76A4.4 4.4 0 0 0 12 5V4h-1v1a1.9 1.9 0 0 0-1.7 1.94V7c0 1.25 1.13 1.62 2.15 1.92.86.25 1.63.51 1.63 1.19 0 .66-.57 1.08-1.35 1.08a3.72 3.72 0 0 1-2.26-.87L9 11a4.42 4.42 0 0 0 2 1v1h1v-1a2 2 0 0 0 2-2c0-1.25-1.08-1.65-2.09-2z" transform="translate(-3 -1)"/>
+  <path stroke-miterlimit="10" d="M25.5 6.5v25H.5V.5h19l6 6z"/>
+  <path stroke-miterlimit="10" d="M18.5.5v7h7M5 21.5h13m-13-4h16m-16 8h16"/>
+  <text fill="currentcolor" stroke="none"  transform="translate(5.72 12.81)" font-size="12" font-weight="700">
+    $
+  </text>
 </svg>

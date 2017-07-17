@@ -17,7 +17,9 @@
     "test",
     "OSS_Notice.pdf",
     "*.png",
-    "npm-debug.log"
+    "npm-debug.log",
+    "icons",
+    "examples"
   ],
   "dependencies": {
     "polymer": "^1.9.0",

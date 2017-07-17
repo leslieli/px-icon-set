@@ -1,6 +1,11 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.71 6.35">
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <style>
+    .st0{fill:none;stroke:#4C6472;stroke-linejoin:round;}
+  </style>
   <title>
     chevron_16x16
   </title>
-  <path stroke-linejoin="round" d="M.35.35l5.5 5.5 5.5-5.5"/>
+  <path d="M2.4 6.2l5.5 5.5 5.5-5.5"/>
 </svg>

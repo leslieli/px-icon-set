@@ -63,12 +63,12 @@
 
       <!-- Component ---------------------------------------------------------->
       <px-demo-component>
-        <px-icon icon="[[props.icon.value]]"></px-icon>
+        <px-icon id="demoIcon" icon="[[props.icon.value]]"></px-icon>
       </px-demo-component>
       <!-- END Component ------------------------------------------------------>
 
       <px-demo-component-snippet
-          element-properties="{{props}}"
+          element-properties="{{_propsSubset(props.*)}}"
           element-name="px-icon">
       </px-demo-component-snippet>
     </px-demo-interactive>
@@ -139,8 +139,25 @@
         type: String,
         defaultValue: 'pxl:analysis',
         inputType: 'text'
+      },
+      useCustomSize: {
+        type: Boolean,
+        defaultValue: false,
+        inputType: 'toggle',
+        inputHelpText: "DEMO ONLY; activates the size field"
+      },
+      customSize: {
+        type: String,
+        defaultValue: '32px',
+        inputType: 'text',
+        inputHelpText: "DEMO ONLY; in production, apply custom size via CSS --iron-icon variables"
       }
     },
+
+    observers: [
+      'triggerSizeChange(props.customSize.value)'
+    ],
+
     ready: function() {
       this.dynamicLoadIcons();
     },
@@ -183,6 +200,20 @@
       if(groups.value && groups.value[s] && groups.value[s][i]) {
         return groups.value[s][i];
       }
+    },
+
+    triggerSizeChange: function(value) {
+      if(this.props.useCustomSize.value) {
+        this.$.demoIcon.customStyle['--px-icon-default-width'] = value;
+        this.$.demoIcon.customStyle['--px-icon-default-height'] = value;
+        this.$.demoIcon.updateStyles();
+      }
+    },
+
+    _propsSubset: function() {
+      var o = {};
+      o['icon'] = this.props.icon;
+      return o;
     }
   });
 </script>
