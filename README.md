@@ -3,7 +3,7 @@
 
 ## Overview
 
-px-icon-set the font awesome icons, made available - in a shadow dom compliant way - through a polymer tag.
+Px-icon-set is a wrapper for the Predix icon set which leverages px-icon.
 
 ## Usage
 
@@ -38,7 +38,7 @@ Finally, use the component in your application:
 <br />
 <hr />
 
-## documentation
+## Documentation
 
 Read the full API and view the demo [here](https://predixdev.github.io/px-icon-set).
 
