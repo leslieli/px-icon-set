@@ -58,14 +58,14 @@
     * Update the default size based on the icon set
     */
     _updateSize: function() {
-      // var prefix = this.icon.split(':')[0],
-      //     meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
-      //     size =  meta.byKey(prefix)['size'];
+      var prefix = this.icon.split(':')[0],
+          meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
+          size =  meta.byKey(prefix) ? meta.byKey(prefix)['size'] : 22;
 
-      // this.customStyle['--px-icon-default-width'] = size + 'px';
-      // this.customStyle['--px-icon-default-height'] = size + 'px';
+      this.customStyle['--px-icon-default-width'] = size + 'px';
+      this.customStyle['--px-icon-default-height'] = size + 'px';
 
-      // this.updateStyles();
+      this.updateStyles();
     }
   })
 </script>
