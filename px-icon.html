@@ -58,6 +58,10 @@
     * Update the default size based on the icon set
     */
     _updateSize: function() {
+      if(typeof this.icon !== 'string') {
+        return;
+      }
+
       var prefix = this.icon.split(':')[0],
           meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
           size =  meta.byKey(prefix) ? meta.byKey(prefix)['size'] : 22;
