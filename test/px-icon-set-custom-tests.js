@@ -4,7 +4,7 @@ function runCustomTests() {
     test('icon', function() {
       var icon = document.getElementById('px_icon'),
           iron = icon.querySelector('iron-icon');
-      assert.equal(iron.icon, 'px:aircraft');
+      assert.equal(iron.icon, 'px-fea:bug');
     });
   });
 }
