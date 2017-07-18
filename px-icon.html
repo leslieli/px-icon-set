@@ -58,21 +58,14 @@
     * Update the default size based on the icon set
     */
     _updateSize: function() {
-      var prefix = this.icon.split(':')[0];
-      if(prefix === 'pxl') {
-        this.customStyle['--px-icon-default-width'] = '32px';
-        this.customStyle['--px-icon-default-height'] = '32px';
+      // var prefix = this.icon.split(':')[0],
+      //     meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
+      //     size =  meta.byKey(prefix)['size'];
 
-      } else if(prefix === 'pxs') {
-        this.customStyle['--px-icon-default-width'] = '16px';
-        this.customStyle['--px-icon-default-height'] = '16px';
+      // this.customStyle['--px-icon-default-width'] = size + 'px';
+      // this.customStyle['--px-icon-default-height'] = size + 'px';
 
-      } else {
-        this.customStyle['--px-icon-default-width'] = '22px';
-        this.customStyle['--px-icon-default-height'] = '22px';
-      }
-
-      this.updateStyles();
+      // this.updateStyles();
     }
   })
 </script>

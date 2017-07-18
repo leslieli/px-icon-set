@@ -21,8 +21,6 @@
     <style include="px-demo-styles" is="custom-style">
       px-icon {
         margin: 5px;
-        /*--iron-icon-width: 64px;
-        --iron-icon-height: 64px;*/
       }
       .epsilon {
         margin-bottom: 10px;
@@ -74,7 +72,7 @@
     </px-demo-interactive>
 
     <div class="demo-layout--center demo-u-pb+++ u-pt++">
-      <h3 class="delta">Cheatsheet</h3>
+      <h3 class="beta">Cheatsheet</h3>
 
       <template is="dom-repeat" items="[[iconSets]]" as="s">
         <h3 class="delta">[[_returnTitle(s)]]</h3>
@@ -137,7 +135,7 @@
     demoProps: {
       icon: {
         type: String,
-        defaultValue: 'pxl:analysis',
+        defaultValue: 'px-fea:analysis',
         inputType: 'text'
       },
       useCustomSize: {
@@ -163,7 +161,7 @@
     },
     dynamicLoadIcons: function() {
       var iconCol = [0,1,2,3],
-          iconSets = ['pxl', 'pxm', 'pxs'],
+          iconSets = ['px-doc', 'px-utl', 'px-nav', 'px-com', 'px-fea', 'px-obj'],
           meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
           sets = {};
 
@@ -187,13 +185,31 @@
     },
 
     _returnTitle: function(s) {
-      if(s === 'pxl') {
-        return 'Large';
-      } else if(s === 'pxm') {
-        return 'Medium';
+      var t;
+
+      switch(s) {
+        case 'px-doc':
+          t = 'Document : Small - 16px';
+          break;
+        case 'px-utl':
+          t = 'Utility : Small - 16px';
+          break;
+        case 'px-nav':
+          t = 'Navigation : Medium - 22px';
+          break;
+        case 'px-com':
+          t = 'Communication : Large - 32px';
+          break;
+        case 'px-fea':
+          t = 'Feature : Large - 32px';
+          break;
+        case 'px-obj':
+          t = 'Object : Large - 32px';
+          break;
       }
 
-      return 'Small';
+
+      return t;
     },
 
     _getItems: function(groups, i, s) {

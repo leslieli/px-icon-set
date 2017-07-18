@@ -1,9 +1,0 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.81 30">
-  <title>
-    wind_turbine_32x32
-  </title>
-  <circle cx="13.07" cy="13.13" r="2.34" stroke-linejoin="round"/>
-  <path stroke-linejoin="round" d="M11.67 17.81L9.88 29.5m6.47 0l-1.79-11.69"/>
-  <path d="M15.85 11.82L14.48 9.9a1.87 1.87 0 0 1-.15-1.9l3.24-6.5h1.87l-1.87 10.77m.76 2.73l2.34-.22a1.87 1.87 0 0 1 1.74.83l4 6-.94 1.62-8.39-7m-2.75-.66l-1 2.14c-.29.63-1.16.67-1.85.71l-7 .81-.88-1.62 10.26-3.76" transform="translate(-3.1 -1)" stroke-linejoin="round"/>
-  <path stroke-miterlimit="10" d="M6.06 29.5h14.03"/>
-</svg>

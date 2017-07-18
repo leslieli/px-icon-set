@@ -1,9 +1,0 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.05 16">
-  <title>
-    train_32x32
-  </title>
-  <path stroke-miterlimit="10" d="M0 15.5h30"/>
-  <path d="M1.5 21.5h27c1.41 0 2.38-1.71 1.86-3.29l-.58-1.75c-1.4-4.2-4.79-7-8.56-7H1.5z" transform="translate(-1 -9)" stroke-linejoin="round"/>
-  <path d="M28.35 13.5H21.5l.58 2.07A2.18 2.18 0 0 0 24 17.5h6" transform="translate(-1 -9)" stroke-linejoin="round"/>
-  <path stroke-linejoin="round" d="M.5 4.5h8v4h-8zm5 4v-4m6 8v-8h4v8"/>
-</svg>
