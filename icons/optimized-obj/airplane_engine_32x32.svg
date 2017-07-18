@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 25">
+  <title>
+    airplane_engine_32x32
+  </title>
+  <path d="M12.95 28.5H7.39a.81.81 0 0 1-.72-.68 48 48 0 0 1 0-22.62.82.82 0 0 1 .73-.7h5.55a47.94 47.94 0 0 0 0 24zM14 21.68a49.17 49.17 0 0 1-.27-5.18 46.91 46.91 0 0 1 .27-5.18" transform="translate(-1 -4)" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.42 28.5h1.74a.82.82 0 0 0 .73-.69A46.6 46.6 0 0 0 15 21.74" transform="translate(-1 -4)" stroke-miterlimit="10"/>
+  <path d="M11.42 4.5h1.74a.82.82 0 0 1 .73.7 46.76 46.76 0 0 1 1.06 6.06" transform="translate(-1 -4)" stroke-linecap="round" stroke-linejoin="round"/>
+  <path stroke-miterlimit="10" d="M13.09 7.5l7.25-2m-7.25 12l7.25 2m-7.25-9h7.25m-7.25 4h7.25"/>
+  <path stroke-linecap="round" stroke-miterlimit="10" d="M20.34 4.5v16"/>
+  <path d="M21.34 21.42s2.29 2 5.34-1V12.5c-3.05-3-5.34-1-5.34-1" transform="translate(-1 -4)" stroke-linecap="round" stroke-miterlimit="10"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M25.68 10.5l3.82 2-3.82 2"/>
+  <path d="M5.21 19.33l-3-1.5a1.6 1.6 0 0 1 0-2.67l3-1.5" transform="translate(-1 -4)" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

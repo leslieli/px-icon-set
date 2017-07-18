@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 19">
+  <title>
+    gas_turbine_32x32
+  </title>
+  <path stroke-linejoin="round" d="M4.5 1.94l5 2.56M4.5 19V0m0 17.06l5-2.56"/>
+  <path d="M5.5 21.46L2.5 23a21.63 21.63 0 0 1 0-13l3 1.54" transform="translate(-1 -7)" stroke-linecap="round" stroke-linejoin="round"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.6 4.5h5.88v10H8.6z"/>
+  <path d="M22.5 21.81l6 3.19a19.06 19.06 0 0 0 0-17c-2.33 1.06-3.67 2.13-6 3.19z" transform="translate(-1 -7)" stroke-linecap="round" stroke-linejoin="round"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.47 1.5h3v4h-3zm3 1h4.03v2h-4.03zm-3 5h3v4h-3zm3 1h4.03v2h-4.03zm-3 5h3v4h-3zm3 1h4.03v2h-4.03z"/>
+</svg>
