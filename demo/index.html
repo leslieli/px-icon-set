@@ -80,7 +80,7 @@
           <template is="dom-repeat" items="[[iconCols]]" as="i">
             <div class="column">
               <template is="dom-repeat" items="[[_getItems(iconsGrouped.*, i, s)]]">
-                <span class="cheatsheet"><px-icon icon="[[item]]"></px-icon>[[item]]</span>
+                <span class="cheatsheet"><px-icon class="icon" icon="[[item]]"></px-icon>[[item]]</span>
               </template>
             </div>
           </template>
@@ -161,7 +161,7 @@
     },
     dynamicLoadIcons: function() {
       var iconCol = [0,1,2,3],
-          iconSets = ['px-doc', 'px-utl', 'px-nav', 'px-com', 'px-fea', 'px-obj'],
+          iconSets = ['px-doc', 'px-utl', 'px-nav', 'px-com', 'px-fea', 'px-obj', 'px-vis'],
           meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
           sets = {};
 
@@ -206,8 +206,10 @@
         case 'px-obj':
           t = 'Object : Large - 32px';
           break;
+        case 'px-vis':
+          t = 'Visualization : Medium - 22px';
+          break;
       }
-
 
       return t;
     },
