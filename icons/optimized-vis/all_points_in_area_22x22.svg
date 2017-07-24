@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-  <style>
-    .st0{fill:none;stroke:#4C6472;stroke-linejoin:round;stroke-miterlimit:10;}
-  </style>
-  <circle cx="10.5" cy="10.5" r="10"/>
-  <path d="M10.5 5v4M9 10.5H5m11 0h-4M10.5 12v4"/>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+  <title>
+    all_points_in_area_22x22
+  </title>
+  <circle cx="10.5" cy="10.5" r="10" stroke-linejoin="round"/>
+  <path stroke-linejoin="round" d="M10.5 5v4M9 10.5H5m11 0h-4M10.5 12v4"/>
 </svg>
