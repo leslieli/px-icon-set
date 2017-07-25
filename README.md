@@ -3,7 +3,7 @@
 
 ## Overview
 
-Px-icon-set is a wrapper for the Predix icon set which leverages px-icon.
+`Px-icon-set` is a wrapper for the Predix icon set which leverages `px-icon` (a subcomponent of `px-icon-set`).
 
 ## Usage
 
@@ -17,13 +17,13 @@ Node, npm and bower are necessary to install the component and dependencies. web
 
 ### Getting Started
 
-First, install the component via bower on the command line.
+First, install the component via bower on the command line:
 
 ```
 bower install px-icon-set --save
 ```
 
-Second, import the component to your application with the following tag in your head.
+Second, import the component in your application with the following tag in your head:
 
 ```
 <link rel="import" href="/bower_components/px-icon-set/px-icon-set.html"/>
@@ -32,7 +32,7 @@ Second, import the component to your application with the following tag in your 
 Finally, use the component in your application:
 
 ```
-<iron-icon icon="px:px-analysis"></iron-icon>
+<iron-icon icon="px-fea:analytics"></iron-icon>
 ```
 
 <br />
