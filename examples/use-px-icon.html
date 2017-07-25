@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example: px-icon-set</title>
+
+  <link rel="import" href="../../polymer/polymer.html"/>
+
+  <!--Import the icon set-->
+  <link rel="import" href="../px-icon-set.html"/>
+
+  <!--Import the px-icon-->
+  <link rel="import" href="../px-icon.html"/>
+
+</head>
+<body>
+  <template is="dom-bind">
+    <custom-style>
+      <style is="custom-style">
+        body {
+          margin: 20px;
+        }
+
+        .flex {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 5px;
+        }
+
+        .icon-container {
+          width: 40px;
+        }
+
+        .custom-size {
+          --iron-icon-width: 75px;
+          --iron-icon-height: 75px;
+        }
+
+        .custom-stroke {
+          color: salmon;
+        }
+      </style>
+    </custom-style>
+
+    <div>
+      <h3>Using px-icon, the icons auto size depending on their optimized size</h3>
+      <div class="flex">
+        <span class="icon-container">
+          <px-icon icon="px-fea:deployments"></px-icon>
+        </span>
+        <span> 32px</span>
+      </div>
+      <div class="flex">
+        <span class="icon-container">
+          <px-icon icon="px-nav:favorite"></px-icon>
+        </span>
+        <span> 22px</span>
+      </div>
+      <div class="flex">
+        <span class="icon-container">
+          <px-icon icon="px-utl:app-settings"></px-icon>
+        </span>
+        <span>16px</span>
+      </div>
+    </div>
+
+    <div>
+      <p>Custom stroke (using CSS color)</p>
+      <px-icon class="custom-stroke" icon="px-fea:deployments"></px-icon>
+    </div>
+
+    <div>
+      <p>Custom size (using CSS variables)</p>
+      <px-icon class="custom-size" icon="px-fea:deployments"></px-icon>
+    </div>
+  </template>
+</body>
+</html>

@@ -11,6 +11,7 @@
 <link rel="import" href="../../px-demo/px-demo-component-snippet.html" />
 
 <!-- Imports for this component -->
+<link rel="import" href="../../px-code-design/css/px-code-deisgn-demo-styles.html" />
 <link rel="import" href="../../px-demo/css/px-demo-styles.html" />
 <link rel="import" href="../px-icon.html" />
 <link rel="import" href="../px-icon-set.html" />
@@ -86,6 +87,69 @@
           </template>
         </div>
       </template>
+    </div>
+
+    <div class="demo-layout--center demo-u-pb+++ u-pt++">
+      <h4 class="gamma">How to use</h4>
+
+      <br />
+      <h5 class="epsilon">Step one</h5>
+      <p>Import both the icon set and the px-icon component</p>
+
+      <figure class="code">
+        <code >
+          &lt;link rel="import" href="../px-icon-set.html" /&gt;
+          <br />
+          &lt;link rel="import" href="../px-icon.html" /&gt;
+        </code>
+      </figure>
+
+      <p>px-icon-set imports ALL px icons sets. You can also import just the ones you want individually instead.</p>
+
+      <br />
+      <h5 class="epsilon">Step two</h5>
+      <p>Use px-icon on your page with the icon attribute set to your icon.</p>
+      <figure class="code">
+        <code >
+          &lt;px-icon icon="px-fea:deployments"&gt;&lt;/px-icon&gt;
+        </code>
+      </figure>
+
+      <px-icon icon="px-fea:deployments"></px-icon>
+
+      <p>Each icon will auto size to its default, optimized size, listed in the above cheatsheet.</p>
+
+      <br />
+      <h5 class="epsilon">Optional: Step three</h5>
+      <p>You can customize the icon size and color with CSS variables</p>
+      <figure class="code">
+        <code >
+          &lt;style&gt;
+          <br />
+            &nbsp;&nbsp;.custom-icon {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;--iron-icon-width: 50px;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;--iron-icon-height: 50px;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;color: salmon;<br />
+            &nbsp;&nbsp;}
+          <br />
+          &lt;/style&gt;
+          <br />
+          <br />
+          &lt;px-icon class="custom-icon" icon="px-fea:deployments"&gt;&lt;/px-icon&gt;
+        </code>
+      </figure>
+
+      <style>
+        .custom-icon {
+          --iron-icon-width: 50px;
+          --iron-icon-height: 50px;
+          color: salmon;
+        }
+      </style>
+      <px-icon class="custom-icon" icon="px-fea:deployments"></px-icon>
+
+
+      <p>Under the hood, px-icon uses iron-icon, so you can apply changes using the iron-icon variables</p>
     </div>
 
     <!-- Footer -->
