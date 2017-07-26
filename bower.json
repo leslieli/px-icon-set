@@ -29,7 +29,6 @@
   },
   "devDependencies": {
     "px-theme": "^3.0.0",
-    "px-starter-kit-design": "^1.0.0",
     "px-code-design": "^2.0.0",
     "px-toggle-design": "^2.0.0",
     "px-demo": "^2.0.0"
