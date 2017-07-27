@@ -1,3 +1,7 @@
+v2.0.2
+==================
+* Add zoom icon
+
 v2.0.1
 ==================
 * Update px-icon to set size via css
