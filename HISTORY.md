@@ -1,3 +1,7 @@
+v2.0.1
+==================
+* Update px-icon to set size via css
+
 v2.0.0
 ==================
 * Major bump for redesign, picking up sub-dependencies for now
