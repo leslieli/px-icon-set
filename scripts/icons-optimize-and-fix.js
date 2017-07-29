@@ -1,19 +1,16 @@
 'use strict';
 
-/**
- * Scans the `icons/src/` directory for .svg files. Grabs the source code from
- * each file, runs it through the svgo optimizer, and places a new .svg file
- * with the same name in `icons/optimized`.
- *
- * Also bundles all optimized icons as <g> groups without a wrapper <svg> in
- * `icons/optimized/_optimized.html`.
- *
- * TO RUN:
- * You need node 7.6+
- * If you're on 7.x run with the flag node --harmony-async-await
- * If you're on 8.x no flag
- *
- */
+// This obj links the prefix to the final file name
+// If you add a new set, register it here
+const iconsetNames = {
+  'com': 'communication',
+  'doc': 'document',
+  'fea': 'feature',
+  'nav': 'navigation',
+  'obj': 'object',
+  'utl': 'utility',
+  'vis': 'vis'
+};
 
 const fs = require('fs');
 const path = require('path');
@@ -49,13 +46,13 @@ const svgo = new SVGO({
 async function optimizeFromSrc() {
   console.log('Optimizing icons in icons/src/*.svg and placing the result in icons/optimized/*.svg');
   const inFolder = process.argv[2];
-  const ending = inFolder.slice(3);
-  const outFolder = `optimized${ending}`;
+  const ending = inFolder.slice(4);
+  const outFolder = `optimized-${ending}`;
 
   const dirpath = path.join(__dirname, '..', 'icons', inFolder);
   const fileList = await getFileList(dirpath);
   const fileNames = fileList.filter(f => f.slice(-4) === '.svg');
-  const outpath = path.join(__dirname, '..', 'icons', outFolder, `_optimized${ending}.html`);
+  const outpath = path.join(__dirname, '..', 'icons', outFolder, `_optimized-${ending}.html`);
   await write(outpath, '');
   const outws = fs.createWriteStream(outpath);
 
@@ -70,7 +67,26 @@ async function optimizeFromSrc() {
   }
 
   outws.end();
-  console.log(`Optimized ${fileNames.length} icons. All optimized <g> tags are available in a single file in icons/optimized/_optimized.html`);
+  console.log(`Optimized ${fileNames.length} icons. All optimized <g> tags are available in a single file in icons/optimized-${ending}/_optimized.html`);
+
+  console.log(`Copying optimized icons to icon set file`);
+
+  const iconsetPath = path.join(__dirname, '..', `px-icon-set-${iconsetNames[ending]}.html`);
+  const oldIconset = await read(iconsetPath);
+  const optimized = await read(outpath);
+
+  // First, get a list of ids to make sure we didnt loose any icons on accident
+  const oldIconNames = getIconNames(oldIconset);
+  const newIconNames = getIconNames(optimized);
+  compareNamesAndPrint(oldIconNames, newIconNames);
+
+  const [svgStart, svgEnd] = getSVGStuff(oldIconset);
+
+  const newIconset = svgStart + '\n' + optimized + svgEnd;
+
+  await write(iconsetPath, newIconset);
+
+  console.log(`Icons copied to set px-icon-set-${iconsetNames[ending]}.html`);
 };
 
 /**
@@ -79,16 +95,17 @@ async function optimizeFromSrc() {
  */
 function cleanForOutfile(string, name) {
   // We assume that they all have a title filed and our content starts after it...
-  var ending = '</title>',
-      endingStart = string.indexOf(ending),
-      index = endingStart + 8,
+  // FIXME This might not be a safe assumption. Probably a regex or something would be safer
+  const ending = '</title>';
+  const index = findIndex(ending,string);
 
-      //Fix our name, get rid of .svg, 32x32, and replace _ with -
-      n = name.split('.')[0].slice(0,-6).split('_').join('-'),
-      g = `<g id="${n}">`,
+  //Fix our name, get rid of .svg, 32x32, and replace _ with -
+  // FIXME .slice(0,-6) might need to get smarter to only slice if the 16x16 is there
+  const n = name.split('.')[0].slice(0,-6).split('_').join('-');
+  const g = `<g id="${n}">`;
 
-      // get our real content
-      s = string.slice(index).replace('</svg>','</g>').replace(/\sid="\w+"/, '').split('\n').filter(s=>s.length).map(s=>s.trim()).join('');
+  // get our real content
+  const s = string.slice(index).replace('</svg>','</g>').replace(/\sid="\w+"/, '').split('\n').filter(s=>s.length).map(s=>s.trim()).join('');
 
   return g + s;
 };
@@ -138,6 +155,47 @@ function write(path, string) {
       return resolve(path);
     });
   });
+};
+
+function getIconNames(src) {
+  const re = /<g\s?id="([^"]+)/g;
+  let names = [];
+  let n;
+
+  while(n = re.exec(src)) {
+    names.push(n[1])
+  }
+
+  return names;
+};
+
+function getSVGStuff(svg) {
+  const iStart = findIndex('<defs>', svg);
+  const iEnd = svg.indexOf('</defs>');
+  const start = svg.slice(0, iStart);
+  const end = svg.slice(iEnd);
+
+  return [start,end];
+};
+
+function findIndex(searchTerm, src) {
+  const i = src.indexOf(searchTerm);
+  return i + searchTerm.length;
+};
+
+function compareNamesAndPrint(oldName, newName) {
+  newName.forEach(name => {
+    const i = oldName.indexOf(name);
+    if(i > -1) { oldName.splice(i,1); }
+  });
+
+  if(oldName.length) {
+    console.log("\n\n********************************************************************************");
+    console.log("\nSome icons are missing or were renamed. Is this intentional?");
+    console.log(oldName.join('\n'));
+    console.log('\n');
+    console.log("********************************************************************************\n\n");
+  }
 };
 
 optimizeFromSrc();
