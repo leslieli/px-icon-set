@@ -2,6 +2,7 @@
 
 // This obj links the prefix to the final file name
 // If you add a new set, register it here
+// three letter set name (px-fea) and the longname used for the icon-set file name (px-icon-set-feature.html)
 const iconsetNames = {
   'com': 'communication',
   'doc': 'document',
@@ -15,6 +16,13 @@ const iconsetNames = {
 const fs = require('fs');
 const path = require('path');
 const SVGO = require('svgo');
+/*
+  Tried to get rid of our ids using svgo, but it kept getting rid of other attrs
+  too. Dont know why, so instead of relying on svgo to remove ids, we're just
+  doing it manually during our cleanForOutput stage. SVGO methods we tried were:
+    * using {cleanupIDs: true}
+    * adding id to {removeAttrs: {attrs: '(class|stroke|fill|id)'}}
+*/
 const svgo = new SVGO({
   full: true,
   multipass: true,
@@ -39,14 +47,17 @@ const svgo = new SVGO({
     {mergePaths: true},
     {convertShapeToPath: true},
     {transformsWithOnePath: false},
-    {removeAttrs: {attrs: '(class|stroke|fill)'}},
+    {removeAttrs: {attrs: '(class|stroke|fill)'}}
   ]
 });
 
+/*
+* Where the magic happens.
+*/
 async function optimizeFromSrc() {
   console.log('Optimizing icons in icons/src/*.svg and placing the result in icons/optimized/*.svg');
-  const inFolder = process.argv[2];
-  const ending = inFolder.slice(4);
+  const inFolder = process.argv[2];  //src folder
+  const ending = inFolder.slice(4);  //get the three letter code
   const outFolder = `optimized-${ending}`;
 
   const dirpath = path.join(__dirname, '..', 'icons', inFolder);
@@ -54,7 +65,7 @@ async function optimizeFromSrc() {
   const fileNames = fileList.filter(f => f.slice(-4) === '.svg');
   const outpath = path.join(__dirname, '..', 'icons', outFolder, `_optimized-${ending}.html`);
   await write(outpath, '');
-  const outws = fs.createWriteStream(outpath);
+  const outws = fs.createWriteStream(outpath); // write stream for the optimized.html versuin
 
   for (let file of fileNames) {
     let srcpath = path.join(__dirname, '..', 'icons', inFolder, file);
@@ -62,8 +73,8 @@ async function optimizeFromSrc() {
     let src = await read(srcpath);
     let optimized = await optimize(src);
     optimized = addAttrsForText(optimized);
-    outws.write(cleanForOutfile(optimized, file) + '\n');
-    await write(destpath, optimized);
+    outws.write(cleanForOutfile(optimized, file) + '\n'); //write the optimized and clean <g> to optimized.html
+    await write(destpath, optimized); //write the optimized svg version
   }
 
   outws.end();
@@ -76,11 +87,13 @@ async function optimizeFromSrc() {
   const optimized = await read(outpath);
 
   // First, get a list of ids to make sure we didnt loose any icons on accident
+  // Will only print a warning if something does go missing.
   const oldIconNames = getIconNames(oldIconset);
   const newIconNames = getIconNames(optimized);
   compareNamesAndPrint(oldIconNames, newIconNames);
 
-  const [svgStart, svgEnd] = getSVGStuff(oldIconset);
+  // get the start and end elements of the svg files
+  const [svgStart, svgEnd] = getSVGBoilerplate(oldIconset);
 
   const newIconset = svgStart + '\n' + optimized + svgEnd;
 
@@ -101,10 +114,11 @@ function cleanForOutfile(string, name) {
 
   //Fix our name, get rid of .svg, 32x32, and replace _ with -
   // FIXME .slice(0,-6) might need to get smarter to only slice if the 16x16 is there
-  const n = name.split('.')[0].slice(0,-6).split('_').join('-');
+  const n = name.split('.')[0].slice(0,-6).split('_').join('-').split(' ').join('-');
   const g = `<g id="${n}">`;
 
   // get our real content
+  // we manually remove ids here; we do this because of the note above in the svgo settings
   const s = string.slice(index).replace('</svg>','</g>').replace(/\sid="\w+"/, '').split('\n').filter(s=>s.length).map(s=>s.trim()).join('');
 
   return g + s;
@@ -114,6 +128,9 @@ function cleanForOutfile(string, name) {
  * Text must inherit its color from the CSS color property so it can be themed
  * correctly with style variables. Adds the necessary fill and stroke attrs
  * inline to <text> tags.
+ *
+ * This step is necessary because we have svgo strip out fill so
+ * everything else will theme properly
  */
 function addAttrsForText(string) {
   const match = string.match(/\<text/);
@@ -169,7 +186,10 @@ function getIconNames(src) {
   return names;
 };
 
-function getSVGStuff(svg) {
+/*
+* Gets the SVG elems we need for out icon set, leaving behind all the icons
+*/
+function getSVGBoilerplate(svg) {
   const iStart = findIndex('<defs>', svg);
   const iEnd = svg.indexOf('</defs>');
   const start = svg.slice(0, iStart);
@@ -178,11 +198,17 @@ function getSVGStuff(svg) {
   return [start,end];
 };
 
+/*
+* Gives us the index at the end of a search term
+*/
 function findIndex(searchTerm, src) {
   const i = src.indexOf(searchTerm);
   return i + searchTerm.length;
 };
 
+/*
+  Provides a check that icons have not gone missing
+*/
 function compareNamesAndPrint(oldName, newName) {
   newName.forEach(name => {
     const i = oldName.indexOf(name);
