@@ -1,3 +1,7 @@
+v2.0.3
+==================
+* fix typo in demo import
+
 v2.0.2
 ==================
 * Add zoom icon
