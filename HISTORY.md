@@ -1,3 +1,7 @@
+v2.0.4
+==================
+* fix codepen
+
 v2.0.3
 ==================
 * fix typo in demo import
