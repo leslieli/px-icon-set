@@ -1,3 +1,7 @@
+v2.0.6
+==================
+* add px-utl:check
+
 v2.0.5
 ==================
 * runtime theming for demo
