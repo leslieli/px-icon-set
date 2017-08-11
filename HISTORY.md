@@ -1,3 +1,7 @@
+v2.0.7
+==================
+* add new objects (imaging machine, cell tower, controller, database, desktop, gateway, sensor)
+
 v2.0.6
 ==================
 * add px-utl:check
