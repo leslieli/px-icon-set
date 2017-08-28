@@ -1,3 +1,7 @@
+v2.0.9
+==================
+* add new icons for stepper
+
 v2.0.8
 ==================
 * fix obj-controller (#3)
