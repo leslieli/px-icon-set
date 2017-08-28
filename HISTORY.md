@@ -1,3 +1,7 @@
+v2.0.8
+==================
+* fix obj-controller (#3)
+
 v2.0.7
 ==================
 * add new objects (imaging machine, cell tower, controller, database, desktop, gateway, sensor)

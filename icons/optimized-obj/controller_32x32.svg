@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <style>
-    .st0{fill:none;stroke:#4C6472;stroke-width:0.93;stroke-linejoin:round;} .st1{fill:none;stroke:#4C6472;stroke-linejoin:round;}
-  </style>
-  <path d="M8.7 17.9V1.5h13v2.3m0 3.2v23.5h-13V21"/>
-  <circle cx="15" cy="12.5" r="1.5"/>
-  <circle cx="15" cy="5.3" r="1.5"/>
-  <path d="M16.5 5.5h14.4"/>
-  <circle cx="15" cy="26.9" r="1.5"/>
-  <circle cx="15" cy="19.5" r="1.5"/>
-  <path d="M13.5 19.5H1.1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.8 29.93">
+  <title>
+    controller_32x32
+  </title>
+  <path d="M7.6 16.86V.47h13v2.3m0 3.19v23.5h-13v-9.5"/>
+  <circle cx="13.9" cy="11.47" r="1.5"/>
+  <circle cx="13.9" cy="4.27" r="1.5"/>
+  <path d="M15.4 4.47h14.4"/>
+  <circle cx="13.9" cy="25.86" r="1.5"/>
+  <circle cx="13.9" cy="18.47" r="1.5"/>
+  <path d="M12.4 18.47H0"/>
 </svg>
