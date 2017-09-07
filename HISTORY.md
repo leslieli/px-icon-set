@@ -1,3 +1,7 @@
+v2.0.10
+==================
+* reduce size of uncomfirmed slightly
+
 v2.0.9
 ==================
 * add new icons for stepper
