@@ -1,3 +1,7 @@
+v2.0.11
+==================
+* bump tag
+
 v2.0.10
 ==================
 * reduce size of uncomfirmed slightly
