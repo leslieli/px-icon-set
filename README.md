@@ -40,7 +40,7 @@ Finally, use the component in your application:
 
 ## Documentation
 
-Read the full API and view the demo [here](https://predixdev.github.io/px-icon-set).
+Read the full API and view the demo [here](https://www.predix-ui.com/#/elements/px-icon-set).
 
 ## Local Development
 
