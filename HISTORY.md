@@ -1,3 +1,7 @@
+v2.0.13
+==================
+* add missing icon for asset ingestion (#5)
+
 v2.0.12
 ==================
 * add new icon for chip
