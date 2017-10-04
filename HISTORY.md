@@ -1,3 +1,7 @@
+v2.0.14
+==================
+* reduce size of a few icons to prevent clipping
+
 v2.0.13
 ==================
 * add missing icon for asset ingestion (#5)

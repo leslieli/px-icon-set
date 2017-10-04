@@ -3,5 +3,5 @@
     _
   </title>
   <path stroke-linejoin="round" d="M8.5 15.84V6.16L16 11l-7.5 4.84z"/>
-  <circle cx="11" cy="11" r="10.5" stroke-linejoin="round"/>
+  <circle cx="11" cy="11" r="10" stroke-linejoin="round"/>
 </svg>
