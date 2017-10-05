@@ -64,8 +64,13 @@
       icon: {
         type: String,
         reflectToAttribute: true,
-        observer: 'updateStyles'
+        observer: '_updateStylesIndirect'
       }
+    },
+
+    _updateStylesIndirect: function() {
+      //calling this without argument
+      this.updateStyles();
     }
   })
 </script>

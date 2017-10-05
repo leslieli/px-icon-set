@@ -1,3 +1,7 @@
+v2.0.15
+==================
+* call updateStyles indirectly to avoid having unneeded properties in custom styles
+
 v2.0.14
 ==================
 * reduce size of a few icons to prevent clipping
