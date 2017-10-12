@@ -1,6 +1,10 @@
-v2.0.15
+v2.0.16
 ==================
 * add new icon for lasso
+
+v2.0.15
+==================
+* call updateStyles indirectly to avoid having unneeded properties in custom styles
 
 v2.0.14
 ==================
