@@ -1,3 +1,7 @@
+v2.0.15
+==================
+* add new icon for lasso
+
 v2.0.14
 ==================
 * reduce size of a few icons to prevent clipping
