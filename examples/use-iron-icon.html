@@ -50,68 +50,70 @@
 
 </head>
 <body>
-  <template is="dom-bind">
-    <custom-style>
-      <style is="custom-style">
-        body {
-          margin: 20px;
-        }
+  <dom-bind>
+    <template is="dom-bind">
+      <custom-style>
+        <style is="custom-style">
+          body {
+            margin: 20px;
+          }
 
-        .flex {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          margin-bottom: 5px;
-        }
+          .flex {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 5px;
+          }
 
-        .icon-container {
-          width: 40px;
-        }
+          .icon-container {
+            width: 40px;
+          }
 
-        .inverse-color {
-          stroke: black;
-          fill: none;
-        }
+          .inverse-color {
+            stroke: black;
+            fill: none;
+          }
 
-        .custom-size {
-          width: 75px;
-          height: 75px;
-        }
-      </style>
-    </custom-style>
+          .custom-size {
+            width: 75px;
+            height: 75px;
+          }
+        </style>
+      </custom-style>
 
-    <div>
-      <h3>iron-icon auto sizes everything to 24px and uses a fill instead of stroke</h3>
+      <div>
+        <h3>iron-icon auto sizes everything to 24px and uses a fill instead of stroke</h3>
 
-      <div class="flex">
-        <span class="icon-container">
-          <iron-icon icon="px-fea:deployments"></iron-icon>
-        </span>
-        <span> 32px</span>
+        <div class="flex">
+          <span class="icon-container">
+            <iron-icon icon="px-fea:deployments"></iron-icon>
+          </span>
+          <span> 32px</span>
+        </div>
+        <div class="flex">
+          <span class="icon-container">
+            <iron-icon icon="px-nav:favorite"></iron-icon>
+          </span>
+          <span> 22px</span>
+        </div>
+        <div class="flex">
+          <span class="icon-container">
+            <iron-icon icon="px-utl:app-settings"></iron-icon>
+          </span>
+          <span>16px</span>
+        </div>
       </div>
-      <div class="flex">
-        <span class="icon-container">
-          <iron-icon icon="px-nav:favorite"></iron-icon>
-        </span>
-        <span> 22px</span>
-      </div>
-      <div class="flex">
-        <span class="icon-container">
-          <iron-icon icon="px-utl:app-settings"></iron-icon>
-        </span>
-        <span>16px</span>
-      </div>
-    </div>
 
-    <div>
-      <h3>You will have to reverse the stroke and fill in CSS</h3>
-      <iron-icon class="inverse-color" icon="px-fea:deployments"></iron-icon>
-    </div>
+      <div>
+        <h3>You will have to reverse the stroke and fill in CSS</h3>
+        <iron-icon class="inverse-color" icon="px-fea:deployments"></iron-icon>
+      </div>
 
-    <div>
-      <p>Custom size (using CSS)</p>
-      <iron-icon class="custom-size inverse-color" icon="px-fea:deployments"></iron-icon>
-    </div>
-  </template>
+      <div>
+        <p>Custom size (using CSS)</p>
+        <iron-icon class="custom-size inverse-color" icon="px-fea:deployments"></iron-icon>
+      </div>
+    </template>
+  </dom-bind>
 </body>
 </html>
