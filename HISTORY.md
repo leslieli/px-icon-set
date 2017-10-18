@@ -1,3 +1,7 @@
+v2.0.17
+==================
+* add new icon for connection
+
 v2.0.16
 ==================
 * add new icon for lasso
