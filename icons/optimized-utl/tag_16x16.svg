@@ -2,6 +2,5 @@
   <title>
     tag_16x16
   </title>
-  <path stroke-linejoin="round" d="M6.52 13.84L.5 7.82 7.81.5h6.03v6.02l-7.32 7.32z"/>
-  <circle cx="11.17" cy="3.19" r=".89" stroke-linejoin="round"/>
+  <path d="M6.52 13.84l-6-6L7.81.5h6v6zm3.76-10.67a.89.89 0 1 0 .89-.87.89.89 0 0 0-.89.87z" stroke-linejoin="round"/>
 </svg>

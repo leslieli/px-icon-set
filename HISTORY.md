@@ -1,3 +1,7 @@
+v2.0.19
+==================
+* add new vis icons, optimize icons for fill
+
 v2.0.18
 ==================
 * add new analysis icons, fix spacing of others

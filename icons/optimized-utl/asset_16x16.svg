@@ -3,7 +3,6 @@
     asset_16x16
   </title>
   <g>
-    <path id="canvas_background" d="M-1-1h582v402H-1z"/>
     <path d="M13.15 10.88V4.76l-5.43-3-5.32 3v6.12l4.99 3.17 5.76-3.17zM7.4 13.94V7.99"/>
     <path d="M2.4 4.93L7.41 8.1l5.74-3.34"/>
   </g>

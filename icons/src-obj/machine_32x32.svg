@@ -3,7 +3,6 @@
 
  <g>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m4.74994,19.05998c0,-9.56 5.15,-17.31 11.5,-17.31s11.5,7.75 11.5,17.31"/>
-  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="2.34" cy="19.05998" cx="16.24994"/>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m16.24994,30.55998a11.5,11.5 0 1 1 11.5,-11.5a11.51,11.51 0 0 1 -11.5,11.5z"/>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m15.83994,16.56998c-1.74,-2.2 -1.12,-5.93 -1.12,-5.93"/>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m17.71994,16.99998c0.32,-2.79 3.4,-5 3.4,-5"/>
@@ -13,5 +12,6 @@
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m14.77994,21.10998c-0.32,2.79 -3.4,5 -3.4,5"/>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m13.75994,19.46998c-2.2,1.74 -5.93,1.12 -5.93,1.12"/>
   <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m14.19994,17.58998c-2.79,-0.32 -5,-3.4 -5,-3.4"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="2.34" cy="19.05998" cx="16.24994"/>
  </g>
 </svg>

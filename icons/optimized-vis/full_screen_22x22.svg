@@ -2,6 +2,6 @@
   <title>
     full_screen_22x22
   </title>
-  <path stroke-linejoin="round" d="M4 18L18 4m-8-.5h8.5V12M12 18.5H3.5V10"/>
   <rect x=".5" y=".5" width="21" height="21" rx="2" ry="2" stroke-linejoin="round"/>
+  <path stroke-linejoin="round" d="M4 18L18 4m-8-.5h8.5V12M12 18.5H3.5V10"/>
 </svg>

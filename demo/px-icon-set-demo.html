@@ -94,36 +94,40 @@
     <div class="demo-layout--center demo-u-pb+++ u-pt++">
       <h4 class="gamma">How to use</h4>
 
-      <br />
-      <h5 class="epsilon">Step one</h5>
-      <p>Import both the icon set and the px-icon component</p>
+      <p>Please refer to the <a href="https://www.predix-ui.com/#/design/iconography">design guidelines</a> for more information on the proper use of iconography.</p>
+
+      <h5 class="epsilon">Step One</h5>
+      <p>Import px-icon-set.html, which imports both px-icon.html and ALL of the icon sets (Document, Utility, etc):</p>
 
       <figure class="code">
         <code >
           &lt;link rel="import" href="../px-icon-set.html" /&gt;
-          <br />
-          &lt;link rel="import" href="../px-icon.html" /&gt;
         </code>
       </figure>
 
-      <p>px-icon-set imports ALL px icons sets. You can also import just the ones you want individually instead.</p>
+      <p>Alternatively, you can import px-icon.html and a specific icon set individually:</p>
 
-      <br />
-      <h5 class="epsilon">Step two</h5>
-      <p>Use px-icon on your page with the icon attribute set to your icon.</p>
       <figure class="code">
         <code >
-          &lt;px-icon icon="px-fea:deployments"&gt;&lt;/px-icon&gt;
+          &lt;link rel="import" href="../px-icon.html" /&gt;<br/>
+          &lt;link rel="import" href="../px-icon-set-utility.html" /&gt;
         </code>
       </figure>
 
-      <px-icon icon="px-fea:deployments"></px-icon>
+      <br />
+      <h5 class="epsilon">Step Two</h5>
+      <p>Use px-icon on your page with the icon attribute set to your icon. Unlike iron-icon, each icon will auto size to its default optimized size listed in the cheatsheet above. If you need to change the size, proceed to Step Three.</p>
+      <figure class="code">
+        <code >
+          &lt;px-icon icon="px-nav:favorite"&gt;&lt;/px-icon&gt;
+        </code>
+      </figure>
 
-      <p>Unlike iron-icon, each icon will auto size to its default, optimized size, listed in the above cheatsheet. If you need to change the size, proceed to Step Three</p>
+      <px-icon icon="px-nav:favorite"></px-icon>
 
       <br />
-      <h5 class="epsilon">Optional: Step three</h5>
-      <p>You can customize the icon size and color with CSS variables</p>
+      <h5 class="epsilon">Optional: Step Three</h5>
+      <p>You can customize the icon size and color with CSS variables. If you scale up the icon size, you may need to reduce the stroke width to compensate, and vice versa. Some of the fully enclosed px-icons can also be used with fill to indicate a toggled state, for instance.</p>
       <figure class="code">
         <code >
           &lt;style&gt;
@@ -131,13 +135,15 @@
             &nbsp;&nbsp;.custom-icon {<br />
             &nbsp;&nbsp;&nbsp;&nbsp;--iron-icon-width: 50px;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;--iron-icon-height: 50px;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;color: salmon;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;stroke-width: 0.75;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;stroke: orange;       /* or "color: orange;" also works */ <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;fill: yellow;<br />
             &nbsp;&nbsp;}
           <br />
           &lt;/style&gt;
           <br />
           <br />
-          &lt;px-icon class="custom-icon" icon="px-fea:deployments"&gt;&lt;/px-icon&gt;
+          &lt;px-icon class="custom-icon" icon="px-nav:favorite"&gt;&lt;/px-icon&gt;
         </code>
       </figure>
 
@@ -145,13 +151,13 @@
         .custom-icon {
           --iron-icon-width: 50px;
           --iron-icon-height: 50px;
-          color: salmon;
+          stroke-width: 0.75;
+          stroke: orange;
+          fill: yellow; 
         }
       </style>
-      <px-icon class="custom-icon" icon="px-fea:deployments"></px-icon>
+      <px-icon class="custom-icon" icon="px-nav:favorite"></px-icon> 
 
-
-      <p>Under the hood, px-icon uses iron-icon, so you can apply changes using the iron-icon variables</p>
     </div>
 
     <!-- Footer -->
@@ -255,25 +261,25 @@
 
       switch(s) {
         case 'px-doc':
-          t = 'Document : Small - 16px';
+          t = 'Document: Small - 16px';
           break;
         case 'px-utl':
-          t = 'Utility : Small - 16px';
+          t = 'Utility: Small - 16px';
           break;
         case 'px-nav':
-          t = 'Navigation : Medium - 22px';
+          t = 'Navigation: Medium - 22px';
           break;
         case 'px-com':
-          t = 'Communication : Large - 32px';
+          t = 'Communication: Large - 32px';
           break;
         case 'px-fea':
-          t = 'Feature : Large - 32px';
+          t = 'Feature: Large - 32px';
           break;
         case 'px-obj':
-          t = 'Object : Large - 32px';
+          t = 'Object: Large - 32px';
           break;
         case 'px-vis':
-          t = 'Visualization : Medium - 22px';
+          t = 'Visualization: Medium - 22px';
           break;
       }
 
