@@ -1,10 +1,11 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 30.14">
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
   <title>
     data_sources_32x32
   </title>
-  <rect x=".5" y="23.64" width="22" height="6" rx="1" ry="1" stroke-miterlimit="10"/>
-  <path d="M18.5 7.39H26a1 1 0 0 1 1 1v17m-22 0v-17a1 1 0 0 1 1-1h7.5" transform="translate(-4.5 -.75)" stroke-miterlimit="10"/>
-  <circle cx="4.5" cy="26.64" r="1" stroke-miterlimit="10"/>
-  <path stroke-miterlimit="10" d="M8 26.64h12M11.5 14.5V1"/>
-  <path stroke-linejoin="round" d="M7.5 4.5l4-4 4 4"/>
+  <g>
+    <rect ry="1" rx="1" height="6" width="22" y="24.265" x="5.187"/>
+    <path d="M18.687 7.265h7.5a1 1 0 0 1 1 1v17m-22 0v-17a1 1 0 0 1 1-1h7.5"/>
+    <circle r="1" cy="27.265" cx="9.187"/>
+    <path d="M12.687 27.265h12m-8.5-12.14v-13.5m-4 3.5l4-4 4 4"/>
+  </g>
 </svg>

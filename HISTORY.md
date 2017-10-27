@@ -1,3 +1,7 @@
+v2.0.18
+==================
+* add new analysis icons, fix spacing of others
+
 v2.0.17
 ==================
 * add new icon for connection

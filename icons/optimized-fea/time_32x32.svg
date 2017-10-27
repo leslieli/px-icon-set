@@ -1,0 +1,9 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    time_32x32
+  </title>
+  <g>
+    <circle stroke-linejoin="round" r="14.5" cy="16.063" cx="16.063"/>
+    <path stroke-linejoin="round" d="M15.092 8.332v9.66l6.83-3.92"/>
+  </g>
+</svg>

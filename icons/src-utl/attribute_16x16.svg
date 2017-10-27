@@ -1,0 +1,10 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+ <title>attribute_16x16</title>
+
+ <g>
+  <path d="m7.90499,4.265a0.91,0.91 0 1 0 0.91,0.91a0.91,0.91 0 0 0 -0.91,-0.91z" fill="none" stroke="#4c6472" stroke-miterlimit="10" />
+  <path d="m12.93499,14.325l-10.06,0l0,-10l5,-3.48l5,3.48l0.06,10z" fill="none" stroke="#4c6472" stroke-linejoin="round" />
+  <line x1="4.24499" y1="8.845" x2="11.56499" y2="8.845" fill="none" stroke="#4c6472" stroke-miterlimit="10" />
+  <line x1="5.16499" y1="11.585" x2="10.65499" y2="11.585" fill="none" stroke="#4c6472" stroke-miterlimit="10" />
+ </g>
+</svg>
