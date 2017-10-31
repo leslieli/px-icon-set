@@ -1,3 +1,7 @@
+v2.0.20
+==================
+* add device flags
+
 v2.0.19
 ==================
 * add new vis icons, optimize icons for fill
