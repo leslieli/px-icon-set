@@ -1,0 +1,8 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title>time_32x32</title>
+
+ <g>
+  <circle stroke-linejoin="round" stroke="#4c6472" fill="none" r="14.5" cy="16.0625" cx="16.0625"/>
+  <polyline stroke-linejoin="round" stroke="#4c6472" fill="none" points="15.092496991157532,8.332497239112854 15.092496991157532,17.99249756336212 21.922497868537903,14.072497487068176 "/>
+ </g>
+</svg>

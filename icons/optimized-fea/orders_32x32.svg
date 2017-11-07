@@ -1,10 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 32">
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
   <title>
     orders_32x32
   </title>
-  <path stroke-miterlimit="10" d="M25.5 6.5v25H.5V.5h19l6 6z"/>
-  <path stroke-miterlimit="10" d="M18.5.5v7h7M5 21.5h13m-13-4h16m-16 8h16"/>
-  <text fill="currentcolor" stroke="none"  transform="translate(5.72 12.81)" font-size="12" font-weight="700">
-    $
-  </text>
+  <g>
+    <path stroke-miterlimit="10" d="M29.062 7.125v23.75H5.312V1.425h18.05l5.7 5.7z"/>
+    <path stroke-miterlimit="10" d="M23.437 1.25v5.625h5.625m-20.5 14.688h13m-13-4h16m-16 8h16"/>
+    <text fill="currentcolor" stroke="none"  x="9.282" y="12.873" font-weight="700" font-size="12">
+      $
+    </text>
+  </g>
 </svg>

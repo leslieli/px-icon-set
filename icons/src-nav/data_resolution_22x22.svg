@@ -1,0 +1,24 @@
+<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+ <title>data_resolution_22x22</title>
+
+ <g>
+  <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m20.56249,20.35249"/>
+  <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m1.37249,20.35249"/>
+  <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m1.81249,1.56249"/>
+  <path stroke-miterlimit="10" stroke="#4c6472" fill="none" d="m1.81249,20.75249"/>
+  <line stroke-miterlimit="10" stroke-linecap="square" stroke="#4c6472" fill="none" y2="9.78249" x2="6.84249" y1="12.37249" x1="5.55249"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="12.36249" x2="12.49249" y1="9.10249" x1="8.61249"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="9.48249" x2="14.32249" y1="10.83249" x1="13.99249"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="7.20249" x2="18.81249" y1="9.78249" x1="17.94249"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="10.55249" x2="17.01249" y1="8.86249" x1="15.47249"/>
+  <line stroke-dasharray="1 1" stroke-miterlimit="10" stroke="#4c6472" fill="none" y2="19.87249" x2="11.40249" y1="12.02249" x1="11.40249"/>
+  <line y1="1.56249" stroke-dasharray="1 1" stroke-miterlimit="10" stroke="#4c6472" fill="none" y2="9.41249" x2="11.40249" x1="11.40249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="8.54249" cx="7.48249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="13.77249" cx="4.86249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="12.90249" cx="13.58249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="11.15249" cx="17.94249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="8.54249" cx="14.45249"/>
+  <circle stroke-miterlimit="10" stroke="#4c6472" fill="none" r="1.31" cy="5.92249" cx="18.82249"/>
+  <polyline stroke-miterlimit="10" stroke="#4c6472" fill="none" points="1.812492847442627,1.5624914169311523 1.812492847442627,20.312491416931152 20.562492847442627,20.312491416931152 "/>
+ </g>
+</svg>

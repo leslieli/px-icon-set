@@ -1,1 +1,8 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 25"><title>orchestration_32x32</title><path d="M30.5,28.5H1.5s0-14.28,6.21-22.43S10.82,24.42,17,21.36,30.5,3,30.5,28.5Z" transform="translate(-1 -4)" fill="none" stroke="#4c6472" stroke-linejoin="round"/><path d="M1.5,28.5C7.71,17.28,13.93,6.07,17,12.18s3.11,11.22,7.25,8.16S30.5,23.4,30.5,28.5" transform="translate(-1 -4)" fill="none" stroke="#4c6472" stroke-linejoin="round"/></svg>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title>orchestration_32x32</title>
+
+ <g>
+  <path d="m30.37499,27.56245l-29,0s0,-14.28 6.21,-22.43s3.11,18.35 9.29,15.29s13.5,-18.36 13.5,7.14z" fill="none" stroke="#4c6472" stroke-linejoin="round"/>
+  <path d="m1.37499,27.56245c6.21,-11.22 12.43,-22.43 15.5,-16.32s3.11,11.22 7.25,8.16s6.25,3.06 6.25,8.16" fill="none" stroke="#4c6472" stroke-linejoin="round"/>
+ </g>
+</svg>

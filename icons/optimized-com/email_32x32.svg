@@ -2,6 +2,6 @@
   <title>
     email_32x32
   </title>
-  <path stroke-linejoin="round" d="M29.5 2.63L15 13.5.5 2.63V.5h29v2.13z"/>
   <path stroke-linejoin="round" d="M.5 6v15.5h29V6"/>
+  <path stroke-linejoin="round" d="M29.5 2.63L15 13.5.5 2.63V.5h29v2.13z"/>
 </svg>

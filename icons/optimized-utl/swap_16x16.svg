@@ -1,0 +1,10 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    swap_16x16
+  </title>
+  <g>
+    <path stroke-miterlimit="10" d="M14.287 11.947h-4.08l-5.23-7.97H.937"/>
+    <path stroke-miterlimit="10" d="M12.277 9.697l2.19 2.19-2.19 2.18m2.01-10.09h-4.08l-1.48 2.03"/>
+    <path stroke-miterlimit="10" d="M12.257 1.787l2.19 2.19-2.19 2.18m-5.99 3.6l-1.42 2.19H.937"/>
+  </g>
+</svg>

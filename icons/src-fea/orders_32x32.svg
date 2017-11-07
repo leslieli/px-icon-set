@@ -1,1 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 32"><title>orders_32x32</title><polygon points="25.5 6.5 25.5 31.5 0.5 31.5 0.5 0.5 19.5 0.5 25.5 6.5" fill="none" stroke="#4c6472" stroke-miterlimit="10"/><polyline points="18.5 0.5 18.5 7.5 25.5 7.5" fill="none" stroke="#4c6472" stroke-miterlimit="10"/><line x1="5" y1="21.5" x2="18" y2="21.5" fill="none" stroke="#4c6472" stroke-miterlimit="10"/><line x1="5" y1="17.5" x2="21" y2="17.5" fill="none" stroke="#4c6472" stroke-miterlimit="10"/><line x1="5" y1="25.5" x2="21" y2="25.5" fill="none" stroke="#4c6472" stroke-miterlimit="10"/><text transform="translate(5.72 12.81)" font-size="12" fill="#4c6472" font-weight="700">$</text></svg>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title>orders_32x32</title>
+
+ <g>
+  <polygon stroke="#4c6472" stroke-miterlimit="10" fill="none" points="29.062463760375977,7.1249935030937195 29.062463760375977,30.87500685453415 5.312451362609863,30.87500685453415 5.312451362609863,1.4249898791313171 23.36246109008789,1.4249898791313171 29.062463760375977,7.1249935030937195 "/>
+  <polyline stroke="#4c6472" stroke-miterlimit="10" fill="none" points="23.437450408935547,1.2499927878379822 23.437450408935547,6.875006377696991 29.062463760375977,6.875006377696991 "/>
+  <line stroke-miterlimit="10" stroke="#4c6472" fill="none" y2="21.5625" x2="21.56246" y1="21.5625" x1="8.56246"/>
+  <line stroke-miterlimit="10" stroke="#4c6472" fill="none" y2="17.5625" x2="24.56246" y1="17.5625" x1="8.56246"/>
+  <line stroke-miterlimit="10" stroke="#4c6472" fill="none" y2="25.5625" x2="24.56246" y1="25.5625" x1="8.56246"/>
+  <text x="9.28246" y="12.8725" font-weight="700" fill="#4c6472" font-size="12">$</text>
+ </g>
+</svg>

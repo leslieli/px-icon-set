@@ -1,19 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 26 29.9" style="enable-background:new 0 0 26 29.9;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#4C6472;stroke-linejoin:round;}
-</style>
-<title>log_32x32</title>
-<g>
-	<polyline class="st0" points="20.2,2.4 25.5,2.4 25.5,29.4 0.5,29.4 0.5,2.4 6.8,2.4 	"/>
-	<rect x="8.4" y="0.5" class="st0" width="10" height="4"/>
-	<line class="st0" x1="10" y1="11.5" x2="20.3" y2="11.5"/>
-	<rect x="5.4" y="11.5" class="st0" width="3" height="3"/>
-	<line class="st0" x1="10" y1="14.5" x2="18.4" y2="14.5"/>
-	<line class="st0" x1="10" y1="19.5" x2="20.3" y2="19.5"/>
-	<rect x="5.4" y="19.5" class="st0" width="3" height="3"/>
-	<line class="st0" x1="10" y1="22.5" x2="18.4" y2="22.5"/>
-</g>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:none;stroke:#4C6472;stroke-linejoin:round;}</style>
+
+ <title>log_32x32</title>
+ <g>
+   <polyline class="st0" points="23.19990849494934,3.3999693393707275 28.499907732009888,3.3999693393707275 28.499907732009888,30.39996886253357 3.4999077320098877,30.39996886253357 3.4999077320098877,3.3999693393707275 9.799907922744751,3.3999693393707275 "/>
+   <rect x="11.39991" y="1.49997" class="st0" width="10" height="4"/>
+   <line class="st0" x1="12.99991" y1="12.49997" x2="23.29991" y2="12.49997"/>
+   <rect x="8.39991" y="12.49997" class="st0" width="3" height="3"/>
+   <line class="st0" x1="12.99991" y1="15.49997" x2="21.39991" y2="15.49997"/>
+   <line class="st0" x1="12.99991" y1="20.49997" x2="23.29991" y2="20.49997"/>
+   <rect x="8.39991" y="20.49997" class="st0" width="3" height="3"/>
+   <line class="st0" x1="12.99991" y1="23.49997" x2="21.39991" y2="23.49997"/>
+ </g>
 </svg>

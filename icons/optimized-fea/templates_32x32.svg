@@ -2,9 +2,8 @@
   <title>
     templates_32x32
   </title>
-  <path stroke-linecap="round" stroke-linejoin="round" d="M5.5.5h24v23h-24z"/>
   <path stroke-linejoin="round" d="M25.5 26v2.5H.5v-23h3.19"/>
-  <path stroke-linecap="round" stroke-linejoin="round" d="M5.5 5.5h24"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.5.5h24v23h-24zm0 5h24"/>
   <path stroke-linejoin="round" d="M17 12.5h7m-7-3h9"/>
   <circle cx="11.5" cy="11" r="2" stroke-linejoin="round"/>
   <path stroke-linejoin="round" d="M17 19.5h7m-7-3h9"/>

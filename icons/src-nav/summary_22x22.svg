@@ -1,0 +1,12 @@
+<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+ <title>summary_22x22</title>
+
+ <g>
+  <polyline stroke-linejoin="round" stroke="#4c6472" fill="none" points="15.534971237182617,2.1199925541877747 18.754971504211426,2.1199925541877747 18.754971504211426,20.249992549419403 3.374971389770508,20.249992549419403 3.374971389770508,2.1199925541877747 6.414971351623535,2.1199925541877747 "/>
+  <rect stroke-linejoin="round" stroke="#4c6472" fill="none" height="2.78" width="6.4" y="1.24999" x="7.84497"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="9.42999" x2="15.50497" y1="9.42999" x1="9.24497"/>
+  <rect stroke-linejoin="round" stroke="#4c6472" fill="none" height="0.9" width="0.85" y="8.97999" x="6.54497"/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="13.90999" x2="15.50497" y1="13.90999" x1="9.20497"/>
+  <rect stroke-linejoin="round" stroke="#4c6472" fill="none" height="0.9" width="0.85" y="13.46999" x="6.54497"/>
+ </g>
+</svg>

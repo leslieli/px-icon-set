@@ -1,1 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.32 30"><title>microservice_32x32</title><polyline points="16.51 18.24 19.68 14.87 16.3 11.7" fill="none" stroke="#4c6472" stroke-linejoin="round"/><polyline points="8.92 11.64 5.64 14.92 8.92 18.19" fill="none" stroke="#4c6472" stroke-linejoin="round"/><line x1="10.79" y1="21" x2="14.53" y2="8.84" fill="none" stroke="#4c6472" stroke-linejoin="round"/><polygon points="24.82 22.25 24.82 7.75 12.66 0.5 0.5 7.75 0.5 22.25 12.66 29.5 24.82 22.25" fill="none" stroke="#4c6472" stroke-linejoin="round"/></svg>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title>microservice_32x32</title>
+
+ <g>
+  <polygon stroke-linejoin="round" stroke="#4c6472" fill="none" points="28.257473945617676,23.187492966651917 28.257473945617676,8.687492966651917 16.097474098205566,1.4374929666519165 3.937474250793457,8.687492966651917 3.937474250793457,23.187492966651917 16.097474098205566,30.437492966651917 28.257473945617676,23.187492966651917 "/>
+  <polyline stroke-linejoin="round" stroke="#4c6472" fill="none" points="19.947474479675293,19.17749273777008 23.11747455596924,15.807492852210999 19.737473487854004,12.637492775917053 "/>
+  <polyline stroke-linejoin="round" stroke="#4c6472" fill="none" points="12.357474327087402,12.57749330997467 9.077474117279053,15.857493042945862 12.357474327087402,19.127493500709534 "/>
+  <line stroke-linejoin="round" stroke="#4c6472" fill="none" y2="9.77749" x2="17.96747" y1="21.93749" x1="14.22747"/>
+ </g>
+</svg>

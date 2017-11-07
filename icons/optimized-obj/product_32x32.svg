@@ -1,10 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.85 29.92">
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
   <title>
     product_32x32
   </title>
-  <path stroke-linejoin="round" d="M26.35 21.58V8.4L13.43.56.5 8.4v13.18l12.93 7.83 12.92-7.83zm-22.09-4.7l4.49 2.76"/>
-  <path stroke-linejoin="round" d="M26.35 9.31v-.97L13.43.5.5 8.34v.5-.47"/>
-  <path stroke-linejoin="round" d="M8.42 3.54l.04.02 13.18 8.2M5.74 5.42l.04.02 13.18 8.2"/>
-  <path stroke-linejoin="round" d="M.42 8.87l13.01 7.88 13-7.88m-13 7.95V29.5"/>
-  <path stroke-linejoin="round" d="M18.96 13.39v3.9l2.77-1.79v-3.74"/>
+  <g>
+    <path stroke-linejoin="round" d="M28.6 22.83V9.65L15.68 1.81 2.75 9.65v13.18l12.93 7.83 12.92-7.83zm-22.09-4.7L11 20.89"/>
+    <path stroke-linejoin="round" d="M28.6 10.56v-.97L15.68 1.75 2.75 9.59v.5-.47"/>
+    <path stroke-linejoin="round" d="M2.67 10.12L15.68 18l13-7.88m-13 7.95v12.68"/>
+    <path stroke-linejoin="round" d="M21.21 14.64v3.9l2.77-1.79v-3.74M10.67 4.79l.04.02 13.18 8.2"/>
+    <path stroke-linejoin="round" d="M7.99 6.67l.04.02 13.18 8.2"/>
+  </g>
 </svg>
