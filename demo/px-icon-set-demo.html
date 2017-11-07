@@ -295,9 +295,10 @@
 
     triggerSizeChange: function(value) {
       if(this.props.useCustomSize.value) {
-        this.$.demoIcon.customStyle['--px-icon-default-width'] = value;
-        this.$.demoIcon.customStyle['--px-icon-default-height'] = value;
-        this.$.demoIcon.updateStyles();
+        this.$.demoIcon.updateStyles(
+          {'--px-icon-default-width': value,
+          '--px-icon-default-height': value
+        });
       }
     },
 
