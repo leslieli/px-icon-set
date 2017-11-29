@@ -1,3 +1,7 @@
+v2.1.2
+==================
+* add qr icon (#4)
+
 v2.1.1
 ==================
 * Fix updateStyles call in demo
