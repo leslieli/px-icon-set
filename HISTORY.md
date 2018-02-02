@@ -1,3 +1,7 @@
+v2.1.3
+==================
+* add additional doc icons
+
 v2.1.2
 ==================
 * add qr icon (#4)
