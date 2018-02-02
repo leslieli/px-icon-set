@@ -1,3 +1,7 @@
+v2.1.4
+==================
+* update travis
+
 v2.1.3
 ==================
 * add additional doc icons
