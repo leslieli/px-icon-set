@@ -1,3 +1,7 @@
+v2.1.7
+==================
+* add px-utl:caret-down
+
 v2.1.6
 ==================
 * add px-vis:resize (#15)
