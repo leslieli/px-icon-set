@@ -1,3 +1,7 @@
+v2.1.8
+==================
+* fix alignment of px-fea:dashboard
+
 v2.1.7
 ==================
 * add px-utl:caret-down
