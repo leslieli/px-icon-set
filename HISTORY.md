@@ -1,3 +1,7 @@
+v2.1.9
+==================
+* add px-doc:table (#16)
+
 v2.1.8
 ==================
 * fix alignment of px-fea:dashboard
