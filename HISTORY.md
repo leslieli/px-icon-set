@@ -1,3 +1,8 @@
+v2.1.10
+==================
+* add px-vis:reset
+* add px-vis:delta
+
 v2.1.9
 ==================
 * add px-doc:table (#16)
