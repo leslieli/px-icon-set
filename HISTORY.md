@@ -2,6 +2,7 @@ v2.1.10
 ==================
 * add px-vis:reset
 * add px-vis:delta
+* add px-nav:product-switcher
 
 v2.1.9
 ==================
