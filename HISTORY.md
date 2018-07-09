@@ -1,3 +1,7 @@
+v2.1.10
+==================
+* add px-nav:product-switcher
+
 v2.1.9
 ==================
 * add px-doc:table (#16)
