@@ -1,3 +1,8 @@
+v2.1.11
+=======
+* add px-vis:reset
+* add px-vis:delta
+
 v2.1.10
 ==================
 * add px-nav:product-switcher
