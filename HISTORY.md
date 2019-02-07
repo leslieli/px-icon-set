@@ -1,3 +1,8 @@
+v2.2.1
+=======
+* add px-svmx:crew
+* add px-svmx:resource
+
 v2.2.0
 =======
 * allow user to override stroke-width by css var
