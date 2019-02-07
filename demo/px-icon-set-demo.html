@@ -251,7 +251,7 @@ limitations under the License.
     },
     dynamicLoadIcons: function() {
       var iconCol = [0,1,2,3],
-          iconSets = ['px-com', 'px-doc', 'px-fea', 'px-nav', 'px-obj', 'px-utl', 'px-vis'],
+          iconSets = ['px-com', 'px-doc', 'px-fea', 'px-nav', 'px-obj', 'px-utl', 'px-vis', 'px-svmx'],
           meta = Polymer.Base.create('iron-meta', {type: 'iconset'}),
           sets = {};
 
@@ -298,6 +298,9 @@ limitations under the License.
           break;
         case 'px-vis':
           t = 'Visualization: Medium - 22px';
+          break;
+        case 'px-svmx':
+          t = 'SERVICEMAX: Large - 32px';
           break;
       }
 
