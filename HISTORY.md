@@ -1,3 +1,7 @@
+v2.2.4
+=======
+* Moving px-smx:crew and px-smx:resource icons part of feature icons
+
 v2.2.3
 =======
 * Fix px-smx:crew and px-smx:resource icons
