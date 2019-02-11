@@ -1,3 +1,7 @@
+v2.2.3
+=======
+* Fix px-smx:crew and px-smx:resource icons
+
 v2.2.1
 =======
 * add px-svmx:crew
