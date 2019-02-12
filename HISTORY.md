@@ -1,3 +1,7 @@
+v2.2.5
+=======
+* px-smx:crew and px-smx:resource icons using full canvas size
+
 v2.2.4
 =======
 * Moving px-smx:crew and px-smx:resource icons part of feature icons

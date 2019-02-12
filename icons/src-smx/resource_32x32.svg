@@ -1,3 +1,6 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>resource_32x32</title><path fill="none" stroke="#4C6472" stroke-miterlimit="10" d="M17,17.5L17,17.5c-2.5,0-4.5-2-4.5-4.5v-2c0-2.5,2-4.5,4.5-4.5h0
-	c2.5,0,4.5,2,4.5,4.5v2C21.5,15.5,19.5,17.5,17,17.5z"/><polyline fill="none" stroke="#4C6472" stroke-linejoin="round" stroke-miterlimit="10" points="22.2,17.6 26.5,20.6 26.5,24.5
-	7.5,24.5 7.5,20.6 11.8,17.6 "/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<title>resource_32x32</title>
+<path fill="none" stroke="#4C6472" stroke-miterlimit="10" d="M16,18.5L16,18.5c-3.6,0-6.5-2.9-6.5-6.5V8c0-3.6,2.9-6.5,6.5-6.5h0
+	c3.6,0,6.5,2.9,6.5,6.5v4C22.5,15.6,19.6,18.5,16,18.5z"/>
+<polyline fill="none" stroke="#4C6472" stroke-linejoin="round" stroke-miterlimit="10" points="23.6,19.4 30.5,23.1 30.5,30.5
+	1.5,30.5 1.5,23.1 8.4,19.4 "/></svg>
