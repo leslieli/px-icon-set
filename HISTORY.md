@@ -1,3 +1,7 @@
+v2.2.7
+=======
+* Add css for rotating 'Next' and 'Prev' icon as they are mirrored for RTL users which is incorrect.
+
 v2.2.6
 =======
 * Fix: Icon pin in map is too large in Firefox.
