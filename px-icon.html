@@ -14,9 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<link rel="import" href="../polymer/polymer.html"/>
-<link rel="import" href="../iron-flex-layout/iron-flex-layout.html"/>
-<link rel="import" href="../iron-icon/iron-icon.html"/>
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html" />
+<link rel="import" href="../iron-icon/iron-icon.html" />
 
 <dom-module id="px-icon">
   <template>
@@ -49,16 +49,19 @@ limitations under the License.
         stroke-width: var(--px-icon-stroke-width);
         @apply --iron-icon;
       }
+
       /* Also copied exactly from iron-icon */
       :host([hidden]) {
         display: none;
       }
+
       /* Set default sizes for all icons sets */
       :host([icon^='px-utl']),
       :host([icon^='px-doc']) {
         --px-icon-default-width: 16px;
         --px-icon-default-height: 16px;
       }
+
       :host([icon^='px-smx']),
       :host([icon^='px-obj']),
       :host([icon^='px-fea']),
@@ -66,6 +69,19 @@ limitations under the License.
         --px-icon-default-width: 32px;
         --px-icon-default-height: 32px;
       }
+
+      /* For "RTL" users, the next and prev icon are mirrored which should not be the case ,
+        So when the direction of render is "RTL" then rotate the icon , just next and Prev
+      */
+
+      :host([icon^='px-nav:back']):host-context([dir='rtl']) {
+        transform: rotate(180deg);
+      }
+
+      :host([icon^='px-nav:next']):host-context([dir='rtl']) {
+        transform: rotate(180deg);
+      }
+
       /* Forces iron-icon to inherit the :host scoped fill/stroke styles */
       iron-icon {
         color: inherit;
@@ -74,13 +90,14 @@ limitations under the License.
         width: inherit;
         height: inherit;
       }
+
     </style>
     <iron-icon icon="[[icon]]"></iron-icon>
   </template>
 </dom-module>
 <script>
   Polymer({
-    is:'px-icon',
+    is: 'px-icon',
     properties: {
       icon: {
         type: String,
@@ -89,7 +106,7 @@ limitations under the License.
       }
     },
 
-    _updateStylesIndirect: function() {
+    _updateStylesIndirect: function () {
       //calling this without argument
       this.updateStyles();
     }
