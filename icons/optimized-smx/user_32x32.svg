@@ -1,0 +1,14 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    user_32x32
+  </title>
+  <g>
+    <g transform="translate(-793 -279)">
+      <g transform="translate(100 164)">
+        <g transform="translate(693 115)">
+          <path d="M25.5 9.5a9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9 9 9 0 0 1 9 9zm-3.5 12H10A9.5 9.5 0 0 0 .5 31a.5.5 0 0 0 .5.5h30a.5.5 0 0 0 .5-.5 9.5 9.5 0 0 0-9.5-9.5z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

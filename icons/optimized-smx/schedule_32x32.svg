@@ -1,0 +1,14 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    schedule_32x32
+  </title>
+  <g>
+    <g transform="translate(-236 -281)">
+      <g transform="translate(100 164)">
+        <g transform="translate(136 117)">
+          <path d="M7 7.5H1A.5.5 0 0 1 .5 7V1A.5.5 0 0 1 1 .5h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zm5 24H6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zm0-12H6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zm-2-16h17m-12 12h17m-17 12h17"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

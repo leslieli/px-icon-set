@@ -1,0 +1,17 @@
+<svg viewBox="0 0 29 30" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    x_logo_32x32
+  </title>
+  <g>
+    <g transform="translate(-214 -558)">
+      <g transform="translate(69 444)">
+        <g transform="translate(145 114)">
+          <path d="M9.036 16.026L0 29.994h9.428l2.014-3.471c.571-.943 1.114-1.9 1.628-2.871.126-.239.232-.457.348-.685l-4.382-6.941z"/>
+          <g transform="translate(.343)">
+            <path d="M9.643 0H0l18.9 30h9.643zm9.901 13.149L28.199 0H18.77l-1.671 2.913c-.543.944-1.336 2.293-1.865 3.251l4.31 6.985z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
