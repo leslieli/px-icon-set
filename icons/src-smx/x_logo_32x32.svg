@@ -1,0 +1,16 @@
+<svg viewBox="0 0 29 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>x_logo_32x32</title>
+    <g stroke="none" stroke-width="1" fill="none">
+        <g transform="translate(-214.000000, -558.000000)" fill="#000066" fill-rule="nonzero">
+            <g transform="translate(69.000000, 444.000000)">
+                <g transform="translate(145.000000, 114.000000)">
+                    <path d="M9.036,16.026 L0,29.994 L9.428,29.994 L11.442,26.523 C12.0133333,25.5796667 12.556,24.6226667 13.07,23.652 C13.196,23.413 13.302,23.195 13.418,22.967 L9.036,16.026 Z"></path>
+                    <g transform="translate(0.343000, 0.000000)">
+                        <polygon points="9.643 0 0 0 18.9 30 28.543 30"></polygon>
+                        <path d="M19.544,13.149 L28.199,0 L18.77,0 L17.099,2.913 C16.556,3.857 15.763,5.206 15.234,6.164 L19.544,13.149 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,3 +1,9 @@
+
+v2.2.8
+=======
+* Add px-smx:project, px-smx:schedule, px-smx:maps and px-smx:crew-manager
+* Add px-smx:settings, px-smx:applications, px-smx:user and px-smx:x-logo
+
 v2.2.7
 =======
 * Add css for rotating 'Next' and 'Prev' icon as they are mirrored for RTL users which is incorrect.
