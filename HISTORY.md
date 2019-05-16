@@ -1,3 +1,6 @@
+v2.2.9
+=======
+* Add px-smm:settings, px-smm:applications and px-smm:user
 
 v2.2.8
 =======

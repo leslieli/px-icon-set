@@ -22,6 +22,7 @@
 // three letter set name (px-fea) and the longname used for the icon-set file name (px-icon-set-feature.html)
 const iconsetNames = {
   'smx': 'servicemax',
+  'smm': 'servicemax-medium',
   'com': 'communication',
   'doc': 'document',
   'fea': 'feature',
