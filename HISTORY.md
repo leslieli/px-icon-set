@@ -1,3 +1,7 @@
+v2.2.10
+=======
+* Add px-smx:jobs, px-smx:routes, px-smx:satellite and px-smx:traffic
+
 v2.2.9
 =======
 * Add px-smm:settings, px-smm:applications and px-smm:user
