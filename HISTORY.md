@@ -1,3 +1,7 @@
+v2.2.11
+=======
+* Add new icon for Job pin on map
+
 v2.2.10
 =======
 * Add px-smx:jobs, px-smx:routes, px-smx:satellite and px-smx:traffic
