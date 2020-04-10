@@ -1,3 +1,7 @@
+v2.2.12
+=======
+* Update px-smx:job icon
+
 v2.2.11
 =======
 * Add new icon for Job pin on map
