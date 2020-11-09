@@ -1,3 +1,7 @@
+v2.2.13
+=======
+* Add px-smx:asset
+
 v2.2.12
 =======
 * Update px-smx:job icon
