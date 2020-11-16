@@ -1,3 +1,7 @@
+v2.2.14
+=======
+* Update px-smx:asset icon
+
 v2.2.13
 =======
 * Add px-smx:asset
