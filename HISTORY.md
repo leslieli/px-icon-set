@@ -1,3 +1,7 @@
+v2.2.15
+=======
+* Update px-smx:asset icon size
+
 v2.2.14
 =======
 * Update px-smx:asset icon
