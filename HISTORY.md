@@ -1,3 +1,7 @@
+v2.2.16
+=======
+* Add px-smm:globe
+
 v2.2.15
 =======
 * Update px-smx:asset icon size
