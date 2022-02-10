@@ -1,11 +1,11 @@
 {
   "name": "px-icon-set",
-  "version": "2.2.16",
+  "version": "2.2.17",
   "description": "Base icon styles for Predix UI",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "optimize-icons": "node scripts/icons-copy-from-source.js && node scripts/icons-optimize.js"
+    "optimize-icons": "node scripts/icons-optimize-and-fix.js"
   },
   "repository": {
     "type": "git",
