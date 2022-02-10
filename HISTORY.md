@@ -1,3 +1,8 @@
+v2.2.17
+=======
+* Update utl:help to remove stroke width scaling.
+* Correct the optimize-icons script at package.json.
+
 v2.2.16
 =======
 * Add px-smm:globe
