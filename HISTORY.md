@@ -1,3 +1,8 @@
+v2.2.18
+=======
+* Add px-utl:match-case
+
+
 v2.2.17
 =======
 * Update utl:help to remove stroke width scaling.
