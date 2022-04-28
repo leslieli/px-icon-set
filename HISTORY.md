@@ -1,3 +1,7 @@
+v2.2.19
+=======
+* Add px-smx:pencil
+
 v2.2.18
 =======
 * Add px-utl:match-case
