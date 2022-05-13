@@ -1,3 +1,7 @@
+v2.2.20
+=======
+* Add px-smx:dependency
+
 v2.2.19
 =======
 * Add px-smx:pencil
