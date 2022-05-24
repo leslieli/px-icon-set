@@ -1,3 +1,7 @@
+v2.2.21
+=======
+* Move px-smx:dependency to px-smm:dependency
+
 v2.2.20
 =======
 * Add px-smx:dependency
