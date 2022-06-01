@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="17.72784" y1="2.95716" x2="16.04158" y2="19.11736">
+<stop offset="0.3" stop-color="#00C65E"/>
+<stop offset="1" stop-color="#006AC6"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="6.5611" y1="25.0792" x2="24.7908" y2="6.84958">
+<stop stop-color="#002891" stop-opacity="0"/>
+<stop offset="1" stop-color="#002891"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="25.0586" y1="17.50326" x2="11.74076" y2="30.8212">
+<stop offset="0.5145" stop-color="#00C65E"/>
+<stop offset="1" stop-color="#006AC6"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="11.17306" y1="-3.25076" x2="18.81802" y2="9.99068">
+<stop offset="0.5413" stop-color="#00C65E"/>
+<stop offset="0.636" stop-color="#00BF65"/>
+<stop offset="1" stop-color="#006AC6"/>
+</linearGradient>
+</defs>
+<path d="M 26.746094 28.941406 L 5.273438 28.941406 L 5.273438 23.742188 L 12.941406 14.382812 C 14.585938 12.398438 16.535156 10.039062 17.839844 8.546875 C 15.820312 8.617188 12.800781 8.660156 10.324219 8.660156 L 6.023438 8.660156 L 6.023438 2.753906 L 26.679688 2.753906 L 26.679688 8.769531 L 19.011719 17.304688 C 17.367188 19.289062 14.453125 22.480469 13.257812 23.785156 C 15.195312 23.867188 19.164062 23.785156 21.632812 23.785156 L 26.761719 23.660156 L 26.761719 28.941406 Z M 26.746094 28.941406 " fill="url(#linear0)"/>
+<path d="M 26.707031 8.761719 L 19.003906 17.351562 C 17.359375 19.335938 14.5625 22.355469 13.363281 23.667969 L 5.273438 23.792969 L 12.871094 14.445312 C 14.515625 12.460938 17.109375 9.261719 18.304688 7.957031 Z M 26.707031 8.761719 " fill="url(#linear1)"/>
+<path d="M 26.746094 23.667969 L 26.746094 29.371094 L 5.273438 29.371094 L 5.273438 23.742188 Z M 26.746094 23.667969 " fill="url(#linear2)"/>
+<path d="M 6.042969 8.804688 L 6.042969 2.679688 L 26.707031 2.71875 L 26.707031 8.769531 Z M 6.042969 8.804688 " fill="url(#linear3)"/>
+</svg>

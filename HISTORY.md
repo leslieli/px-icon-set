@@ -1,3 +1,7 @@
+v2.2.22
+======
+* Add px-smx:zinc-logo
+
 v2.2.21
 =======
 * Move px-smx:dependency to px-smm:dependency
