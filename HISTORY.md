@@ -1,3 +1,7 @@
+v2.2.23
+======
+* Remove px-smx:pencil
+
 v2.2.22
 ======
 * Add px-smx:zinc-logo
