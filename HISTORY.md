@@ -1,3 +1,7 @@
+v2.2.24
+======
+* Add px-smxl:zinc
+
 v2.2.23
 ======
 * Remove px-smx:pencil
