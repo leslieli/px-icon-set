@@ -1,3 +1,7 @@
+v2.2.25
+======
+* Add px-smm:dependency-group
+
 v2.2.24
 ======
 * Add px-smxl:zinc

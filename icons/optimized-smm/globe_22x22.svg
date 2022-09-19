@@ -3,6 +3,9 @@
     globe_22x22
   </title>
   <g>
-    <g><circle cx="11" cy="11" r="10" stroke-linejoin="round"/><path stroke-linejoin="round" d="m11,1v20m-10,-10h20M4,4a15,15 0 0,0 14,0 M18,18a15,15 0 0,0-14,0M10,1a15,15 0 0,0 0,20m2,0 a15,15 0 0,0 0-20"/></g>
+    <g>
+      <circle cx="11" cy="11" r="10"/>
+      <path d="M11 1v20M1 11h20M4 4a15 15 0 0 0 14 0m0 14a15 15 0 0 0-14 0m6-17a15 15 0 0 0 0 20m2 0a15 15 0 0 0 0-20"/>
+    </g>
   </g>
 </svg>
