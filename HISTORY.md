@@ -1,3 +1,7 @@
+v2.2.26
+======
+* Add `px-smx:resource-home` icon
+
 v2.2.25
 ======
 * Add px-smm:dependency-group

@@ -60,6 +60,8 @@ $ gulp serve
 
 Navigate to the root of that server (e.g. http://localhost:8080/) in a browser to open the API documentation page, with link to the "Demo" / working examples.
 
+Navigate to the link like `/examples/use-px-icon.html` to work with the examples.
+
 ### GE Coding Style Guide
 [GE JS Developer's Guide](https://github.com/GeneralElectric/javascript)
 
