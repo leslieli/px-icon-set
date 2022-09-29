@@ -1,3 +1,8 @@
+v2.2.27
+======
+* Refine `px-smx:resource-home` icon
+
+
 v2.2.26
 ======
 * Add `px-smx:resource-home` icon
