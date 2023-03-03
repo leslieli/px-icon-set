@@ -23,6 +23,7 @@
 const iconsetNames = {
   'smx': 'servicemax',
   'smm': 'servicemax-medium',
+  'smxs': 'servicemax-small',
   'com': 'communication',
   'doc': 'document',
   'fea': 'feature',
