@@ -1,3 +1,7 @@
+v2.2.29
+======
+* Refine `px-smxs:at-symbol` icon
+
 v2.2.28
 ======
 * Add `px-smxs:at-symbol` icon
