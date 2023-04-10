@@ -1,3 +1,7 @@
+v2.2.30
+======
+* Update `px-smx:traffic` icon
+
 v2.2.29
 ======
 * Refine `px-smxs:at-symbol` icon
