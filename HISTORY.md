@@ -1,3 +1,7 @@
+v2.2.31
+======
+* Add `px-smxs:swap` icon
+
 v2.2.30
 ======
 * Update `px-smx:traffic` icon
