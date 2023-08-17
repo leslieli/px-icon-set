@@ -1,3 +1,7 @@
+v2.2.33
+======
+* Add `px-smxs:moon` icon
+
 v2.2.32
 ======
 * Refine `px-smxs:swap` icon
