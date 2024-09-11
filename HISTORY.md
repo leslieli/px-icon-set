@@ -1,3 +1,7 @@
+v2.2.34
+======
+* Add `px-smx:ptc-logo` icon
+
 v2.2.33
 ======
 * Add `px-smxs:moon` icon
