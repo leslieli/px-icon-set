@@ -1,3 +1,7 @@
+v2.2.35
+======
+* Add `px-smxs:utl-flag` icon
+
 v2.2.34
 ======
 * Add `px-smx:ptc-logo` icon
