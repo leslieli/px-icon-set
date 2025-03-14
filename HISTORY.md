@@ -1,3 +1,7 @@
+v2.2.36
+======
+* Add `px-smxs:error-flag` icon
+
 v2.2.35
 ======
 * Add `px-smxs:utl-flag` icon
