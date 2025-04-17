@@ -1,3 +1,7 @@
+v2.2.37
+======
+* Add `px-smxs:ai-schedule` icon
+
 v2.2.36
 ======
 * Add `px-smxs:error-flag` icon
