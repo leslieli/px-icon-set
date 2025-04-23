@@ -1,3 +1,8 @@
+
+v2.2.38
+======
+* Add `px-smxs:expand` and `px-smax:minimize` icons
+
 v2.2.37
 ======
 * Add `px-smxs:ai-schedule` icon
