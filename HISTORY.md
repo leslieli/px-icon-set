@@ -1,4 +1,6 @@
-
+v2.2.39
+======
+* Add `px-smx:resource-ultra`, `px-smx:crew-ultra`, `px-smx:equipment-ultra`,`px-smx:asset-ultra`, and fix npm install failed issue.
 v2.2.38
 ======
 * Add `px-smxs:expand` and `px-smax:minimize` icons
