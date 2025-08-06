@@ -35,7 +35,7 @@ const iconsetNames = {
 
 const fs = require('fs');
 const path = require('path');
-const SVGO = require('svgo');
+const { optimize } = require('svgo');
 /*
   Tried to get rid of our ids using svgo, but it kept getting rid of other attrs
   too. Dont know why, so instead of relying on svgo to remove ids, we're just
@@ -43,33 +43,36 @@ const SVGO = require('svgo');
     * using {cleanupIDs: true}
     * adding id to {removeAttrs: {attrs: '(class|stroke|fill|id)'}}
 */
-const svgo = new SVGO({
-  full: true,
+const svgoConfig = {
   multipass: true,
   js2svg: {
     pretty: true,
     indent: '  '
   },
   plugins: [
-    {cleanupAttrs: true},
-    {removeEditorsNSData: true},
-    {removeEmptyAttrs: true},
-    {removeEmptyContainers: true},
-    {cleanUpEnableBackground: true},
-    {convertStyleToAttrs: true},
-    {convertPathData: true},
-    {convertTransform: true},
-    {removeUnknownsAndDefaults: true},
-    {removeNonInheritableGroupAttrs: true},
-    {removeUselessStrokeAndFill: true},
-    {removeUnusedNS: true},
-    {cleanupNumericValues: true},
-    {mergePaths: true},
-    {convertShapeToPath: true},
-    {transformsWithOnePath: false},
-    {removeAttrs: {attrs: '(class|stroke|fill)'}}
+    'cleanupAttrs',
+    'removeEditorsNSData',
+    'removeEmptyAttrs',
+    'removeEmptyContainers',
+    'cleanupEnableBackground',
+    'convertStyleToAttrs',
+    'convertPathData',
+    'convertTransform',
+    'removeUnknownsAndDefaults',
+    'removeNonInheritableGroupAttrs',
+    'removeUselessStrokeAndFill',
+    'removeUnusedNS',
+    'cleanupNumericValues',
+    'mergePaths',
+    'convertShapeToPath',
+    {
+      name: 'removeAttrs',
+      params: {
+        attrs: '(class|stroke|fill)'
+      }
+    }
   ]
-});
+};
 
 /*
 * Where the magic happens.
@@ -91,7 +94,7 @@ async function optimizeFromSrc() {
     let srcpath = path.join(__dirname, '..', 'icons', inFolder, file);
     let destpath = path.join(__dirname, '..', 'icons', outFolder, file);
     let src = await read(srcpath);
-    let optimized = await optimize(src);
+    let optimized = await optimizeSvg(src);
     optimized = addAttrsForText(optimized);
     outws.write(cleanForOutfile(optimized, file) + '\n'); //write the optimized and clean <g> to optimized.html
     await write(destpath, optimized); //write the optimized svg version
@@ -177,11 +180,10 @@ function read(path) {
   });
 };
 
-function optimize(string) {
+function optimizeSvg(string) {
   return new Promise(resolve => {
-    svgo.optimize(string, result => {
-      return resolve(result.data);
-    });
+    const result = optimize(string, svgoConfig);
+    return resolve(result.data);
   });
 };
 

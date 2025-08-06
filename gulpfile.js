@@ -29,6 +29,7 @@ const combiner = require('stream-combiner2');
 const bump = require('gulp-bump');
 const argv = require('yargs').argv;
 const { ensureLicense } = require('ensure-px-license');
+const sass = require('gulp-sass')(require('sass'));
 
 const sassOptions = {
   importer: importOnce,
@@ -40,7 +41,8 @@ const sassOptions = {
 
 gulp.task('clean', function() {
   return gulp.src(['.tmp', 'css'], {
-    read: false
+    read: false,
+    allowEmpty: true
   }).pipe($.clean());
 });
 
@@ -51,7 +53,7 @@ function handleError(err){
 
 function buildCSS(){
   return combiner.obj([
-    $.sass(sassOptions),
+    sass(sassOptions),
     $.autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false,
@@ -75,7 +77,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['sass/*.scss'], ['sass']);
+  gulp.watch(['sass/*.scss'], gulp.series('sass'));
 });
 
 gulp.task('serve', function() {
@@ -89,7 +91,7 @@ gulp.task('serve', function() {
   });
 
   gulp.watch(['css/*-styles.html', '*.html', '*.js', 'demo/*.html']).on('change', browserSync.reload);
-  gulp.watch(['sass/*.scss'], ['sass']);
+  gulp.watch(['sass/*.scss'], gulp.series('sass'));
 
 });
 
@@ -117,6 +119,4 @@ gulp.task('license', function() {
     .pipe(gulp.dest('.'));
 });
 
-gulp.task('default', function(callback) {
-  gulpSequence('clean', 'sass', 'license')(callback);
-});
+gulp.task('default', gulp.series('clean', 'sass', 'license'));
