@@ -1,3 +1,6 @@
+v2.2.40
+* Add `px-smx:resources` and `px-smx:today` icons.
+
 v2.2.39
 ======
 * Add `px-smx:resource-ultra`, `px-smx:crew-ultra`, `px-smx:equipment-ultra`,`px-smx:asset-ultra`, and fix npm install failed issue.
