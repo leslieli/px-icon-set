@@ -1,5 +1,10 @@
+v2.2.41
+* Add `px-smx:zinc`, `px-smx:asset-box`, and `px-smx:pencil-ruler` icons.
+======
+
 v2.2.40
 * Add `px-smx:resources` and `px-smx:today` icons.
+======
 
 v2.2.39
 ======
