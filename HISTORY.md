@@ -1,3 +1,7 @@
+v2.2.42
+* Add `px-smm:bulb` icon.
+======
+
 v2.2.41
 * Add `px-smx:zinc`, `px-smx:asset-box`, and `px-smx:pencil-ruler` icons.
 ======
